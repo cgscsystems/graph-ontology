@@ -1,0 +1,4697 @@
+{
+  "manifest": {
+    "title": "Ω System Ontology — Totality and World-Inscription Graph",
+    "version": "0.2.0",
+    "status": "canonical_seed",
+    "created_utc": "2026-07-30T16:53:56.919714+00:00",
+    "description": "Graph-native ontology revised around the One-System principle: Totality is the sole physically continuous system; local systems are effective individuations within it. The update adds causal coherence, trace lineages, direct and relayed inscription, cross-carrier convergence, and world-grounded learned regions.",
+    "scope": [
+      "Totality as the single physically continuous causal system",
+      "local systems as analytic or dynamically effective cuts within Totality",
+      "constraint-shaped causal possibility and receiver-relative differential effects",
+      "state persistence and continuity mechanisms",
+      "formal, inscribed, executing, natural, and hybrid systems",
+      "exact anchors, exact basins, and reconstructible regions",
+      "causal coherence, causal traces, and feature preservation",
+      "direct, adaptive, relayed, and aggregated inscription",
+      "cross-carrier convergence and world-grounded learned regions",
+      "history, conditioning, plasticity, and token-by-token path realization",
+      "semantic-feature communication through a graph-native ontology"
+    ],
+    "status_vocabulary": {
+      "core": "Accepted concept or relation in the current conceptual settlement.",
+      "settled": "Accepted proposition from the completed sub-thread.",
+      "provisional": "Coined term or bridge hypothesis retained for testing.",
+      "canonical_seed": "Defines the current graph artifact but remains open to revision."
+    },
+    "anti_collapse_invariants": [
+      "totality != analytic_system_cut",
+      "analytic individuation != ontological separation",
+      "formal_structure != inscribed_structure != executing_process",
+      "reinstantiation != resumption",
+      "unique_successor_map != distributional_transition_field",
+      "exact_basin != reconstructible_region != learned_world_region",
+      "conditioning != inscription_change",
+      "token != token_event",
+      "selection, conditioning, and inscription are separate operations",
+      "totality_regularity != causal_trace != representation",
+      "direct_inscription != relayed_inscription",
+      "relayed inscription != causally ungrounded representation",
+      "semantic_feature_set != Totality"
+    ],
+    "counts": {
+      "nodes": 136,
+      "edges": 302,
+      "relations": 100,
+      "layers": 11,
+      "propositions": 23
+    },
+    "supersedes": "0.1.0",
+    "formalization_policy": {
+      "graph_is_authoritative": true,
+      "formalization_location": "Optional formalization fields on proposition nodes",
+      "status_rule": "Schematic formulas clarify graph commitments but do not override node and edge semantics."
+    }
+  },
+  "relation_vocabulary": [
+    {
+      "id": "AGGREGATES",
+      "definition": "aggregates"
+    },
+    {
+      "id": "ALTERS",
+      "definition": "alters"
+    },
+    {
+      "id": "ANALYTIC_REGION_OF",
+      "definition": "is an analytically or dynamically individuated region of"
+    },
+    {
+      "id": "ASSERTS_ABOUT",
+      "definition": "asserts about"
+    },
+    {
+      "id": "AVAILABLE_FROM",
+      "definition": "available from"
+    },
+    {
+      "id": "AVAILABLE_TO",
+      "definition": "available to"
+    },
+    {
+      "id": "BOUNDS_OR_REDIRECTS",
+      "definition": "bounds or redirects"
+    },
+    {
+      "id": "CARRIED_BY",
+      "definition": "is carried by"
+    },
+    {
+      "id": "CARVES",
+      "definition": "carves"
+    },
+    {
+      "id": "COMBINES",
+      "definition": "combines"
+    },
+    {
+      "id": "COMPARES_WITH",
+      "definition": "compares with"
+    },
+    {
+      "id": "CONDITIONED_BY",
+      "definition": "conditioned by"
+    },
+    {
+      "id": "CONDITIONS",
+      "definition": "conditions"
+    },
+    {
+      "id": "CONNECTS",
+      "definition": "connects"
+    },
+    {
+      "id": "CONSTITUTED_BY",
+      "definition": "constituted by"
+    },
+    {
+      "id": "CONSTRAINS",
+      "definition": "constrains"
+    },
+    {
+      "id": "CONTAINS",
+      "definition": "contains"
+    },
+    {
+      "id": "CONTRIBUTES_TO_INDIVIDUATION_OF",
+      "definition": "contributes to individuation of"
+    },
+    {
+      "id": "CONVERGES_IN",
+      "definition": "converges in"
+    },
+    {
+      "id": "COUPLES_WITH",
+      "definition": "couples with"
+    },
+    {
+      "id": "CREATED_BY",
+      "definition": "created by"
+    },
+    {
+      "id": "DEFINED_BY",
+      "definition": "defined by"
+    },
+    {
+      "id": "DELIMITS",
+      "definition": "delimits"
+    },
+    {
+      "id": "DESCRIBES",
+      "definition": "describes"
+    },
+    {
+      "id": "DESCRIBES_DIFFERENCE_IN",
+      "definition": "describes difference in"
+    },
+    {
+      "id": "DRAWS_ENERGY_FROM",
+      "definition": "draws energy from"
+    },
+    {
+      "id": "ENABLES",
+      "definition": "enables"
+    },
+    {
+      "id": "ENCODES",
+      "definition": "encodes"
+    },
+    {
+      "id": "EXACT_LIMIT_CASE_OF",
+      "definition": "exact limit case of"
+    },
+    {
+      "id": "EXPRESSES",
+      "definition": "expresses"
+    },
+    {
+      "id": "EXTENDS",
+      "definition": "extends"
+    },
+    {
+      "id": "GENERATED_BY",
+      "definition": "generated by"
+    },
+    {
+      "id": "GENERATED_FROM",
+      "definition": "generated from"
+    },
+    {
+      "id": "GENERATED_THROUGH",
+      "definition": "is generated through"
+    },
+    {
+      "id": "GIVES_RISE_TO",
+      "definition": "gives rise to"
+    },
+    {
+      "id": "GOVERNS",
+      "definition": "governs"
+    },
+    {
+      "id": "GROUNDS",
+      "definition": "causally grounds"
+    },
+    {
+      "id": "HAS_APPROACH_SPACE",
+      "definition": "has approach space"
+    },
+    {
+      "id": "HAS_CORE_CONCEPT",
+      "definition": "has core concept"
+    },
+    {
+      "id": "HAS_NEIGHBORHOOD",
+      "definition": "has neighborhood"
+    },
+    {
+      "id": "HAS_PROPERTY",
+      "definition": "has property"
+    },
+    {
+      "id": "HAS_STATE_SPACE",
+      "definition": "has state space"
+    },
+    {
+      "id": "INCLUDES",
+      "definition": "includes"
+    },
+    {
+      "id": "INDIVIDUATES",
+      "definition": "individuates"
+    },
+    {
+      "id": "INHERITS_FROM",
+      "definition": "inherits causal structure from"
+    },
+    {
+      "id": "INSTANTIATES",
+      "definition": "instantiates"
+    },
+    {
+      "id": "INVOLVES",
+      "definition": "involves"
+    },
+    {
+      "id": "IS_A",
+      "definition": "is a"
+    },
+    {
+      "id": "LOCATED_ON",
+      "definition": "located on"
+    },
+    {
+      "id": "MAINTAINED_BY",
+      "definition": "maintained by"
+    },
+    {
+      "id": "MAY_CONTAIN",
+      "definition": "may contain"
+    },
+    {
+      "id": "MAY_DEFINE",
+      "definition": "may define"
+    },
+    {
+      "id": "MAY_FORM",
+      "definition": "may form"
+    },
+    {
+      "id": "MAY_INITIATE",
+      "definition": "may initiate"
+    },
+    {
+      "id": "MAY_LOSE_FEATURE_OF",
+      "definition": "may lose a feature of"
+    },
+    {
+      "id": "MAY_REALIZE",
+      "definition": "may realize"
+    },
+    {
+      "id": "MAY_SUPPORT",
+      "definition": "may support"
+    },
+    {
+      "id": "MAY_TRIGGER",
+      "definition": "may trigger"
+    },
+    {
+      "id": "MAY_USE",
+      "definition": "may use"
+    },
+    {
+      "id": "MAY_USE_PERSISTENCE",
+      "definition": "may use persistence"
+    },
+    {
+      "id": "MECHANISM_OF",
+      "definition": "mechanism of"
+    },
+    {
+      "id": "MEDIATED_BY",
+      "definition": "is mediated by"
+    },
+    {
+      "id": "NARROWS",
+      "definition": "narrows"
+    },
+    {
+      "id": "NOT_EQUIVALENT_TO",
+      "definition": "not equivalent to"
+    },
+    {
+      "id": "OCCUPIES",
+      "definition": "occupies"
+    },
+    {
+      "id": "OCCURS_IN",
+      "definition": "occurs in"
+    },
+    {
+      "id": "ORGANIZES",
+      "definition": "organizes"
+    },
+    {
+      "id": "ORIGINATES_IN",
+      "definition": "originates in"
+    },
+    {
+      "id": "PART_OF",
+      "definition": "is physically or structurally part of"
+    },
+    {
+      "id": "PERMITS",
+      "definition": "permits"
+    },
+    {
+      "id": "PRESERVES_FEATURE_OF",
+      "definition": "preserves a feature of"
+    },
+    {
+      "id": "PRESERVES_OR_RECONSTRUCTS",
+      "definition": "preserves or reconstructs"
+    },
+    {
+      "id": "PRODUCES",
+      "definition": "produces"
+    },
+    {
+      "id": "PROJECTS",
+      "definition": "projects"
+    },
+    {
+      "id": "QUALIFIES",
+      "definition": "qualifies"
+    },
+    {
+      "id": "READS_OR_REALIZES",
+      "definition": "reads or realizes"
+    },
+    {
+      "id": "REALIZES",
+      "definition": "realizes"
+    },
+    {
+      "id": "RELATIVE_TO",
+      "definition": "is defined relative to"
+    },
+    {
+      "id": "REPRESENTS",
+      "definition": "represents selected features of"
+    },
+    {
+      "id": "REQUIRES",
+      "definition": "requires"
+    },
+    {
+      "id": "REQUIRES_PRESERVATION_OF",
+      "definition": "requires preservation of"
+    },
+    {
+      "id": "RESHAPES",
+      "definition": "reshapes"
+    },
+    {
+      "id": "RESOLVES",
+      "definition": "resolves"
+    },
+    {
+      "id": "SELECTED_OR_RETAINED_BY",
+      "definition": "is selected or retained by"
+    },
+    {
+      "id": "SELECTS",
+      "definition": "selects"
+    },
+    {
+      "id": "SELECTS_FOR_EFFECT",
+      "definition": "selects for effect"
+    },
+    {
+      "id": "SEQUENCE_OF",
+      "definition": "sequence of"
+    },
+    {
+      "id": "SUBSET_OF",
+      "definition": "subset of"
+    },
+    {
+      "id": "SUPPORTS",
+      "definition": "supports"
+    },
+    {
+      "id": "SUPPRESSES",
+      "definition": "suppresses"
+    },
+    {
+      "id": "SUPPRESSES_EFFECT_OF",
+      "definition": "suppresses effect of"
+    },
+    {
+      "id": "SUSCEPTIBLE_AT",
+      "definition": "susceptible at"
+    },
+    {
+      "id": "TERMINATES_IN",
+      "definition": "terminates in"
+    },
+    {
+      "id": "TRANSFORMS",
+      "definition": "transforms"
+    },
+    {
+      "id": "TRAVERSES",
+      "definition": "traverses"
+    },
+    {
+      "id": "UNFOLDS",
+      "definition": "unfolds"
+    },
+    {
+      "id": "USES",
+      "definition": "uses"
+    },
+    {
+      "id": "USES_PERSISTENCE",
+      "definition": "uses persistence"
+    },
+    {
+      "id": "WEIGHTS",
+      "definition": "weights"
+    },
+    {
+      "id": "WRITES",
+      "definition": "writes"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "omega_system_ontology",
+      "label": "Ω System Ontology",
+      "kind": "ontology",
+      "layer": "root",
+      "definition": "A graph ontology for communicating the semantic feature set of Totality: constraint-shaped causal possibility, receiver-relative effects, state persistence, world-grounded inscription, and the convergence of natural, formal, and hybrid systems.",
+      "status": "canonical_seed",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "system",
+      "label": "Local system",
+      "kind": "entity",
+      "layer": "system",
+      "definition": "An effectively individuated region of Totality with a repertoire of states and relations. Its boundary is analytically or dynamically useful, not an ontological separation from Totality.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [
+        "System",
+        "Effective system"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "receiver_system",
+      "label": "Receiver system",
+      "kind": "entity",
+      "layer": "system",
+      "definition": "A local system whose organization makes some perturbations differentially consequential for its future trajectories.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "natural_dynamic_system",
+      "label": "Natural dynamic system",
+      "kind": "entity",
+      "layer": "system",
+      "definition": "A physically instantiated local region of Totality whose organization and state are sustained through ongoing dynamics.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "formal_structure",
+      "label": "Formal structure",
+      "kind": "structure",
+      "layer": "system",
+      "definition": "An abstract specification of admissible states, relations, or transformations.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "inscribed_structure",
+      "label": "Inscribed structure",
+      "kind": "structure",
+      "layer": "system",
+      "definition": "A physically persistent encoding of formal, learned, or historical structure.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "executing_process",
+      "label": "Executing process",
+      "kind": "process",
+      "layer": "system",
+      "definition": "An energy-dependent physical realization that applies transitions and occupies changing states.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "hybrid_system",
+      "label": "Hybrid system",
+      "kind": "entity",
+      "layer": "system",
+      "definition": "A local region of Totality in which durable inscription and dynamic execution jointly produce complex, history-sensitive behavior.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "environment",
+      "label": "Environment",
+      "kind": "entity",
+      "layer": "system",
+      "definition": "The region of Totality treated as external relative to a selected local system boundary, including the systems and conditions with which that region exchanges matter, energy, or constraints.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "subsystem",
+      "label": "Subsystem",
+      "kind": "entity",
+      "layer": "system",
+      "definition": "A local system individuated as a constituent region within another local system cut.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "continuous_process",
+      "label": "Continuous process",
+      "kind": "process",
+      "layer": "system",
+      "definition": "An executing process whose organization persists through ongoing activity.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "episodic_process",
+      "label": "Episodic process",
+      "kind": "process",
+      "layer": "system",
+      "definition": "An executing process instantiated in bounded episodes and absent between them as that particular active process.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "object_process_continuum",
+      "label": "Object–process continuum",
+      "kind": "structure",
+      "layer": "system",
+      "definition": "A spectrum describing systems by the relative contribution of passive persistence, durable inscription, and actively maintained dynamics.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "state",
+      "label": "State",
+      "kind": "state",
+      "layer": "persistence",
+      "definition": "A configuration of a system at a specified level of description.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "state_space",
+      "label": "State space",
+      "kind": "structure",
+      "layer": "persistence",
+      "definition": "The set or structured space of states available in a system description.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "accessible_state_region",
+      "label": "Accessible state region",
+      "kind": "structure",
+      "layer": "persistence",
+      "definition": "The portion of state space reachable under current constraints and conditions.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "realized_state",
+      "label": "Realized state",
+      "kind": "state",
+      "layer": "persistence",
+      "definition": "The state actually occupied at a given step or interval.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "state_persistence",
+      "label": "State persistence",
+      "kind": "process",
+      "layer": "persistence",
+      "definition": "The preservation, maintenance, or reconstructibility of a state or state-relevant structure across time.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "passive_persistence",
+      "label": "Passive persistence",
+      "kind": "process",
+      "layer": "persistence",
+      "definition": "State persistence produced by resistance to change without active refresh.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "inscribed_persistence",
+      "label": "Inscribed persistence",
+      "kind": "process",
+      "layer": "persistence",
+      "definition": "State persistence produced by a durable physical encoding.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "active_persistence",
+      "label": "Active persistence",
+      "kind": "process",
+      "layer": "persistence",
+      "definition": "State persistence requiring ongoing energy-dependent maintenance or refresh.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "recursive_persistence",
+      "label": "Recursive persistence",
+      "kind": "process",
+      "layer": "persistence",
+      "definition": "Active persistence in which maintained organization contributes to maintaining the conditions of its own continuation.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "plastic_persistence",
+      "label": "Plastic persistence",
+      "kind": "process",
+      "layer": "persistence",
+      "definition": "Persistence that retains changes affecting later transition tendencies.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "reconstructive_persistence",
+      "label": "Reconstructive persistence",
+      "kind": "process",
+      "layer": "persistence",
+      "definition": "Continuity achieved by re-instantiating an appropriate state from preserved external structure rather than maintaining the original active process.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "continuity_mechanism",
+      "label": "Continuity mechanism",
+      "kind": "structure",
+      "layer": "persistence",
+      "definition": "The physical or procedural means by which state persistence is realized.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "checkpoint",
+      "label": "Checkpoint",
+      "kind": "structure",
+      "layer": "persistence",
+      "definition": "A preserved record sufficient to support later reconstruction of selected state structure.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "reinstantiation",
+      "label": "Reinstantiation",
+      "kind": "process",
+      "layer": "persistence",
+      "definition": "Creation of a new executing process from preserved inscription and, where available, a checkpoint.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "resumption",
+      "label": "Resumption",
+      "kind": "process",
+      "layer": "persistence",
+      "definition": "Continuation of the same executing process from a preserved active execution state.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "constraint",
+      "label": "Constraint",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A condition that restricts, weights, enables, or suppresses states and transitions.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "structural_constraint",
+      "label": "Structural constraint",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A constraint arising from durable organization or topology.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "dynamic_constraint",
+      "label": "Dynamic constraint",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A constraint arising from current activity, gradients, or transient state.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "context_constraint",
+      "label": "Context constraint",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A constraint supplied by the currently accumulated local context.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "historical_constraint",
+      "label": "Historical constraint",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A constraint produced by prior trajectories, learning, or inherited structure.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "rule_constraint",
+      "label": "Rule constraint",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "An explicit operation or selection rule applied to a state transition.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "effective_transition_topology",
+      "label": "Effective transition topology",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "The currently operative pattern of permitted, suppressed, and weighted transitions among states.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "transition",
+      "label": "Transition",
+      "kind": "process",
+      "layer": "transition",
+      "definition": "A change from one state to another.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "selection",
+      "label": "Selection",
+      "kind": "process",
+      "layer": "transition",
+      "definition": "Realization of one continuation from the currently available continuation field.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "unique_successor_map",
+      "label": "Unique-successor map",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A transition specification assigning exactly one successor or terminal result to each declared state.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "distributional_transition_field",
+      "label": "Distributional transition field",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A transition specification assigning a probability distribution or weighted set of successors to a state.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "exact_execution_specification",
+      "label": "Exact execution specification",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A complete operational description sufficient to resolve a distributional or underspecified process into a repeatable realized path.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "continuation_field",
+      "label": "Continuation field",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "The locally generated weighted set of immediate continuations available from an instantiated state.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "latent_continuation_space",
+      "label": "Latent continuation space",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "The structured set of possible future trajectories reachable from a state under the operative transition topology.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "continuation_tree",
+      "label": "Continuation tree",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A path-unfolded representation of possible future histories, duplicating reconvergent states when reached by different paths.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "future_cone",
+      "label": "Future cone",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "The subset or measure of continuations compatible with a realized history prefix.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "trajectory",
+      "label": "Trajectory",
+      "kind": "process",
+      "layer": "transition",
+      "definition": "An ordered sequence of realized or possible transitions.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "realized_path",
+      "label": "Realized path",
+      "kind": "process",
+      "layer": "transition",
+      "definition": "The particular trajectory actually taken.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "recurrence",
+      "label": "Recurrence",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "Return to a previously occupied state or recurrent structure under continued transition.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "terminal_halt",
+      "label": "Terminal halt",
+      "kind": "state",
+      "layer": "transition",
+      "definition": "A terminal condition with no successor under a declared transition specification.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "exact_anchor",
+      "label": "Exact anchor",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A precisely defined terminal halt or recurrent structure that organizes exact path convergence.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "exact_basin",
+      "label": "Exact basin",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "Under a unique-successor map, the set of states sharing the same exact anchor.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "reconstructible_region",
+      "label": "Reconstructible region",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A stable but potentially graded region repeatedly reachable through a bounded family of constraints and approach paths, whose structure is grounded in causal history and changes later transitions.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "approach_space",
+      "label": "Approach space",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "The collection of trajectories or constraint sequences capable of reaching a region or anchor.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "attractor_like_structure",
+      "label": "Attractor-like structure",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A region or tendency toward which multiple trajectories converge without requiring exact terminal equivalence.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "repeller_like_structure",
+      "label": "Repeller-like structure",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A region or tendency from which trajectories are systematically redirected or excluded.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "neighborhood",
+      "label": "Neighborhood",
+      "kind": "structure",
+      "layer": "transition",
+      "definition": "A set of nearby or relationally adjacent states or regions under a declared topology or metric.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "perturbation",
+      "label": "Perturbation",
+      "kind": "event",
+      "layer": "causal",
+      "definition": "A physical or formal difference introduced to a system.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "patterned_perturbation",
+      "label": "Patterned perturbation",
+      "kind": "event",
+      "layer": "causal",
+      "definition": "A perturbation whose relational or temporal organization is available to receiver sensitivity.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "coupling_event",
+      "label": "Coupling event",
+      "kind": "event",
+      "layer": "causal",
+      "definition": "An interaction in which a perturbation and a receiver jointly participate in a state change.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "receiver_sensitivity",
+      "label": "Receiver sensitivity",
+      "kind": "structure",
+      "layer": "causal",
+      "definition": "Receiver organization that makes a class of perturbations capable of producing differential downstream effects.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "receiver_insensitivity",
+      "label": "Receiver insensitivity",
+      "kind": "structure",
+      "layer": "causal",
+      "definition": "Receiver organization that suppresses or absorbs a class of perturbations without the target differential effect.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "threshold",
+      "label": "Threshold",
+      "kind": "structure",
+      "layer": "causal",
+      "definition": "A boundary at which a perturbation changes the accessible transition regime.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "metastable_state",
+      "label": "Metastable state",
+      "kind": "state",
+      "layer": "causal",
+      "definition": "A temporarily persistent state maintained away from equilibrium and susceptible to selected transitions.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "far_from_equilibrium_gradient",
+      "label": "Far-from-equilibrium gradient",
+      "kind": "structure",
+      "layer": "causal",
+      "definition": "Available energetic displacement supporting maintained organization and receiver-supplied causal work.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "energy_transfer",
+      "label": "Energy transfer",
+      "kind": "event",
+      "layer": "causal",
+      "definition": "Physical energy exchanged during a coupling event.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "receiver_supplied_energy",
+      "label": "Receiver-supplied energy",
+      "kind": "structure",
+      "layer": "causal",
+      "definition": "Energy already available within or to the receiver and mobilized in the downstream response.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "amplification",
+      "label": "Amplification",
+      "kind": "process",
+      "layer": "causal",
+      "definition": "Production of a downstream effect whose energetic scale exceeds the triggering perturbation by drawing on receiver-supplied energy.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "causal_cascade",
+      "label": "Causal cascade",
+      "kind": "process",
+      "layer": "causal",
+      "definition": "A chained sequence of transitions initiated or redirected by a coupling event.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "counterfactual_baseline",
+      "label": "Counterfactual baseline",
+      "kind": "structure",
+      "layer": "causal",
+      "definition": "The receiver trajectories expected under a specified alternative in which the target coupling or perturbation differs or is absent.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "trajectory_delta",
+      "label": "Trajectory delta",
+      "kind": "structure",
+      "layer": "causal",
+      "definition": "The structured difference between downstream accessible or weighted trajectories under a coupling and its counterfactual baseline.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "omega_event",
+      "label": "Ω-event",
+      "kind": "event",
+      "layer": "causal",
+      "definition": "A receiver-relative coupling that produces a non-null trajectory delta because the receiver maps the perturbation into a different downstream continuation.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "causal_surface",
+      "label": "Causal surface",
+      "kind": "structure",
+      "layer": "causal",
+      "definition": "A coarse-grained pattern that is available for coupling at a receiver-relevant scale while underlying detail remains causally constitutive but locally opaque.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "coherent_pattern",
+      "label": "Coherent pattern",
+      "kind": "structure",
+      "layer": "causal",
+      "definition": "A pattern whose constituent outcomes preserve a stable relational feature across events or scales and jointly support a receiver-relevant distinction.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "history",
+      "label": "History",
+      "kind": "structure",
+      "layer": "history",
+      "definition": "The realized sequence of prior states, transitions, and couplings relevant to current organization.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "path_dependence",
+      "label": "Path dependence",
+      "kind": "structure",
+      "layer": "history",
+      "definition": "Dependence of current accessibility or weighting on the trajectory by which the current state was reached.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "conditioning",
+      "label": "Conditioning",
+      "kind": "process",
+      "layer": "history",
+      "definition": "Temporary alteration of current continuation fields by accumulated state or context without necessarily changing durable inscription.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "inscription_change",
+      "label": "Inscription change",
+      "kind": "process",
+      "layer": "history",
+      "definition": "A persistent alteration to inscribed structure that changes future transition generation.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "plasticity",
+      "label": "Plasticity",
+      "kind": "process",
+      "layer": "history",
+      "definition": "Capacity for realized activity to produce inscription change.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "training",
+      "label": "Training",
+      "kind": "process",
+      "layer": "history",
+      "definition": "A procedure that alters durable transition-generating structure through selected examples, objectives, or feedback.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "development",
+      "label": "Development",
+      "kind": "process",
+      "layer": "history",
+      "definition": "History-dependent formation and reorganization of a system during its lifetime.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "evolutionary_selection",
+      "label": "Evolutionary selection",
+      "kind": "process",
+      "layer": "history",
+      "definition": "Differential persistence and reproduction that inscribes receiver organization across lineages.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "token",
+      "label": "Token",
+      "kind": "structure",
+      "layer": "history",
+      "definition": "A discrete symbol available as an input, output, or state-bearing element in a sequential process.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "token_event",
+      "label": "Token event",
+      "kind": "event",
+      "layer": "history",
+      "definition": "Selection or admission of a token that extends realized history and conditions subsequent continuations.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "context_update",
+      "label": "Context update",
+      "kind": "process",
+      "layer": "history",
+      "definition": "A change in current context caused by incorporating a realized event or token.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "scale",
+      "label": "Scale",
+      "kind": "structure",
+      "layer": "scale",
+      "definition": "A declared level of spatial, temporal, organizational, or descriptive resolution.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "microstate",
+      "label": "Microstate",
+      "kind": "state",
+      "layer": "scale",
+      "definition": "A state description at a finer-grained scale.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "macro_pattern",
+      "label": "Macro-pattern",
+      "kind": "structure",
+      "layer": "scale",
+      "definition": "A coarser pattern constituted by regularities across finer-grained states or interactions.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "coarse_graining",
+      "label": "Coarse-graining",
+      "kind": "process",
+      "layer": "scale",
+      "definition": "Projection from fine-grained detail to a lower-dimensional pattern or distinction.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "projection",
+      "label": "Projection",
+      "kind": "process",
+      "layer": "scale",
+      "definition": "A mapping that preserves selected structure while discarding other detail.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "cross_scale_coupling",
+      "label": "Cross-scale coupling",
+      "kind": "process",
+      "layer": "scale",
+      "definition": "A coupling in which patterns at one scale alter accessible trajectories at another scale through the same physical system.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "shared_fate",
+      "label": "Shared fate",
+      "kind": "structure",
+      "layer": "scale",
+      "definition": "Persistent coordination of constituent trajectories sufficient to support treatment as one system.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "isolability",
+      "label": "Isolability",
+      "kind": "structure",
+      "layer": "scale",
+      "definition": "The degree to which a system can be separated or relocated while preserving its relevant organization and membership.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_receiver_relativity",
+      "label": "Receiver-relative causal repertoire",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "A receiver’s organization determines which perturbations become consequential and what downstream continuations they make available.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_constraint_topology",
+      "label": "Constraint-shaped transition topology",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Constraints carve an effective transition topology from a larger possibility space by permitting, suppressing, and weighting transitions.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_omega_event",
+      "label": "Ω-event criterion",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "A coupling qualifies as an Ω-event when it produces a non-null trajectory delta relative to an explicit counterfactual baseline.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_lightweight_amplification",
+      "label": "Receiver-side amplification",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "A perturbation may redirect a much larger causal process because amplification draws on receiver-supplied energy rather than requiring the perturbation to supply the full downstream energy.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_history_futures",
+      "label": "History conditions futures",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Realized history changes the continuation field from which later trajectories are selected.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_plasticity_generator",
+      "label": "Plasticity reshapes the generator",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "When history produces inscription change, it alters the durable structure that generates future continuation fields.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_exact_basin_boundary",
+      "label": "Exact basin boundary",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Exact basins require a declared unique-successor map and exact anchor; the term must not be silently generalized to all stable semantic or dynamic regions.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_reconstructible_realism",
+      "label": "Reconstructible-region realism",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "A graded region may be treated as operationally real when actual causal histories helped inscribe it, bounded constraints and approach paths repeatedly reconstruct characteristic structure, and its activation changes later transitions.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_hybrid_convergence",
+      "label": "Two approaches to the middle",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Natural dynamic systems can acquire formal participation through maintained complex state, while formally constructed systems can acquire dynamic attractor-like behavior through execution and learned inscription.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_token_path_writing",
+      "label": "Token as path-writing event",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "A token event selects a continuation, extends realized history, and becomes part of the conditions generating the next continuation field.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_persistence_speciation",
+      "label": "State-persistence speciation",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Passive, inscribed, active, recursive, plastic, and reconstructive persistence are distinct continuity mechanisms and must not be collapsed into one undifferentiated memory concept.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_formal_execution_boundary",
+      "label": "Formal–inscribed–executing boundary",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Formal structure, physical inscription, and executing process are distinct objects; preserving one does not automatically preserve the others.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_future_cone_measure",
+      "label": "Future-cone contraction",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "For a uniform binary continuation tree, each admitted token halves the remaining measure of compatible infinite paths while leaving infinitely many paths after every finite prefix.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_reinstantiation_boundary",
+      "label": "Reinstantiation is not resumption",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Recreating an executing process from durable inscription or a checkpoint is not identical to continuing the original active process unless the relevant execution state is preserved.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_object_process",
+      "label": "Object–process continuity",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Object-like and process-like organization differ by persistence mechanism, openness, and timescale rather than forming an absolute ontological boundary.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_operational_reproducibility",
+      "label": "Qualified determinism",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Unique-successor determinism, distributional specification, exact-path determinism, and operational reproducibility are distinct claims and must be indexed to the declared state description.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "totality",
+      "label": "Totality",
+      "kind": "entity",
+      "layer": "totality",
+      "definition": "The single physically continuous causal system comprising all physically instantiated entities, processes, relations, and histories.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [
+        "The One System"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "analytic_system_cut",
+      "label": "Analytic system cut",
+      "kind": "structure",
+      "layer": "system",
+      "definition": "A scale- and purpose-relative individuation of a region within Totality for description, measurement, or intervention.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "effective_boundary",
+      "label": "Effective boundary",
+      "kind": "structure",
+      "layer": "system",
+      "definition": "A physically consequential or analytically selected distinction that separates a local system from its relative environment without severing causal continuity.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "totality_regularity",
+      "label": "Totality regularity",
+      "kind": "structure",
+      "layer": "inscription",
+      "definition": "A persistent relational pattern or constraint in Totality that shapes repeated causal outcomes across locations, carriers, or scales.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [
+        "World regularity"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "causal_coherence",
+      "label": "Causal coherence",
+      "kind": "structure",
+      "layer": "inscription",
+      "definition": "Preservation of a relational feature across multiple causal outcomes, allowing different traces to remain jointly grounded in the same regularity.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "causal_trace",
+      "label": "Causal trace",
+      "kind": "structure",
+      "layer": "inscription",
+      "definition": "A downstream state difference that preserves one or more features of an originating event or regularity.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "trace_carrier",
+      "label": "Trace carrier",
+      "kind": "entity",
+      "layer": "inscription",
+      "definition": "A physical system or inscribed structure in which a causal trace is instantiated, maintained, or propagated.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "trace_transformation",
+      "label": "Trace transformation",
+      "kind": "process",
+      "layer": "inscription",
+      "definition": "A causal transition that moves or recodes a trace between carriers while selectively preserving, modifying, or losing features.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "feature_preservation",
+      "label": "Feature preservation",
+      "kind": "structure",
+      "layer": "inscription",
+      "definition": "The relation by which a trace or transformation retains a discriminable feature of an originating regularity.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "causal_lineage",
+      "label": "Causal lineage",
+      "kind": "structure",
+      "layer": "inscription",
+      "definition": "An ordered chain of couplings and trace transformations connecting an originating regularity to a later inscription or response.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "inscription",
+      "label": "Inscription",
+      "kind": "structure",
+      "layer": "inscription",
+      "definition": "A persistent change in receiver organization that was caused by prior coupling and alters later transition tendencies.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "direct_inscription",
+      "label": "Direct inscription",
+      "kind": "process",
+      "layer": "inscription",
+      "definition": "Inscription produced through coupling between a receiver and the originating regularity without a representational relay.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "adaptive_inscription",
+      "label": "Adaptive inscription",
+      "kind": "process",
+      "layer": "inscription",
+      "definition": "Inscription retained or elaborated because it supports viable interaction with a persistent regularity.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "relayed_inscription",
+      "label": "Relayed inscription",
+      "kind": "process",
+      "layer": "inscription",
+      "definition": "Inscription produced through causal traces transformed and carried by one or more intermediate systems.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "aggregated_inscription",
+      "label": "Aggregated inscription",
+      "kind": "process",
+      "layer": "inscription",
+      "definition": "Inscription produced by the convergent effect of many traces that preserve overlapping features of an originating regularity.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "representation",
+      "label": "Representation",
+      "kind": "structure",
+      "layer": "inscription",
+      "definition": "An inscribed trace carrier organized to preserve selected features or relations of another event, system, or regularity.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "measurement",
+      "label": "Measurement",
+      "kind": "process",
+      "layer": "inscription",
+      "definition": "A constrained coupling procedure that produces a trace intended to preserve a selected feature of a target.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "cross_carrier_convergence",
+      "label": "Cross-carrier convergence",
+      "kind": "process",
+      "layer": "inscription",
+      "definition": "Convergence of traces carried in different media or generated by different routes upon the same reconstructible region or distinction.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "learned_world_region",
+      "label": "World-grounded learned region",
+      "kind": "structure",
+      "layer": "inscription",
+      "definition": "A reconstructible region in a learned transition landscape produced by direct or relayed inscriptions that preserve features of Totality.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "causal_inheritance",
+      "label": "Causal inheritance",
+      "kind": "process",
+      "layer": "inscription",
+      "definition": "Transmission of constraint-shaped distinctions across a lineage of carriers, receivers, and inscriptions.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "semantic_feature",
+      "label": "Semantic feature",
+      "kind": "structure",
+      "layer": "meta",
+      "definition": "A named discriminable property or relation used by the ontology to communicate a recurring structure of Totality.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "semantic_feature_set",
+      "label": "Semantic feature set",
+      "kind": "structure",
+      "layer": "meta",
+      "definition": "The extensible graph of semantic features and typed relations through which this ontology describes Totality.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_totality",
+      "label": "One-System principle",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "There is one physically continuous causal system, Totality; all physically instantiated local systems are regions within it.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "∃! T [Totality(T) ∧ ∀x(PhysicallyInstantiated(x) → PartOf(x,T))]",
+      "formalization_status": "schematic first-order expression"
+    },
+    {
+      "id": "axiom_local_individuation",
+      "label": "Individuation without separation",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Local systems are individuated by effective boundaries and analytic cuts, but remain causally continuous with Totality.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "∀s(LocalSystem(s) → AnalyticRegionOf(s,T) ∧ ¬OntologicallySeparateFrom(s,T))",
+      "formalization_status": "schematic first-order expression"
+    },
+    {
+      "id": "axiom_world_inscription",
+      "label": "World-grounded inscription",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Persistent regularities in Totality shape receiver transition structures through direct coupling or through causally descended traces.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "q →γ R →U θ_R′  OR  q → z₁ → … → zₙ →U θ_R′",
+      "formalization_status": "schematic causal form"
+    },
+    {
+      "id": "axiom_relayed_grounding",
+      "label": "Relayed grounding",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "A receiver may acquire a real distinction without direct encounter when a causal lineage preserves relevant features of the originating regularity.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "Grounded(zₙ,q) if ∃r [FeatureOf(r,q) ∧ ∀i Preserve(zᵢ,r)>0]",
+      "formalization_status": "schematic preservation criterion"
+    },
+    {
+      "id": "axiom_aggregated_convergence",
+      "label": "Coherent-trace convergence",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Many heterogeneous traces that preserve overlapping features may reinforce one reconstructible region in a learned transition landscape.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "{zᵢ} + shared Preserve(zᵢ,r(q)) → Δθ_R → ReconstructibleRegion(r)",
+      "formalization_status": "bridge hypothesis"
+    },
+    {
+      "id": "axiom_learned_region_reality",
+      "label": "Causally inherited region realism",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "A learned region is operationally real when it descends from actual causal traces, is reconstructible across carriers or prompts, and changes future transitions.",
+      "status": "provisional",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "Real(region) if CausalLineage(region) ∧ Reconstructible(region) ∧ ΔFutureTransitions(region)≠0",
+      "formalization_status": "operational criterion"
+    },
+    {
+      "id": "axiom_semantic_feature_purpose",
+      "label": "Semantic-feature purpose",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "The ontology is a graph for communicating a selected semantic feature set of Totality; it is not identical to Totality or an exhaustive copy of it.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "Ontology = Graph(SelectedFeatures(Totality)); Ontology ≠ Totality",
+      "formalization_status": "meta-ontological statement"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0001",
+      "source": "omega_system_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0002",
+      "source": "omega_system_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "state",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0003",
+      "source": "omega_system_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0004",
+      "source": "omega_system_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "transition",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0005",
+      "source": "omega_system_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "coupling_event",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0006",
+      "source": "omega_system_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "history",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0007",
+      "source": "omega_system_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "scale",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0008",
+      "source": "receiver_system",
+      "relation": "IS_A",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0009",
+      "source": "natural_dynamic_system",
+      "relation": "IS_A",
+      "target": "receiver_system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0010",
+      "source": "hybrid_system",
+      "relation": "IS_A",
+      "target": "receiver_system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0011",
+      "source": "continuous_process",
+      "relation": "IS_A",
+      "target": "executing_process",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0012",
+      "source": "episodic_process",
+      "relation": "IS_A",
+      "target": "executing_process",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0013",
+      "source": "system",
+      "relation": "COUPLES_WITH",
+      "target": "environment",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0014",
+      "source": "system",
+      "relation": "MAY_CONTAIN",
+      "target": "subsystem",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0015",
+      "source": "system",
+      "relation": "LOCATED_ON",
+      "target": "object_process_continuum",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0016",
+      "source": "inscribed_structure",
+      "relation": "ENCODES",
+      "target": "formal_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0017",
+      "source": "executing_process",
+      "relation": "INSTANTIATES",
+      "target": "formal_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0018",
+      "source": "executing_process",
+      "relation": "READS_OR_REALIZES",
+      "target": "inscribed_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0019",
+      "source": "hybrid_system",
+      "relation": "COMBINES",
+      "target": "inscribed_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0020",
+      "source": "hybrid_system",
+      "relation": "COMBINES",
+      "target": "executing_process",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0021",
+      "source": "natural_dynamic_system",
+      "relation": "REQUIRES",
+      "target": "far_from_equilibrium_gradient",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0022",
+      "source": "natural_dynamic_system",
+      "relation": "MAY_SUPPORT",
+      "target": "formal_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0023",
+      "source": "episodic_process",
+      "relation": "CREATED_BY",
+      "target": "reinstantiation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0024",
+      "source": "system",
+      "relation": "HAS_STATE_SPACE",
+      "target": "state_space",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0025",
+      "source": "state_space",
+      "relation": "CONTAINS",
+      "target": "state",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0026",
+      "source": "accessible_state_region",
+      "relation": "SUBSET_OF",
+      "target": "state_space",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0027",
+      "source": "realized_state",
+      "relation": "IS_A",
+      "target": "state",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0028",
+      "source": "executing_process",
+      "relation": "OCCUPIES",
+      "target": "realized_state",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0029",
+      "source": "state_persistence",
+      "relation": "PRESERVES_OR_RECONSTRUCTS",
+      "target": "state",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0030",
+      "source": "passive_persistence",
+      "relation": "IS_A",
+      "target": "state_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0031",
+      "source": "inscribed_persistence",
+      "relation": "IS_A",
+      "target": "state_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0032",
+      "source": "active_persistence",
+      "relation": "IS_A",
+      "target": "state_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0033",
+      "source": "recursive_persistence",
+      "relation": "IS_A",
+      "target": "state_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0034",
+      "source": "plastic_persistence",
+      "relation": "IS_A",
+      "target": "state_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0035",
+      "source": "reconstructive_persistence",
+      "relation": "IS_A",
+      "target": "state_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0036",
+      "source": "continuity_mechanism",
+      "relation": "REALIZES",
+      "target": "state_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0037",
+      "source": "inscribed_structure",
+      "relation": "USES_PERSISTENCE",
+      "target": "inscribed_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0038",
+      "source": "natural_dynamic_system",
+      "relation": "USES_PERSISTENCE",
+      "target": "active_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0039",
+      "source": "natural_dynamic_system",
+      "relation": "MAY_USE_PERSISTENCE",
+      "target": "recursive_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0040",
+      "source": "natural_dynamic_system",
+      "relation": "MAY_USE_PERSISTENCE",
+      "target": "plastic_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0041",
+      "source": "hybrid_system",
+      "relation": "USES_PERSISTENCE",
+      "target": "inscribed_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0042",
+      "source": "hybrid_system",
+      "relation": "USES_PERSISTENCE",
+      "target": "active_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0043",
+      "source": "checkpoint",
+      "relation": "SUPPORTS",
+      "target": "reconstructive_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0044",
+      "source": "reinstantiation",
+      "relation": "USES",
+      "target": "inscribed_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0045",
+      "source": "reinstantiation",
+      "relation": "MAY_USE",
+      "target": "checkpoint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0046",
+      "source": "reinstantiation",
+      "relation": "PRODUCES",
+      "target": "executing_process",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0047",
+      "source": "resumption",
+      "relation": "REQUIRES_PRESERVATION_OF",
+      "target": "executing_process",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0048",
+      "source": "reinstantiation",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "resumption",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0049",
+      "source": "structural_constraint",
+      "relation": "IS_A",
+      "target": "constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0050",
+      "source": "dynamic_constraint",
+      "relation": "IS_A",
+      "target": "constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0051",
+      "source": "context_constraint",
+      "relation": "IS_A",
+      "target": "constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0052",
+      "source": "historical_constraint",
+      "relation": "IS_A",
+      "target": "constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0053",
+      "source": "rule_constraint",
+      "relation": "IS_A",
+      "target": "constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0054",
+      "source": "constraint",
+      "relation": "CARVES",
+      "target": "effective_transition_topology",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0055",
+      "source": "constraint",
+      "relation": "DELIMITS",
+      "target": "accessible_state_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0056",
+      "source": "effective_transition_topology",
+      "relation": "PERMITS",
+      "target": "transition",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0057",
+      "source": "effective_transition_topology",
+      "relation": "SUPPRESSES",
+      "target": "transition",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0058",
+      "source": "effective_transition_topology",
+      "relation": "WEIGHTS",
+      "target": "transition",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0059",
+      "source": "unique_successor_map",
+      "relation": "IS_A",
+      "target": "effective_transition_topology",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0060",
+      "source": "distributional_transition_field",
+      "relation": "IS_A",
+      "target": "effective_transition_topology",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0061",
+      "source": "unique_successor_map",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "distributional_transition_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0062",
+      "source": "exact_execution_specification",
+      "relation": "RESOLVES",
+      "target": "distributional_transition_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0063",
+      "source": "continuation_field",
+      "relation": "GENERATED_BY",
+      "target": "distributional_transition_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0064",
+      "source": "continuation_field",
+      "relation": "CONDITIONED_BY",
+      "target": "realized_state",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0065",
+      "source": "continuation_field",
+      "relation": "CONDITIONED_BY",
+      "target": "context_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0066",
+      "source": "continuation_field",
+      "relation": "CONDITIONED_BY",
+      "target": "historical_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0067",
+      "source": "latent_continuation_space",
+      "relation": "GENERATED_FROM",
+      "target": "continuation_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0068",
+      "source": "continuation_tree",
+      "relation": "UNFOLDS",
+      "target": "latent_continuation_space",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0069",
+      "source": "future_cone",
+      "relation": "SUBSET_OF",
+      "target": "latent_continuation_space",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0070",
+      "source": "trajectory",
+      "relation": "SEQUENCE_OF",
+      "target": "transition",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0071",
+      "source": "realized_path",
+      "relation": "IS_A",
+      "target": "trajectory",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0072",
+      "source": "realized_path",
+      "relation": "TRAVERSES",
+      "target": "effective_transition_topology",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0073",
+      "source": "recurrence",
+      "relation": "MAY_DEFINE",
+      "target": "exact_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0074",
+      "source": "terminal_halt",
+      "relation": "MAY_DEFINE",
+      "target": "exact_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0075",
+      "source": "exact_basin",
+      "relation": "DEFINED_BY",
+      "target": "unique_successor_map",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0076",
+      "source": "exact_basin",
+      "relation": "DEFINED_BY",
+      "target": "exact_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0077",
+      "source": "exact_basin",
+      "relation": "EXACT_LIMIT_CASE_OF",
+      "target": "reconstructible_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0078",
+      "source": "exact_basin",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "reconstructible_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0079",
+      "source": "reconstructible_region",
+      "relation": "HAS_APPROACH_SPACE",
+      "target": "approach_space",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0080",
+      "source": "reconstructible_region",
+      "relation": "HAS_NEIGHBORHOOD",
+      "target": "neighborhood",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0081",
+      "source": "attractor_like_structure",
+      "relation": "ORGANIZES",
+      "target": "reconstructible_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0082",
+      "source": "repeller_like_structure",
+      "relation": "BOUNDS_OR_REDIRECTS",
+      "target": "reconstructible_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0083",
+      "source": "approach_space",
+      "relation": "CONTAINS",
+      "target": "trajectory",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0084",
+      "source": "patterned_perturbation",
+      "relation": "IS_A",
+      "target": "perturbation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0085",
+      "source": "coupling_event",
+      "relation": "INVOLVES",
+      "target": "perturbation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0086",
+      "source": "coupling_event",
+      "relation": "INVOLVES",
+      "target": "receiver_system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0087",
+      "source": "coupling_event",
+      "relation": "INCLUDES",
+      "target": "energy_transfer",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0088",
+      "source": "receiver_system",
+      "relation": "HAS_PROPERTY",
+      "target": "receiver_sensitivity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0089",
+      "source": "receiver_system",
+      "relation": "HAS_PROPERTY",
+      "target": "receiver_insensitivity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0090",
+      "source": "receiver_sensitivity",
+      "relation": "SELECTS_FOR_EFFECT",
+      "target": "patterned_perturbation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0091",
+      "source": "receiver_insensitivity",
+      "relation": "SUPPRESSES_EFFECT_OF",
+      "target": "perturbation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0092",
+      "source": "threshold",
+      "relation": "GOVERNS",
+      "target": "transition",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0093",
+      "source": "metastable_state",
+      "relation": "IS_A",
+      "target": "state",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0094",
+      "source": "metastable_state",
+      "relation": "MAINTAINED_BY",
+      "target": "far_from_equilibrium_gradient",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0095",
+      "source": "metastable_state",
+      "relation": "SUSCEPTIBLE_AT",
+      "target": "threshold",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0096",
+      "source": "receiver_supplied_energy",
+      "relation": "AVAILABLE_FROM",
+      "target": "far_from_equilibrium_gradient",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0097",
+      "source": "amplification",
+      "relation": "DRAWS_ENERGY_FROM",
+      "target": "receiver_supplied_energy",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0098",
+      "source": "omega_event",
+      "relation": "IS_A",
+      "target": "coupling_event",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0099",
+      "source": "omega_event",
+      "relation": "PRODUCES",
+      "target": "trajectory_delta",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0100",
+      "source": "omega_event",
+      "relation": "MAY_TRIGGER",
+      "target": "amplification",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0101",
+      "source": "omega_event",
+      "relation": "MAY_INITIATE",
+      "target": "causal_cascade",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0102",
+      "source": "trajectory_delta",
+      "relation": "COMPARES_WITH",
+      "target": "counterfactual_baseline",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0103",
+      "source": "trajectory_delta",
+      "relation": "DESCRIBES_DIFFERENCE_IN",
+      "target": "latent_continuation_space",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0104",
+      "source": "causal_cascade",
+      "relation": "SEQUENCE_OF",
+      "target": "transition",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0105",
+      "source": "causal_surface",
+      "relation": "AVAILABLE_TO",
+      "target": "receiver_sensitivity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0106",
+      "source": "coherent_pattern",
+      "relation": "MAY_FORM",
+      "target": "causal_surface",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0107",
+      "source": "history",
+      "relation": "PRODUCES",
+      "target": "historical_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0108",
+      "source": "history",
+      "relation": "GIVES_RISE_TO",
+      "target": "path_dependence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0109",
+      "source": "conditioning",
+      "relation": "ALTERS",
+      "target": "continuation_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0110",
+      "source": "conditioning",
+      "relation": "USES",
+      "target": "context_update",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0111",
+      "source": "inscription_change",
+      "relation": "ALTERS",
+      "target": "inscribed_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0112",
+      "source": "inscription_change",
+      "relation": "RESHAPES",
+      "target": "distributional_transition_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0113",
+      "source": "plasticity",
+      "relation": "ENABLES",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0114",
+      "source": "training",
+      "relation": "MECHANISM_OF",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0115",
+      "source": "development",
+      "relation": "MECHANISM_OF",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0116",
+      "source": "evolutionary_selection",
+      "relation": "MECHANISM_OF",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0117",
+      "source": "conditioning",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0118",
+      "source": "selection",
+      "relation": "SELECTS",
+      "target": "realized_path",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0119",
+      "source": "selection",
+      "relation": "SELECTS",
+      "target": "future_cone",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0120",
+      "source": "selection",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "conditioning",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0121",
+      "source": "selection",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0122",
+      "source": "token_event",
+      "relation": "REALIZES",
+      "target": "selection",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0123",
+      "source": "token_event",
+      "relation": "INVOLVES",
+      "target": "token",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0124",
+      "source": "token_event",
+      "relation": "IS_A",
+      "target": "omega_event",
+      "definition": "",
+      "status": "provisional",
+      "confidence": "high"
+    },
+    {
+      "id": "e0125",
+      "source": "token_event",
+      "relation": "EXTENDS",
+      "target": "realized_path",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0126",
+      "source": "token_event",
+      "relation": "PRODUCES",
+      "target": "context_update",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0127",
+      "source": "context_update",
+      "relation": "CONDITIONS",
+      "target": "continuation_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0128",
+      "source": "token_event",
+      "relation": "SELECTS",
+      "target": "future_cone",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0129",
+      "source": "realized_path",
+      "relation": "NARROWS",
+      "target": "future_cone",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0130",
+      "source": "token_event",
+      "relation": "WRITES",
+      "target": "history",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0131",
+      "source": "microstate",
+      "relation": "IS_A",
+      "target": "state",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0132",
+      "source": "macro_pattern",
+      "relation": "CONSTITUTED_BY",
+      "target": "microstate",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0133",
+      "source": "coarse_graining",
+      "relation": "PROJECTS",
+      "target": "microstate",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0134",
+      "source": "coarse_graining",
+      "relation": "PRODUCES",
+      "target": "macro_pattern",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0135",
+      "source": "projection",
+      "relation": "MAY_REALIZE",
+      "target": "coarse_graining",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0136",
+      "source": "macro_pattern",
+      "relation": "MAY_FORM",
+      "target": "causal_surface",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0137",
+      "source": "cross_scale_coupling",
+      "relation": "CONNECTS",
+      "target": "macro_pattern",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0138",
+      "source": "cross_scale_coupling",
+      "relation": "CONNECTS",
+      "target": "microstate",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0139",
+      "source": "shared_fate",
+      "relation": "CONTRIBUTES_TO_INDIVIDUATION_OF",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0140",
+      "source": "isolability",
+      "relation": "CONTRIBUTES_TO_INDIVIDUATION_OF",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0141",
+      "source": "scale",
+      "relation": "QUALIFIES",
+      "target": "state_space",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0142",
+      "source": "scale",
+      "relation": "QUALIFIES",
+      "target": "causal_surface",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0143",
+      "source": "axiom_receiver_relativity",
+      "relation": "ASSERTS_ABOUT",
+      "target": "receiver_system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0144",
+      "source": "axiom_receiver_relativity",
+      "relation": "ASSERTS_ABOUT",
+      "target": "receiver_sensitivity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0145",
+      "source": "axiom_receiver_relativity",
+      "relation": "ASSERTS_ABOUT",
+      "target": "receiver_insensitivity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0146",
+      "source": "axiom_receiver_relativity",
+      "relation": "ASSERTS_ABOUT",
+      "target": "trajectory_delta",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0147",
+      "source": "axiom_constraint_topology",
+      "relation": "ASSERTS_ABOUT",
+      "target": "constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0148",
+      "source": "axiom_constraint_topology",
+      "relation": "ASSERTS_ABOUT",
+      "target": "effective_transition_topology",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0149",
+      "source": "axiom_constraint_topology",
+      "relation": "ASSERTS_ABOUT",
+      "target": "accessible_state_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0150",
+      "source": "axiom_omega_event",
+      "relation": "ASSERTS_ABOUT",
+      "target": "omega_event",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0151",
+      "source": "axiom_omega_event",
+      "relation": "ASSERTS_ABOUT",
+      "target": "trajectory_delta",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0152",
+      "source": "axiom_omega_event",
+      "relation": "ASSERTS_ABOUT",
+      "target": "counterfactual_baseline",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0153",
+      "source": "axiom_lightweight_amplification",
+      "relation": "ASSERTS_ABOUT",
+      "target": "omega_event",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0154",
+      "source": "axiom_lightweight_amplification",
+      "relation": "ASSERTS_ABOUT",
+      "target": "amplification",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0155",
+      "source": "axiom_lightweight_amplification",
+      "relation": "ASSERTS_ABOUT",
+      "target": "receiver_supplied_energy",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0156",
+      "source": "axiom_lightweight_amplification",
+      "relation": "ASSERTS_ABOUT",
+      "target": "energy_transfer",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0157",
+      "source": "axiom_history_futures",
+      "relation": "ASSERTS_ABOUT",
+      "target": "history",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0158",
+      "source": "axiom_history_futures",
+      "relation": "ASSERTS_ABOUT",
+      "target": "conditioning",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0159",
+      "source": "axiom_history_futures",
+      "relation": "ASSERTS_ABOUT",
+      "target": "continuation_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0160",
+      "source": "axiom_history_futures",
+      "relation": "ASSERTS_ABOUT",
+      "target": "future_cone",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0161",
+      "source": "axiom_plasticity_generator",
+      "relation": "ASSERTS_ABOUT",
+      "target": "plasticity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0162",
+      "source": "axiom_plasticity_generator",
+      "relation": "ASSERTS_ABOUT",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0163",
+      "source": "axiom_plasticity_generator",
+      "relation": "ASSERTS_ABOUT",
+      "target": "inscribed_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0164",
+      "source": "axiom_plasticity_generator",
+      "relation": "ASSERTS_ABOUT",
+      "target": "distributional_transition_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0165",
+      "source": "axiom_exact_basin_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "exact_basin",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0166",
+      "source": "axiom_exact_basin_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "unique_successor_map",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0167",
+      "source": "axiom_exact_basin_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "exact_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0168",
+      "source": "axiom_exact_basin_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "reconstructible_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0169",
+      "source": "axiom_reconstructible_realism",
+      "relation": "ASSERTS_ABOUT",
+      "target": "reconstructible_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0170",
+      "source": "axiom_reconstructible_realism",
+      "relation": "ASSERTS_ABOUT",
+      "target": "approach_space",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0171",
+      "source": "axiom_reconstructible_realism",
+      "relation": "ASSERTS_ABOUT",
+      "target": "neighborhood",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0172",
+      "source": "axiom_hybrid_convergence",
+      "relation": "ASSERTS_ABOUT",
+      "target": "natural_dynamic_system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0173",
+      "source": "axiom_hybrid_convergence",
+      "relation": "ASSERTS_ABOUT",
+      "target": "formal_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0174",
+      "source": "axiom_hybrid_convergence",
+      "relation": "ASSERTS_ABOUT",
+      "target": "hybrid_system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0175",
+      "source": "axiom_hybrid_convergence",
+      "relation": "ASSERTS_ABOUT",
+      "target": "executing_process",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0176",
+      "source": "axiom_token_path_writing",
+      "relation": "ASSERTS_ABOUT",
+      "target": "token_event",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0177",
+      "source": "axiom_token_path_writing",
+      "relation": "ASSERTS_ABOUT",
+      "target": "realized_path",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0178",
+      "source": "axiom_token_path_writing",
+      "relation": "ASSERTS_ABOUT",
+      "target": "context_update",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0179",
+      "source": "axiom_token_path_writing",
+      "relation": "ASSERTS_ABOUT",
+      "target": "continuation_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0180",
+      "source": "axiom_persistence_speciation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "state_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0181",
+      "source": "axiom_persistence_speciation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "passive_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0182",
+      "source": "axiom_persistence_speciation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "inscribed_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0183",
+      "source": "axiom_persistence_speciation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "active_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0184",
+      "source": "axiom_persistence_speciation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "recursive_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0185",
+      "source": "axiom_persistence_speciation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "plastic_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0186",
+      "source": "axiom_persistence_speciation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "reconstructive_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0187",
+      "source": "axiom_formal_execution_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "formal_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0188",
+      "source": "axiom_formal_execution_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "inscribed_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0189",
+      "source": "axiom_formal_execution_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "executing_process",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0190",
+      "source": "axiom_future_cone_measure",
+      "relation": "ASSERTS_ABOUT",
+      "target": "future_cone",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0191",
+      "source": "axiom_future_cone_measure",
+      "relation": "ASSERTS_ABOUT",
+      "target": "continuation_tree",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0192",
+      "source": "axiom_future_cone_measure",
+      "relation": "ASSERTS_ABOUT",
+      "target": "token_event",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0193",
+      "source": "axiom_reinstantiation_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "reinstantiation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0194",
+      "source": "axiom_reinstantiation_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "resumption",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0195",
+      "source": "axiom_reinstantiation_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "checkpoint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0196",
+      "source": "axiom_reinstantiation_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "executing_process",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0197",
+      "source": "axiom_object_process",
+      "relation": "ASSERTS_ABOUT",
+      "target": "object_process_continuum",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0198",
+      "source": "axiom_object_process",
+      "relation": "ASSERTS_ABOUT",
+      "target": "passive_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0199",
+      "source": "axiom_object_process",
+      "relation": "ASSERTS_ABOUT",
+      "target": "active_persistence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0200",
+      "source": "axiom_object_process",
+      "relation": "ASSERTS_ABOUT",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0201",
+      "source": "axiom_operational_reproducibility",
+      "relation": "ASSERTS_ABOUT",
+      "target": "unique_successor_map",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0202",
+      "source": "axiom_operational_reproducibility",
+      "relation": "ASSERTS_ABOUT",
+      "target": "distributional_transition_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0203",
+      "source": "axiom_operational_reproducibility",
+      "relation": "ASSERTS_ABOUT",
+      "target": "exact_execution_specification",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0204",
+      "source": "formal_structure",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "inscribed_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0205",
+      "source": "inscribed_structure",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "executing_process",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0206",
+      "source": "token",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "token_event",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0207",
+      "source": "realized_path",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0208",
+      "source": "omega_system_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0209",
+      "source": "omega_system_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "semantic_feature_set",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0210",
+      "source": "system",
+      "relation": "ANALYTIC_REGION_OF",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0211",
+      "source": "analytic_system_cut",
+      "relation": "INDIVIDUATES",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0212",
+      "source": "analytic_system_cut",
+      "relation": "DEFINED_BY",
+      "target": "effective_boundary",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0213",
+      "source": "effective_boundary",
+      "relation": "DELIMITS",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0214",
+      "source": "effective_boundary",
+      "relation": "DELIMITS",
+      "target": "environment",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0215",
+      "source": "environment",
+      "relation": "RELATIVE_TO",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0216",
+      "source": "environment",
+      "relation": "ANALYTIC_REGION_OF",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0217",
+      "source": "subsystem",
+      "relation": "ANALYTIC_REGION_OF",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0218",
+      "source": "natural_dynamic_system",
+      "relation": "ANALYTIC_REGION_OF",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0219",
+      "source": "hybrid_system",
+      "relation": "ANALYTIC_REGION_OF",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0220",
+      "source": "inscribed_structure",
+      "relation": "PART_OF",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0221",
+      "source": "executing_process",
+      "relation": "PART_OF",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0222",
+      "source": "coupling_event",
+      "relation": "OCCURS_IN",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0223",
+      "source": "energy_transfer",
+      "relation": "OCCURS_IN",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0224",
+      "source": "totality_regularity",
+      "relation": "OCCURS_IN",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0225",
+      "source": "totality_regularity",
+      "relation": "CONSTRAINS",
+      "target": "effective_transition_topology",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0226",
+      "source": "causal_coherence",
+      "relation": "HAS_PROPERTY",
+      "target": "feature_preservation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0227",
+      "source": "causal_coherence",
+      "relation": "EXPRESSES",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0228",
+      "source": "causal_trace",
+      "relation": "ORIGINATES_IN",
+      "target": "coupling_event",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0229",
+      "source": "causal_trace",
+      "relation": "CARRIED_BY",
+      "target": "trace_carrier",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0230",
+      "source": "trace_carrier",
+      "relation": "IS_A",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0231",
+      "source": "representation",
+      "relation": "IS_A",
+      "target": "trace_carrier",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0232",
+      "source": "representation",
+      "relation": "REPRESENTS",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0233",
+      "source": "measurement",
+      "relation": "PRODUCES",
+      "target": "causal_trace",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0234",
+      "source": "measurement",
+      "relation": "USES",
+      "target": "rule_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0235",
+      "source": "trace_transformation",
+      "relation": "TRANSFORMS",
+      "target": "causal_trace",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0236",
+      "source": "trace_transformation",
+      "relation": "PRESERVES_FEATURE_OF",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "provisional",
+      "confidence": "high"
+    },
+    {
+      "id": "e0237",
+      "source": "trace_transformation",
+      "relation": "MAY_LOSE_FEATURE_OF",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "provisional",
+      "confidence": "high"
+    },
+    {
+      "id": "e0238",
+      "source": "feature_preservation",
+      "relation": "PRESERVES_FEATURE_OF",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0239",
+      "source": "causal_lineage",
+      "relation": "SEQUENCE_OF",
+      "target": "trace_transformation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0240",
+      "source": "causal_lineage",
+      "relation": "ORIGINATES_IN",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0241",
+      "source": "causal_lineage",
+      "relation": "TERMINATES_IN",
+      "target": "inscription",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0242",
+      "source": "causal_inheritance",
+      "relation": "MEDIATED_BY",
+      "target": "causal_lineage",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0243",
+      "source": "causal_inheritance",
+      "relation": "INHERITS_FROM",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0244",
+      "source": "inscription",
+      "relation": "CREATED_BY",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0245",
+      "source": "inscription",
+      "relation": "ALTERS",
+      "target": "effective_transition_topology",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0246",
+      "source": "inscription",
+      "relation": "PRESERVES_OR_RECONSTRUCTS",
+      "target": "causal_trace",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0247",
+      "source": "direct_inscription",
+      "relation": "IS_A",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0248",
+      "source": "direct_inscription",
+      "relation": "ORIGINATES_IN",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0249",
+      "source": "adaptive_inscription",
+      "relation": "IS_A",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0250",
+      "source": "adaptive_inscription",
+      "relation": "SELECTED_OR_RETAINED_BY",
+      "target": "evolutionary_selection",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0251",
+      "source": "adaptive_inscription",
+      "relation": "MAY_USE",
+      "target": "development",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0252",
+      "source": "relayed_inscription",
+      "relation": "IS_A",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0253",
+      "source": "relayed_inscription",
+      "relation": "MEDIATED_BY",
+      "target": "causal_lineage",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0254",
+      "source": "aggregated_inscription",
+      "relation": "IS_A",
+      "target": "inscription_change",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0255",
+      "source": "aggregated_inscription",
+      "relation": "AGGREGATES",
+      "target": "causal_trace",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0256",
+      "source": "aggregated_inscription",
+      "relation": "MAY_USE",
+      "target": "training",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0257",
+      "source": "cross_carrier_convergence",
+      "relation": "INVOLVES",
+      "target": "trace_carrier",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0258",
+      "source": "cross_carrier_convergence",
+      "relation": "CONVERGES_IN",
+      "target": "reconstructible_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0259",
+      "source": "learned_world_region",
+      "relation": "IS_A",
+      "target": "reconstructible_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0260",
+      "source": "learned_world_region",
+      "relation": "GENERATED_THROUGH",
+      "target": "aggregated_inscription",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0261",
+      "source": "learned_world_region",
+      "relation": "PRESERVES_FEATURE_OF",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "provisional",
+      "confidence": "high"
+    },
+    {
+      "id": "e0262",
+      "source": "receiver_system",
+      "relation": "MAY_CONTAIN",
+      "target": "learned_world_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0263",
+      "source": "causal_surface",
+      "relation": "MAY_CONTAIN",
+      "target": "causal_trace",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0264",
+      "source": "coherent_pattern",
+      "relation": "EXPRESSES",
+      "target": "causal_coherence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0265",
+      "source": "semantic_feature_set",
+      "relation": "CONTAINS",
+      "target": "semantic_feature",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0266",
+      "source": "semantic_feature_set",
+      "relation": "DESCRIBES",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0267",
+      "source": "semantic_feature_set",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0268",
+      "source": "semantic_feature",
+      "relation": "DESCRIBES",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0269",
+      "source": "omega_system_ontology",
+      "relation": "DESCRIBES",
+      "target": "semantic_feature_set",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0270",
+      "source": "axiom_totality",
+      "relation": "ASSERTS_ABOUT",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0271",
+      "source": "axiom_totality",
+      "relation": "ASSERTS_ABOUT",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0272",
+      "source": "axiom_local_individuation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "analytic_system_cut",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0273",
+      "source": "axiom_local_individuation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "effective_boundary",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0274",
+      "source": "axiom_local_individuation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0275",
+      "source": "axiom_local_individuation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0276",
+      "source": "axiom_world_inscription",
+      "relation": "ASSERTS_ABOUT",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0277",
+      "source": "axiom_world_inscription",
+      "relation": "ASSERTS_ABOUT",
+      "target": "direct_inscription",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0278",
+      "source": "axiom_world_inscription",
+      "relation": "ASSERTS_ABOUT",
+      "target": "relayed_inscription",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0279",
+      "source": "axiom_world_inscription",
+      "relation": "ASSERTS_ABOUT",
+      "target": "inscription",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0280",
+      "source": "axiom_world_inscription",
+      "relation": "ASSERTS_ABOUT",
+      "target": "receiver_system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0281",
+      "source": "axiom_relayed_grounding",
+      "relation": "ASSERTS_ABOUT",
+      "target": "causal_lineage",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0282",
+      "source": "axiom_relayed_grounding",
+      "relation": "ASSERTS_ABOUT",
+      "target": "feature_preservation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0283",
+      "source": "axiom_relayed_grounding",
+      "relation": "ASSERTS_ABOUT",
+      "target": "relayed_inscription",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0284",
+      "source": "axiom_relayed_grounding",
+      "relation": "ASSERTS_ABOUT",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0285",
+      "source": "axiom_aggregated_convergence",
+      "relation": "ASSERTS_ABOUT",
+      "target": "aggregated_inscription",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0286",
+      "source": "axiom_aggregated_convergence",
+      "relation": "ASSERTS_ABOUT",
+      "target": "cross_carrier_convergence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0287",
+      "source": "axiom_aggregated_convergence",
+      "relation": "ASSERTS_ABOUT",
+      "target": "learned_world_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0288",
+      "source": "axiom_aggregated_convergence",
+      "relation": "ASSERTS_ABOUT",
+      "target": "reconstructible_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0289",
+      "source": "axiom_learned_region_reality",
+      "relation": "ASSERTS_ABOUT",
+      "target": "learned_world_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0290",
+      "source": "axiom_learned_region_reality",
+      "relation": "ASSERTS_ABOUT",
+      "target": "causal_lineage",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0291",
+      "source": "axiom_learned_region_reality",
+      "relation": "ASSERTS_ABOUT",
+      "target": "reconstructible_region",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0292",
+      "source": "axiom_learned_region_reality",
+      "relation": "ASSERTS_ABOUT",
+      "target": "effective_transition_topology",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0293",
+      "source": "axiom_semantic_feature_purpose",
+      "relation": "ASSERTS_ABOUT",
+      "target": "omega_system_ontology",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0294",
+      "source": "axiom_semantic_feature_purpose",
+      "relation": "ASSERTS_ABOUT",
+      "target": "semantic_feature_set",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0295",
+      "source": "axiom_semantic_feature_purpose",
+      "relation": "ASSERTS_ABOUT",
+      "target": "semantic_feature",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0296",
+      "source": "axiom_semantic_feature_purpose",
+      "relation": "ASSERTS_ABOUT",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0297",
+      "source": "totality_regularity",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "representation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0298",
+      "source": "causal_trace",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "totality_regularity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0299",
+      "source": "direct_inscription",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "relayed_inscription",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0300",
+      "source": "relayed_inscription",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "direct_inscription",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0301",
+      "source": "learned_world_region",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "exact_basin",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "e0302",
+      "source": "analytic_system_cut",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "totality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    }
+  ]
+}

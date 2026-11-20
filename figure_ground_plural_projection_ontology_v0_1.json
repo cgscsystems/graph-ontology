@@ -1,0 +1,3093 @@
+{
+  "manifest": {
+    "title": "Figure-Ground and Plural Projection Ontology — Framing, Provenance, and Graph-of-Graphs Knowledge",
+    "version": "0.1.0",
+    "status": "canonical_seed",
+    "created_utc": "2026-08-19T01:21:02.8485552Z",
+    "description": "Graph-native ontology for reversible figure-ground assignments, plural preservation-and-loss projections, provenance-qualified convergence, complementary path and address knowledge, human-readable constellations, and durable integration across independently governed knowledge graphs.",
+    "scope": [
+      "source fields, admitted fields, and explicit boundaries",
+      "inquiry-relative figure, ground, exclusion, and refiguring",
+      "projection families with preservation policies, resolution, scope, and loss profiles",
+      "addresses, paths, histories, convergence, and bounded re-entry",
+      "evidence accounts with provenance, authority, epistemic status, and account boundaries",
+      "shared identity contact without automatic equivalence",
+      "causal, structural, and explanatory projections as distinct organizations",
+      "human-readable constellations as reversible figures over retained graph ground",
+      "typed graph-of-graphs integration with namespace and conflict preservation",
+      "cross-session persistence through stable identifiers and bounded reconstruction context"
+    ],
+    "status_vocabulary": {
+      "core": "Accepted concept or relation in the current conceptual settlement.",
+      "settled": "Accepted proposition in the current conceptual settlement.",
+      "provisional": "Useful bridge or coined term retained for testing.",
+      "canonical_seed": "Defines this graph artifact while remaining open to versioned revision."
+    },
+    "anti_collapse_invariants": [
+      "source_field != admitted_field",
+      "figure_role != intrinsic_property",
+      "ground_role != absence",
+      "ground_role != excluded_role",
+      "figure_ground_assignment != projection",
+      "inquiry_frame != projection",
+      "refiguring != represented_field_change",
+      "address != path",
+      "same_endpoint != same_path",
+      "shared_identity_contact != equivalence_claim",
+      "path_convergence != causal_equivalence",
+      "explanatory_route != causal_lineage",
+      "causal_projection != structural_projection != explanatory_projection",
+      "evidence_account != represented_object",
+      "observation != assertion != inference",
+      "provenance != truth",
+      "local_coherence != global_completeness",
+      "bridge_mapping != graph_union",
+      "identifier_similarity != cross_namespace_identity",
+      "qualified_view != source_field"
+    ],
+    "counts": {
+      "nodes": 103,
+      "edges": 186,
+      "relations": 52,
+      "layers": 11,
+      "propositions": 19
+    },
+    "supersedes": null,
+    "formalization_policy": {
+      "graph_is_authoritative": true,
+      "formalization_location": "Optional formalization fields on proposition nodes",
+      "status_rule": "Schematic formulas clarify graph commitments but do not override node and edge semantics."
+    }
+  },
+  "relation_vocabulary": [
+    {
+      "id": "HAS_CORE_CONCEPT",
+      "definition": "Links an ontology root to a concept required for its interpretation."
+    },
+    {
+      "id": "IS_A",
+      "definition": "States typed specialization without asserting complete identity."
+    },
+    {
+      "id": "PART_OF",
+      "definition": "Places a concept within a larger structured whole."
+    },
+    {
+      "id": "CONTAINS",
+      "definition": "States that a field or artifact admits a constituent."
+    },
+    {
+      "id": "RELATIVE_TO",
+      "definition": "Marks dependence on a frame, purpose, receiver, or scope."
+    },
+    {
+      "id": "DEFINED_BY",
+      "definition": "Identifies constitutive criteria for a concept."
+    },
+    {
+      "id": "GUIDED_BY",
+      "definition": "Identifies information that directs an operation without wholly determining it."
+    },
+    {
+      "id": "FRAMES",
+      "definition": "Establishes the admitted field and interpretive conditions for an inquiry."
+    },
+    {
+      "id": "OPERATES_ON",
+      "definition": "Names the object or structure transformed by an operation."
+    },
+    {
+      "id": "ASSIGNS_ROLE",
+      "definition": "Assigns a reversible contextual role rather than an intrinsic property."
+    },
+    {
+      "id": "FOREGROUNDS",
+      "definition": "Makes a constituent salient as figure."
+    },
+    {
+      "id": "BACKGROUNDS",
+      "definition": "Retains a constituent as contextual ground."
+    },
+    {
+      "id": "EXCLUDES",
+      "definition": "Places a constituent outside the admitted field of a particular framing."
+    },
+    {
+      "id": "REFIGURES",
+      "definition": "Changes figure-ground roles while permitting the represented field to remain unchanged."
+    },
+    {
+      "id": "SELECTS",
+      "definition": "Chooses content or structure according to declared criteria."
+    },
+    {
+      "id": "PROJECTS",
+      "definition": "Produces a qualified view from a richer source."
+    },
+    {
+      "id": "PRESERVES",
+      "definition": "Retains declared structure or accessibility through an operation."
+    },
+    {
+      "id": "HAS_SCOPE",
+      "definition": "Declares the boundary within which a claim or operation applies."
+    },
+    {
+      "id": "HAS_RESOLUTION",
+      "definition": "Declares the granularity at which distinctions are retained."
+    },
+    {
+      "id": "HAS_LOSS_PROFILE",
+      "definition": "Declares what a projection cannot carry forward."
+    },
+    {
+      "id": "REACHES",
+      "definition": "Connects a path or traversal to a reachable object."
+    },
+    {
+      "id": "TERMINATES_IN",
+      "definition": "Identifies the endpoint of an ordered path."
+    },
+    {
+      "id": "TRAVERSES",
+      "definition": "Identifies an element, relation, or account encountered along a path."
+    },
+    {
+      "id": "CONVERGES_AT",
+      "definition": "States that distinct paths or accounts meet at a hub."
+    },
+    {
+      "id": "CONTACTS_AT",
+      "definition": "States shared reference at an anchor without asserting equivalence."
+    },
+    {
+      "id": "ANCHORED_BY",
+      "definition": "Associates an account or alignment with a stable identity reference."
+    },
+    {
+      "id": "ALIGNS_WITH",
+      "definition": "States an explicit correspondence whose strength is determined by its bridge assertion."
+    },
+    {
+      "id": "BRIDGES",
+      "definition": "Connects independently governed graphs without erasing their boundaries."
+    },
+    {
+      "id": "TRANSLATES",
+      "definition": "Maps meaning or structure between vocabularies under a declared scope."
+    },
+    {
+      "id": "QUALIFIES",
+      "definition": "Adds conditions that limit how a statement may be used."
+    },
+    {
+      "id": "HAS_PROVENANCE",
+      "definition": "Links knowledge to the history and authority of its production."
+    },
+    {
+      "id": "HAS_EPISTEMIC_STATUS",
+      "definition": "Classifies a statement as observation, assertion, inference, or another declared knowledge status."
+    },
+    {
+      "id": "ASSERTS_ABOUT",
+      "definition": "Makes a proposition explicitly concern one or more concepts."
+    },
+    {
+      "id": "SUPPORTS",
+      "definition": "Contributes evidence or rationale without necessarily entailing the target."
+    },
+    {
+      "id": "DERIVED_FROM",
+      "definition": "States a traceable derivation from a prior artifact, account, or observation."
+    },
+    {
+      "id": "CARRIED_BY",
+      "definition": "Names the artifact that makes a graph or account durable."
+    },
+    {
+      "id": "ORGANIZES",
+      "definition": "Provides ordering or human-readable structure over admitted content."
+    },
+    {
+      "id": "ANSWERS",
+      "definition": "Relates a projection or route to the inquiry it is intended to answer."
+    },
+    {
+      "id": "MAY_CONFLICT_WITH",
+      "definition": "Marks claims that can coherently disagree and therefore require adjudication."
+    },
+    {
+      "id": "NOT_EQUIVALENT_TO",
+      "definition": "Records an anti-collapse boundary between concepts."
+    },
+    {
+      "id": "PERSISTS_AS",
+      "definition": "Identifies a durable representation through which knowledge survives a session."
+    },
+    {
+      "id": "RECONSTRUCTS",
+      "definition": "Uses retained context to rebuild a usable interpretive state."
+    },
+    {
+      "id": "REENTERS",
+      "definition": "Returns a knower or process to a bounded knowledge region."
+    },
+    {
+      "id": "VERSION_OF",
+      "definition": "Relates an artifact to an earlier or parallel version under the same declared lineage."
+    },
+    {
+      "id": "MEMBER_OF",
+      "definition": "Registers a governed graph as a member of a graph-of-graphs."
+    },
+    {
+      "id": "QUERIES",
+      "definition": "States that an inquiry or surface requests a qualified view from graph content."
+    },
+    {
+      "id": "RETURNS",
+      "definition": "Associates an operation with its result."
+    },
+    {
+      "id": "RETAINS",
+      "definition": "Keeps context available even when it is not foregrounded."
+    },
+    {
+      "id": "EXPOSES_BOUNDARY",
+      "definition": "Makes a limit of evidence, authority, or interpretation explicit."
+    },
+    {
+      "id": "DISTINGUISHES",
+      "definition": "Establishes a required conceptual separation."
+    },
+    {
+      "id": "REQUIRES",
+      "definition": "States a necessary dependency or condition."
+    },
+    {
+      "id": "MAY_REALIZE",
+      "definition": "States that an abstract pattern can be instantiated without requiring every instance."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "fgpp_ontology",
+      "label": "Figure-Ground and Plural Projection Ontology",
+      "kind": "ontology",
+      "layer": "root",
+      "definition": "A graph-native ontology for representing reversible figure-ground roles, preservation-and-loss projections, provenance-qualified convergence, plural explanatory routes, and durable graph-of-graphs knowledge.",
+      "status": "canonical_seed",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_source_field",
+      "label": "Source field",
+      "kind": "field",
+      "layer": "field",
+      "definition": "The richer domain from which a particular inquiry admits content.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_admitted_field",
+      "label": "Admitted field",
+      "kind": "field",
+      "layer": "field",
+      "definition": "The bounded content made available to a particular inquiry before figure and ground roles are assigned.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_field_element",
+      "label": "Field element",
+      "kind": "entity",
+      "layer": "field",
+      "definition": "A distinguishable constituent admitted by a field.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_field_relation",
+      "label": "Field relation",
+      "kind": "relation_pattern",
+      "layer": "field",
+      "definition": "A declared connection among field elements.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_field_boundary",
+      "label": "Field boundary",
+      "kind": "boundary",
+      "layer": "field",
+      "definition": "The scope condition separating admitted content from content not presently admitted.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_retained_context",
+      "label": "Retained context",
+      "kind": "context",
+      "layer": "field",
+      "definition": "Admitted content kept available for interpretation even when it is not foregrounded.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_inquiry_frame",
+      "label": "Inquiry frame",
+      "kind": "frame",
+      "layer": "framing",
+      "definition": "A purpose-relative arrangement of field, question, receiver position, and lens that makes an answerable inquiry possible.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_inquiry_question",
+      "label": "Inquiry question",
+      "kind": "question",
+      "layer": "framing",
+      "definition": "The distinction or uncertainty an inquiry is organized to resolve.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_inquiry_purpose",
+      "label": "Inquiry purpose",
+      "kind": "purpose",
+      "layer": "framing",
+      "definition": "The practical or explanatory end that guides framing and selection.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_receiver_position",
+      "label": "Receiver position",
+      "kind": "position",
+      "layer": "framing",
+      "definition": "The situated capacities, prior knowledge, and access conditions from which a frame is interpreted.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_lens",
+      "label": "Lens",
+      "kind": "selector",
+      "layer": "framing",
+      "definition": "A declared emphasis or interpretive criterion used within an inquiry frame.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_figure_ground_assignment",
+      "label": "Figure-ground assignment",
+      "kind": "operation",
+      "layer": "framing",
+      "definition": "A reversible role assignment over an admitted field that marks some content as figure and retains the rest as ground.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_figure_role",
+      "label": "Figure role",
+      "kind": "contextual_role",
+      "layer": "framing",
+      "definition": "The role of being presently salient to an inquiry; it is not an intrinsic property of its bearer.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_ground_role",
+      "label": "Ground role",
+      "kind": "contextual_role",
+      "layer": "framing",
+      "definition": "The role of providing retained interpretive context without being presently salient; it is not absence.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_excluded_role",
+      "label": "Excluded role",
+      "kind": "contextual_role",
+      "layer": "framing",
+      "definition": "The role of lying outside the admitted field of a particular frame while remaining potentially available to another frame.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_salience_assignment",
+      "label": "Salience assignment",
+      "kind": "operation",
+      "layer": "framing",
+      "definition": "The graded or discrete allocation of attention within an admitted field.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_refiguring",
+      "label": "Refiguring",
+      "kind": "operation",
+      "layer": "framing",
+      "definition": "A change in figure-ground assignment that can reveal another coherent organization without changing the represented field.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_projection",
+      "label": "Projection",
+      "kind": "operation",
+      "layer": "projection",
+      "definition": "An operation that produces a qualified view by preserving declared structure and accepting declared loss.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_selector",
+      "label": "Selector",
+      "kind": "operator",
+      "layer": "projection",
+      "definition": "The rule or criterion by which a projection chooses what to carry forward.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_preservation_policy",
+      "label": "Preservation policy",
+      "kind": "policy",
+      "layer": "projection",
+      "definition": "A declaration of which identities, relations, distinctions, or reconstruction affordances a projection retains.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_loss_profile",
+      "label": "Loss profile",
+      "kind": "boundary",
+      "layer": "projection",
+      "definition": "A declaration of content or distinctions not carried by a projection.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_qualified_view",
+      "label": "Qualified view",
+      "kind": "view",
+      "layer": "projection",
+      "definition": "The result of a projection together with its scope, resolution, provenance, and loss conditions.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_reversible_projection",
+      "label": "Reversible projection",
+      "kind": "operation",
+      "layer": "projection",
+      "definition": "A projection whose retained information is sufficient for a declared bounded reconstruction, not necessarily exact inversion.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_resolution",
+      "label": "Resolution",
+      "kind": "qualifier",
+      "layer": "projection",
+      "definition": "The granularity at which a view preserves distinctions.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_scope",
+      "label": "Scope",
+      "kind": "qualifier",
+      "layer": "projection",
+      "definition": "The domain and conditions within which a view or claim is licensed.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_projection_family",
+      "label": "Projection family",
+      "kind": "collection",
+      "layer": "projection",
+      "definition": "A set of independently useful views produced from a shared represented field under different selectors or purposes.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_address",
+      "label": "Address",
+      "kind": "locator",
+      "layer": "path",
+      "definition": "A compact locator for an endpoint or knowledge region that does not by itself preserve the path by which it was reached.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_endpoint",
+      "label": "Endpoint",
+      "kind": "entity",
+      "layer": "path",
+      "definition": "The destination or resolved object at which a path terminates.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_path",
+      "label": "Path",
+      "kind": "ordered_structure",
+      "layer": "path",
+      "definition": "An ordered sequence of traversals whose history can contribute meaning beyond its endpoint.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_traversal",
+      "label": "Traversal",
+      "kind": "event",
+      "layer": "path",
+      "definition": "One ordered step through an element, relation, transformation, or account.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_path_history",
+      "label": "Path history",
+      "kind": "history",
+      "layer": "path",
+      "definition": "The ordered record of choices and transformations that produced an endpoint.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_path_convergence",
+      "label": "Path convergence",
+      "kind": "pattern",
+      "layer": "path",
+      "definition": "The meeting of distinct paths at a shared endpoint or hub without erasing path-specific history.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_approach_path",
+      "label": "Approach path",
+      "kind": "path",
+      "layer": "path",
+      "definition": "A path whose ordering encodes how and why a destination was reached.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_reentry_path",
+      "label": "Re-entry path",
+      "kind": "path",
+      "layer": "path",
+      "definition": "A bounded route that restores usable access to a knowledge region from a retained address and reconstruction context.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_represented_object",
+      "label": "Represented object",
+      "kind": "entity",
+      "layer": "evidence",
+      "definition": "The object, process, or structure about which one or more evidence accounts speak.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_evidence_account",
+      "label": "Evidence account",
+      "kind": "account",
+      "layer": "evidence",
+      "definition": "A provenance-bearing organization of evidence produced under a particular access path, authority, and purpose.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_evidence_item",
+      "label": "Evidence item",
+      "kind": "evidence",
+      "layer": "evidence",
+      "definition": "A bounded observation, artifact, trace, or statement admitted by an evidence account.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_provenance",
+      "label": "Provenance",
+      "kind": "history",
+      "layer": "evidence",
+      "definition": "The source, custody, transformations, and authority conditions under which knowledge was produced.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_source_identity",
+      "label": "Source identity",
+      "kind": "identity",
+      "layer": "evidence",
+      "definition": "A stable reference to the origin responsible for an evidence item or account.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_authority_scope",
+      "label": "Authority scope",
+      "kind": "boundary",
+      "layer": "evidence",
+      "definition": "The domain within which a source is licensed to make or curate a claim.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_epistemic_status",
+      "label": "Epistemic status",
+      "kind": "qualifier",
+      "layer": "evidence",
+      "definition": "A declared classification of how a knowledge item is warranted.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_observation",
+      "label": "Observation",
+      "kind": "knowledge_item",
+      "layer": "evidence",
+      "definition": "A recorded encounter under declared access and measurement conditions.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_assertion",
+      "label": "Assertion",
+      "kind": "knowledge_item",
+      "layer": "evidence",
+      "definition": "A claim made by an identified authority under a declared scope.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_inference",
+      "label": "Inference",
+      "kind": "knowledge_item",
+      "layer": "evidence",
+      "definition": "A claim derived from other knowledge through a stated reasoning rule.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_evidence_boundary",
+      "label": "Evidence boundary",
+      "kind": "boundary",
+      "layer": "evidence",
+      "definition": "A declared limit beyond which an evidence account does not warrant conclusions.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_causal_lineage",
+      "label": "Causal lineage",
+      "kind": "history",
+      "layer": "evidence",
+      "definition": "A claimed sequence of world-producing or state-producing dependencies supported by an evidence account.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_account_boundary",
+      "label": "Account boundary",
+      "kind": "boundary",
+      "layer": "evidence",
+      "definition": "The limit of vocabulary, access, and causal visibility internal to an evidence account.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_identity_anchor",
+      "label": "Identity anchor",
+      "kind": "identity",
+      "layer": "convergence",
+      "definition": "A stable reference through which independently governed accounts can be brought into contact.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_shared_identity_contact",
+      "label": "Shared identity contact",
+      "kind": "pattern",
+      "layer": "convergence",
+      "definition": "The fact that distinct accounts refer to the same anchor; contact does not by itself assert semantic or causal equivalence.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_convergence_hub",
+      "label": "Convergence hub",
+      "kind": "hub",
+      "layer": "convergence",
+      "definition": "A region where multiple paths, accounts, or projections make typed contact.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_cross_graph_alignment",
+      "label": "Cross-graph alignment",
+      "kind": "mapping",
+      "layer": "convergence",
+      "definition": "A scoped correspondence between independently governed graph elements.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_equivalence_claim",
+      "label": "Equivalence claim",
+      "kind": "assertion",
+      "layer": "convergence",
+      "definition": "An explicit, separately warranted claim that two graph elements are interchangeable under a stated scope.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_translation_bridge",
+      "label": "Translation bridge",
+      "kind": "bridge",
+      "layer": "convergence",
+      "definition": "A typed mapping that permits movement between vocabularies while preserving source identities and declared loss.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_unresolved_contact",
+      "label": "Unresolved contact",
+      "kind": "boundary",
+      "layer": "convergence",
+      "definition": "A shared anchor whose deeper relation has not yet been warranted.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_convergence_pattern",
+      "label": "Convergence pattern",
+      "kind": "pattern",
+      "layer": "convergence",
+      "definition": "A recurring shape in which plural paths or accounts meet while retaining their distinct histories.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_explanatory_projection",
+      "label": "Explanatory projection",
+      "kind": "projection_type",
+      "layer": "narrative",
+      "definition": "A projection organized to answer why or how under a declared explanatory frame.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_causal_projection",
+      "label": "Causal projection",
+      "kind": "projection_type",
+      "layer": "narrative",
+      "definition": "A projection organized around claimed productive dependencies and temporal succession.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_structural_projection",
+      "label": "Structural projection",
+      "kind": "projection_type",
+      "layer": "narrative",
+      "definition": "A projection organized around identities, relations, topology, or repeated shapes.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_explanatory_route",
+      "label": "Explanatory route",
+      "kind": "ordered_structure",
+      "layer": "narrative",
+      "definition": "A human-readable ordering through graph content that supports understanding without automatically asserting a world-causal edge.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_coherent_reading",
+      "label": "Coherent reading",
+      "kind": "interpretation",
+      "layer": "narrative",
+      "definition": "An internally usable interpretation supported by a declared frame and evidence boundary.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_explanatory_constellation",
+      "label": "Explanatory constellation",
+      "kind": "figure",
+      "layer": "narrative",
+      "definition": "A purpose-relative human-readable figure composed from selected graph elements and relations against a larger retained graph ground.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_narrative_lineage",
+      "label": "Narrative lineage",
+      "kind": "history",
+      "layer": "narrative",
+      "definition": "The ordered history of selections through which an explanatory route or constellation was composed.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_plural_account_set",
+      "label": "Plural account set",
+      "kind": "collection",
+      "layer": "narrative",
+      "definition": "A set of coherent accounts that may concern the same represented object while remaining unable to fully describe one another.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_knowledge_graph",
+      "label": "Knowledge graph",
+      "kind": "graph",
+      "layer": "integration",
+      "definition": "A governed graph of knowledge items, relations, provenance, and boundaries.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_ontology_graph",
+      "label": "Ontology graph",
+      "kind": "graph",
+      "layer": "integration",
+      "definition": "A knowledge graph that declares the concepts and relation types by which a domain can be represented.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_graph_of_graphs",
+      "label": "Graph of graphs",
+      "kind": "graph",
+      "layer": "integration",
+      "definition": "A registry of independently governed graphs connected by typed, provenance-bearing bridges rather than silent union.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_graph_namespace",
+      "label": "Graph namespace",
+      "kind": "namespace",
+      "layer": "integration",
+      "definition": "The identity domain within which graph identifiers are unique and governed.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_stable_identifier",
+      "label": "Stable identifier",
+      "kind": "identity",
+      "layer": "integration",
+      "definition": "A persistent identifier whose meaning and authority are governed within a namespace.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_bridge_mapping",
+      "label": "Bridge mapping",
+      "kind": "mapping",
+      "layer": "integration",
+      "definition": "A candidate or accepted correspondence between elements in different graph namespaces.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_bridge_assertion",
+      "label": "Bridge assertion",
+      "kind": "assertion",
+      "layer": "integration",
+      "definition": "A provenance-bearing statement that types, scopes, and warrants a bridge mapping.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_bridge_conflict",
+      "label": "Bridge conflict",
+      "kind": "boundary",
+      "layer": "integration",
+      "definition": "A recorded incompatibility among bridge assertions that must remain visible pending adjudication.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_versioned_graph_artifact",
+      "label": "Versioned graph artifact",
+      "kind": "artifact",
+      "layer": "integration",
+      "definition": "A durable graph carrier with explicit identity, version, status, and lineage.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_queryable_knowledge_surface",
+      "label": "Queryable knowledge surface",
+      "kind": "interface",
+      "layer": "integration",
+      "definition": "An interface that returns qualified projections while exposing provenance, scope, and loss.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_integration_policy",
+      "label": "Integration policy",
+      "kind": "policy",
+      "layer": "integration",
+      "definition": "Rules governing graph membership, identifier boundaries, bridge admission, and conflict preservation.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_knowledge_session",
+      "label": "Knowledge session",
+      "kind": "event",
+      "layer": "persistence",
+      "definition": "A bounded episode in which a knower or process constructs, queries, or revises graph knowledge.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_project_context",
+      "label": "Project context",
+      "kind": "context",
+      "layer": "persistence",
+      "definition": "A durable frame of purposes, authorities, artifacts, and vocabulary shared across multiple sessions.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_session_context",
+      "label": "Session context",
+      "kind": "context",
+      "layer": "persistence",
+      "definition": "The local assumptions, active questions, and selected figures of one knowledge session.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_durable_knowledge_artifact",
+      "label": "Durable knowledge artifact",
+      "kind": "artifact",
+      "layer": "persistence",
+      "definition": "A persistent carrier through which graph knowledge can outlive the session that produced it.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_reentry_address",
+      "label": "Re-entry address",
+      "kind": "locator",
+      "layer": "persistence",
+      "definition": "A stable locator for returning to a knowledge region without pretending to preserve the entire originating path.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_reconstruction_context",
+      "label": "Reconstruction context",
+      "kind": "context",
+      "layer": "persistence",
+      "definition": "The bounded definitions, provenance, constraints, and path cues required to rebuild a usable interpretive state.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_bounded_reconstruction",
+      "label": "Bounded reconstruction",
+      "kind": "operation",
+      "layer": "persistence",
+      "definition": "Reconstruction sufficient for a declared task and scope without requiring recovery of every transient state.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_context_capsule",
+      "label": "Context capsule",
+      "kind": "artifact",
+      "layer": "persistence",
+      "definition": "A compact, provenance-bearing package of address, frame, boundaries, and reconstruction cues for future re-entry.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_invariant_remainder",
+      "label": "Invariant remainder",
+      "kind": "knowledge_item",
+      "layer": "persistence",
+      "definition": "The minimal condition that remains stable enough to support re-entry after transient context is lost.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_role_relativity",
+      "label": "Figure and ground are frame-relative roles",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Being figure or ground is assigned relative to an inquiry frame and is not an intrinsic property of a field element.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "For frame A over source field U: Admitted_A ⊆ U; Figure_A ∪ Ground_A = Admitted_A; Figure_A ∩ Ground_A = ∅. An element may change role under another frame B.",
+      "formalization_status": "schematic"
+    },
+    {
+      "id": "fgpp_axiom_ground_retention",
+      "label": "Ground is retained context, not absence",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Ground remains admitted and interpretively available even when it is not salient.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "Ground_A(x) ⇒ x ∈ Admitted_A; therefore Ground_A(x) does not imply x is absent from U or discarded by every projection.",
+      "formalization_status": "schematic"
+    },
+    {
+      "id": "fgpp_axiom_refiguring_invariance",
+      "label": "Refiguring need not change the represented field",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "A new figure-ground assignment can expose another coherent organization while the represented field remains fixed.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "It is possible that U_A = U_B while Figure_A ≠ Figure_B or Ground_A ≠ Ground_B.",
+      "formalization_status": "schematic"
+    },
+    {
+      "id": "fgpp_axiom_framing_projection_boundary",
+      "label": "Framing, projection, and scope-cutting are distinct operations",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Framing poses an inquiry, figure-ground assignment allocates salience, and projection preserves selected structure under loss; none entails the others.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_address_path_complementarity",
+      "label": "Address and path carry complementary knowledge",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "An address supports direct return to an endpoint, while a path can preserve the history that explains how and why it was reached.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_same_endpoint_plurality",
+      "label": "A shared endpoint does not imply a shared path",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Distinct paths may terminate at the same endpoint while retaining different histories, purposes, and meanings.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "End(p1) = End(p2) does not entail p1 = p2, History(p1) = History(p2), or Purpose(p1) = Purpose(p2).",
+      "formalization_status": "schematic"
+    },
+    {
+      "id": "fgpp_axiom_shared_contact_boundary",
+      "label": "Shared identity creates contact, not equivalence",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Reference to the same identity anchor licenses comparison but does not by itself collapse accounts, relations, or meanings.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "formalization": "ContactAt(a,b,h) does not entail a ≡ b.",
+      "formalization_status": "schematic"
+    },
+    {
+      "id": "fgpp_axiom_projection_pluralism",
+      "label": "One represented field may support multiple valid projections",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Different preservation policies and inquiry purposes can yield distinct, coherent views of the same represented field.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_provenance_preservation",
+      "label": "Integration must preserve provenance",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "A graph-of-graphs must retain the source identity, authority, and transformation history of every member graph and bridge assertion.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_epistemic_noncollapse",
+      "label": "Observation, assertion, and inference must not collapse",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Knowledge items with different warranting relations remain distinguishable even when they concern the same anchor.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_explanatory_nonassertion",
+      "label": "An explanatory route is not automatically a declared world relation",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Ordering graph elements for understanding does not by itself assert causal, temporal, or structural adjacency in the represented field.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_constellation_coherence",
+      "label": "A constellation is a figure over graph ground",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "An explanatory constellation gains coherence from a declared frame and retained graph context; it is neither the whole graph nor an arbitrary decoration.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_local_coherence_boundary",
+      "label": "Local coherence does not imply global completeness",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "An account can coherently answer its own question while lacking the vocabulary or evidence needed to describe another coherent account.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_typed_bridge_integration",
+      "label": "Graphs integrate through typed bridges, not silent union",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Cross-graph integration requires explicit mappings, scope, provenance, and conflict handling while member graphs remain independently governed.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_namespace_nonidentity",
+      "label": "Identifier similarity does not establish identity",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Identifiers from different namespaces are not identical unless a separately warranted bridge assertion establishes a scoped relation.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_loss_reentry",
+      "label": "Projection loss and re-entry conditions must be co-declared",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "A useful durable projection states both what it omits and what bounded context permits later reconstruction or re-entry.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_query_relative_view",
+      "label": "Every returned view is inquiry-relative",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "A queryable knowledge surface returns a qualified view governed by question, scope, resolution, provenance, and loss rather than an unqualified whole.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_persistent_remainder",
+      "label": "Persistence requires a viable invariant remainder",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Knowledge survives session loss when a stable address and bounded reconstruction context retain enough structure for re-entry.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fgpp_axiom_account_incommensurability",
+      "label": "Coherent accounts may be mutually incomplete",
+      "kind": "proposition",
+      "layer": "axiom",
+      "definition": "Distinct evidence-producing systems can produce coherent accounts of one represented object while each lacks the internal resources to explain the others.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    }
+  ],
+  "edges": [
+    {
+      "id": "fgpp_e0001",
+      "source": "fgpp_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "fgpp_source_field",
+      "definition": "The ontology requires this concept for its central figure-ground and plural-projection model.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0002",
+      "source": "fgpp_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "fgpp_inquiry_frame",
+      "definition": "The ontology requires this concept for its central figure-ground and plural-projection model.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0003",
+      "source": "fgpp_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "fgpp_figure_ground_assignment",
+      "definition": "The ontology requires this concept for its central figure-ground and plural-projection model.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0004",
+      "source": "fgpp_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "fgpp_projection",
+      "definition": "The ontology requires this concept for its central figure-ground and plural-projection model.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0005",
+      "source": "fgpp_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "fgpp_path",
+      "definition": "The ontology requires this concept for its central figure-ground and plural-projection model.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0006",
+      "source": "fgpp_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "fgpp_evidence_account",
+      "definition": "The ontology requires this concept for its central figure-ground and plural-projection model.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0007",
+      "source": "fgpp_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "fgpp_shared_identity_contact",
+      "definition": "The ontology requires this concept for its central figure-ground and plural-projection model.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0008",
+      "source": "fgpp_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "fgpp_explanatory_constellation",
+      "definition": "The ontology requires this concept for its central figure-ground and plural-projection model.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0009",
+      "source": "fgpp_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "fgpp_graph_of_graphs",
+      "definition": "The ontology requires this concept for its central figure-ground and plural-projection model.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0010",
+      "source": "fgpp_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "fgpp_durable_knowledge_artifact",
+      "definition": "The ontology requires this concept for its central figure-ground and plural-projection model.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0011",
+      "source": "fgpp_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "fgpp_invariant_remainder",
+      "definition": "The ontology requires this concept for its central figure-ground and plural-projection model.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0012",
+      "source": "fgpp_source_field",
+      "relation": "CONTAINS",
+      "target": "fgpp_field_element",
+      "definition": "A source field admits distinguishable elements.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0013",
+      "source": "fgpp_source_field",
+      "relation": "CONTAINS",
+      "target": "fgpp_field_relation",
+      "definition": "A source field admits declared relations.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0014",
+      "source": "fgpp_admitted_field",
+      "relation": "PART_OF",
+      "target": "fgpp_source_field",
+      "definition": "An admitted field is bounded within a richer source field.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0015",
+      "source": "fgpp_admitted_field",
+      "relation": "DEFINED_BY",
+      "target": "fgpp_field_boundary",
+      "definition": "Its boundary determines what is presently admitted.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0016",
+      "source": "fgpp_admitted_field",
+      "relation": "CONTAINS",
+      "target": "fgpp_retained_context",
+      "definition": "Admitted content includes context retained outside the present figure.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0017",
+      "source": "fgpp_field_boundary",
+      "relation": "RELATIVE_TO",
+      "target": "fgpp_inquiry_frame",
+      "definition": "The boundary is frame-relative.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0018",
+      "source": "fgpp_retained_context",
+      "relation": "PART_OF",
+      "target": "fgpp_admitted_field",
+      "definition": "Retained context remains inside the admitted field.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0019",
+      "source": "fgpp_inquiry_frame",
+      "relation": "GUIDED_BY",
+      "target": "fgpp_inquiry_question",
+      "definition": "The question determines which distinctions matter.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0020",
+      "source": "fgpp_inquiry_frame",
+      "relation": "GUIDED_BY",
+      "target": "fgpp_inquiry_purpose",
+      "definition": "The purpose shapes relevance and acceptable loss.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0021",
+      "source": "fgpp_inquiry_frame",
+      "relation": "RELATIVE_TO",
+      "target": "fgpp_receiver_position",
+      "definition": "Interpretation depends on a situated receiver.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0022",
+      "source": "fgpp_inquiry_frame",
+      "relation": "GUIDED_BY",
+      "target": "fgpp_lens",
+      "definition": "A lens supplies declared emphasis.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0023",
+      "source": "fgpp_inquiry_frame",
+      "relation": "FRAMES",
+      "target": "fgpp_admitted_field",
+      "definition": "The frame establishes the active field.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0024",
+      "source": "fgpp_figure_ground_assignment",
+      "relation": "DEFINED_BY",
+      "target": "fgpp_inquiry_frame",
+      "definition": "Role assignment is meaningful only relative to a frame.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0025",
+      "source": "fgpp_figure_ground_assignment",
+      "relation": "OPERATES_ON",
+      "target": "fgpp_admitted_field",
+      "definition": "Figure and ground are assigned within admitted content.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0026",
+      "source": "fgpp_figure_ground_assignment",
+      "relation": "ASSIGNS_ROLE",
+      "target": "fgpp_figure_role",
+      "definition": "The operation assigns figure role.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0027",
+      "source": "fgpp_figure_ground_assignment",
+      "relation": "ASSIGNS_ROLE",
+      "target": "fgpp_ground_role",
+      "definition": "The operation assigns ground role.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0028",
+      "source": "fgpp_field_boundary",
+      "relation": "ASSIGNS_ROLE",
+      "target": "fgpp_excluded_role",
+      "definition": "The boundary places non-admitted content outside this frame.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0029",
+      "source": "fgpp_figure_ground_assignment",
+      "relation": "FOREGROUNDS",
+      "target": "fgpp_field_element",
+      "definition": "Selected elements become salient.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0030",
+      "source": "fgpp_figure_ground_assignment",
+      "relation": "BACKGROUNDS",
+      "target": "fgpp_retained_context",
+      "definition": "Non-salient admitted content remains as ground.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0031",
+      "source": "fgpp_salience_assignment",
+      "relation": "PART_OF",
+      "target": "fgpp_figure_ground_assignment",
+      "definition": "Salience allocation realizes the role assignment.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0032",
+      "source": "fgpp_refiguring",
+      "relation": "OPERATES_ON",
+      "target": "fgpp_figure_ground_assignment",
+      "definition": "Refiguring replaces one assignment with another.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0033",
+      "source": "fgpp_refiguring",
+      "relation": "PRESERVES",
+      "target": "fgpp_source_field",
+      "definition": "Refiguring can preserve the represented field.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0034",
+      "source": "fgpp_refiguring",
+      "relation": "RETURNS",
+      "target": "fgpp_figure_ground_assignment",
+      "definition": "The result is a new role assignment.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0035",
+      "source": "fgpp_projection",
+      "relation": "GUIDED_BY",
+      "target": "fgpp_selector",
+      "definition": "Selection criteria guide the projection.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0036",
+      "source": "fgpp_projection",
+      "relation": "DEFINED_BY",
+      "target": "fgpp_preservation_policy",
+      "definition": "The preservation policy declares what survives.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0037",
+      "source": "fgpp_projection",
+      "relation": "HAS_LOSS_PROFILE",
+      "target": "fgpp_loss_profile",
+      "definition": "Every projection exposes its accepted loss.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0038",
+      "source": "fgpp_projection",
+      "relation": "HAS_SCOPE",
+      "target": "fgpp_scope",
+      "definition": "Every projection is licensed within a scope.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0039",
+      "source": "fgpp_projection",
+      "relation": "HAS_RESOLUTION",
+      "target": "fgpp_resolution",
+      "definition": "Every projection declares retained granularity.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0040",
+      "source": "fgpp_projection",
+      "relation": "PROJECTS",
+      "target": "fgpp_source_field",
+      "definition": "The projection operates from a richer source.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0041",
+      "source": "fgpp_projection",
+      "relation": "RETURNS",
+      "target": "fgpp_qualified_view",
+      "definition": "The projection yields a qualified view.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0042",
+      "source": "fgpp_qualified_view",
+      "relation": "QUALIFIES",
+      "target": "fgpp_scope",
+      "definition": "The result carries its scope.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0043",
+      "source": "fgpp_qualified_view",
+      "relation": "QUALIFIES",
+      "target": "fgpp_resolution",
+      "definition": "The result carries its resolution.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0044",
+      "source": "fgpp_qualified_view",
+      "relation": "HAS_LOSS_PROFILE",
+      "target": "fgpp_loss_profile",
+      "definition": "The result exposes unavailable detail.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0045",
+      "source": "fgpp_reversible_projection",
+      "relation": "IS_A",
+      "target": "fgpp_projection",
+      "definition": "A reversible projection is a specialized projection.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0046",
+      "source": "fgpp_reversible_projection",
+      "relation": "PRESERVES",
+      "target": "fgpp_reconstruction_context",
+      "definition": "It retains bounded reconstruction affordances.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0047",
+      "source": "fgpp_projection_family",
+      "relation": "CONTAINS",
+      "target": "fgpp_qualified_view",
+      "definition": "A family contains distinct qualified views.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0048",
+      "source": "fgpp_projection_family",
+      "relation": "RELATIVE_TO",
+      "target": "fgpp_source_field",
+      "definition": "Its members concern a shared source field.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0049",
+      "source": "fgpp_selector",
+      "relation": "SELECTS",
+      "target": "fgpp_field_element",
+      "definition": "Selectors may choose elements.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0050",
+      "source": "fgpp_selector",
+      "relation": "SELECTS",
+      "target": "fgpp_field_relation",
+      "definition": "Selectors may choose relations.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0051",
+      "source": "fgpp_path",
+      "relation": "CONTAINS",
+      "target": "fgpp_traversal",
+      "definition": "A path is ordered from traversal steps.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0052",
+      "source": "fgpp_path",
+      "relation": "TERMINATES_IN",
+      "target": "fgpp_endpoint",
+      "definition": "A path reaches a destination.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0053",
+      "source": "fgpp_path",
+      "relation": "PERSISTS_AS",
+      "target": "fgpp_path_history",
+      "definition": "The ordered route can be recorded as history.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0054",
+      "source": "fgpp_address",
+      "relation": "REACHES",
+      "target": "fgpp_endpoint",
+      "definition": "An address locates an endpoint without encoding the route.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0055",
+      "source": "fgpp_approach_path",
+      "relation": "IS_A",
+      "target": "fgpp_path",
+      "definition": "An approach path is a meaning-bearing specialization.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0056",
+      "source": "fgpp_reentry_path",
+      "relation": "IS_A",
+      "target": "fgpp_path",
+      "definition": "A re-entry path is a bounded return route.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0057",
+      "source": "fgpp_reentry_path",
+      "relation": "REQUIRES",
+      "target": "fgpp_address",
+      "definition": "Re-entry starts from a retained locator.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0058",
+      "source": "fgpp_reentry_path",
+      "relation": "REQUIRES",
+      "target": "fgpp_reconstruction_context",
+      "definition": "Re-entry requires enough context to interpret the locator.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0059",
+      "source": "fgpp_path_convergence",
+      "relation": "CONVERGES_AT",
+      "target": "fgpp_endpoint",
+      "definition": "Distinct paths can meet at one endpoint.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0060",
+      "source": "fgpp_path_convergence",
+      "relation": "ORGANIZES",
+      "target": "fgpp_path",
+      "definition": "Convergence groups paths without erasing them.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0061",
+      "source": "fgpp_traversal",
+      "relation": "TRAVERSES",
+      "target": "fgpp_field_relation",
+      "definition": "A traversal may follow a declared relation.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0062",
+      "source": "fgpp_evidence_account",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_represented_object",
+      "definition": "An account concerns a represented object.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0063",
+      "source": "fgpp_evidence_account",
+      "relation": "CONTAINS",
+      "target": "fgpp_evidence_item",
+      "definition": "An account organizes bounded evidence items.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0064",
+      "source": "fgpp_evidence_account",
+      "relation": "HAS_PROVENANCE",
+      "target": "fgpp_provenance",
+      "definition": "Every account records how it was produced.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0065",
+      "source": "fgpp_provenance",
+      "relation": "ANCHORED_BY",
+      "target": "fgpp_source_identity",
+      "definition": "Provenance identifies its source.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0066",
+      "source": "fgpp_source_identity",
+      "relation": "HAS_SCOPE",
+      "target": "fgpp_authority_scope",
+      "definition": "A source's authority is explicitly bounded.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0067",
+      "source": "fgpp_evidence_item",
+      "relation": "HAS_EPISTEMIC_STATUS",
+      "target": "fgpp_epistemic_status",
+      "definition": "Every item exposes how it is warranted.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0068",
+      "source": "fgpp_observation",
+      "relation": "IS_A",
+      "target": "fgpp_evidence_item",
+      "definition": "An observation is an evidence item.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0069",
+      "source": "fgpp_assertion",
+      "relation": "IS_A",
+      "target": "fgpp_evidence_item",
+      "definition": "An assertion is an evidence item.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0070",
+      "source": "fgpp_inference",
+      "relation": "IS_A",
+      "target": "fgpp_evidence_item",
+      "definition": "An inference is an evidence item.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0071",
+      "source": "fgpp_inference",
+      "relation": "DERIVED_FROM",
+      "target": "fgpp_evidence_item",
+      "definition": "An inference is traceable to supporting items.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0072",
+      "source": "fgpp_evidence_account",
+      "relation": "EXPOSES_BOUNDARY",
+      "target": "fgpp_evidence_boundary",
+      "definition": "The account states where its warrant ends.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0073",
+      "source": "fgpp_evidence_account",
+      "relation": "EXPOSES_BOUNDARY",
+      "target": "fgpp_account_boundary",
+      "definition": "The account states its internal vocabulary and access limits.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0074",
+      "source": "fgpp_causal_lineage",
+      "relation": "PART_OF",
+      "target": "fgpp_evidence_account",
+      "definition": "A causal lineage is a warranted component of an account.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0075",
+      "source": "fgpp_causal_lineage",
+      "relation": "ORGANIZES",
+      "target": "fgpp_evidence_item",
+      "definition": "It orders evidence as claimed productive dependency.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0076",
+      "source": "fgpp_evidence_item",
+      "relation": "SUPPORTS",
+      "target": "fgpp_assertion",
+      "definition": "Evidence may support an assertion without being identical to it.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0077",
+      "source": "fgpp_shared_identity_contact",
+      "relation": "CONTACTS_AT",
+      "target": "fgpp_identity_anchor",
+      "definition": "Contact occurs through a stable identity anchor.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0078",
+      "source": "fgpp_evidence_account",
+      "relation": "ANCHORED_BY",
+      "target": "fgpp_identity_anchor",
+      "definition": "An account can reference an independently shared anchor.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0079",
+      "source": "fgpp_shared_identity_contact",
+      "relation": "ORGANIZES",
+      "target": "fgpp_evidence_account",
+      "definition": "Contact groups accounts for comparison without union.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0080",
+      "source": "fgpp_convergence_hub",
+      "relation": "CONTAINS",
+      "target": "fgpp_shared_identity_contact",
+      "definition": "A hub contains one or more typed contacts.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0081",
+      "source": "fgpp_path_convergence",
+      "relation": "MAY_REALIZE",
+      "target": "fgpp_convergence_pattern",
+      "definition": "Path meeting is one realization of convergence.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0082",
+      "source": "fgpp_shared_identity_contact",
+      "relation": "MAY_REALIZE",
+      "target": "fgpp_convergence_pattern",
+      "definition": "Account contact is another realization of convergence.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0083",
+      "source": "fgpp_cross_graph_alignment",
+      "relation": "ANCHORED_BY",
+      "target": "fgpp_identity_anchor",
+      "definition": "Alignment may use a shared stable anchor.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0084",
+      "source": "fgpp_cross_graph_alignment",
+      "relation": "HAS_SCOPE",
+      "target": "fgpp_scope",
+      "definition": "Every alignment is scope-qualified.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0085",
+      "source": "fgpp_equivalence_claim",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_cross_graph_alignment",
+      "definition": "Equivalence is an explicit claim over an alignment.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0086",
+      "source": "fgpp_translation_bridge",
+      "relation": "BRIDGES",
+      "target": "fgpp_cross_graph_alignment",
+      "definition": "A translation bridge carries a typed alignment.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0087",
+      "source": "fgpp_translation_bridge",
+      "relation": "HAS_LOSS_PROFILE",
+      "target": "fgpp_loss_profile",
+      "definition": "Translation exposes what it cannot preserve.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0088",
+      "source": "fgpp_unresolved_contact",
+      "relation": "IS_A",
+      "target": "fgpp_shared_identity_contact",
+      "definition": "Unresolved contact is contact without a warranted deeper mapping.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0089",
+      "source": "fgpp_unresolved_contact",
+      "relation": "EXPOSES_BOUNDARY",
+      "target": "fgpp_evidence_boundary",
+      "definition": "Its unresolved status marks an evidence limit.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0090",
+      "source": "fgpp_explanatory_projection",
+      "relation": "IS_A",
+      "target": "fgpp_projection",
+      "definition": "An explanatory projection is purpose-specialized.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0091",
+      "source": "fgpp_causal_projection",
+      "relation": "IS_A",
+      "target": "fgpp_projection",
+      "definition": "A causal projection is dependency-specialized.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0092",
+      "source": "fgpp_structural_projection",
+      "relation": "IS_A",
+      "target": "fgpp_projection",
+      "definition": "A structural projection is topology-specialized.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0093",
+      "source": "fgpp_explanatory_route",
+      "relation": "IS_A",
+      "target": "fgpp_path",
+      "definition": "An explanatory route is an ordered interpretive path.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0094",
+      "source": "fgpp_explanatory_route",
+      "relation": "ANSWERS",
+      "target": "fgpp_inquiry_question",
+      "definition": "The route is organized to answer a declared question.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0095",
+      "source": "fgpp_explanatory_route",
+      "relation": "ORGANIZES",
+      "target": "fgpp_evidence_item",
+      "definition": "The route orders supporting content for human understanding.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0096",
+      "source": "fgpp_coherent_reading",
+      "relation": "DERIVED_FROM",
+      "target": "fgpp_explanatory_route",
+      "definition": "A reading is supported by a route.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0097",
+      "source": "fgpp_coherent_reading",
+      "relation": "HAS_SCOPE",
+      "target": "fgpp_scope",
+      "definition": "Coherence is local to declared conditions.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0098",
+      "source": "fgpp_explanatory_constellation",
+      "relation": "IS_A",
+      "target": "fgpp_qualified_view",
+      "definition": "A constellation is a qualified human-readable graph figure.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0099",
+      "source": "fgpp_explanatory_constellation",
+      "relation": "DEFINED_BY",
+      "target": "fgpp_figure_ground_assignment",
+      "definition": "Its figure is determined by a frame-relative assignment.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0100",
+      "source": "fgpp_explanatory_constellation",
+      "relation": "ORGANIZES",
+      "target": "fgpp_explanatory_route",
+      "definition": "A constellation can contain multiple explanatory routes.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0101",
+      "source": "fgpp_explanatory_constellation",
+      "relation": "RETAINS",
+      "target": "fgpp_retained_context",
+      "definition": "Its graph ground remains available for refiguring.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0102",
+      "source": "fgpp_explanatory_constellation",
+      "relation": "HAS_PROVENANCE",
+      "target": "fgpp_narrative_lineage",
+      "definition": "The selected route has a traceable composition history.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0103",
+      "source": "fgpp_plural_account_set",
+      "relation": "CONTAINS",
+      "target": "fgpp_evidence_account",
+      "definition": "Plural accounts remain separately governed.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0104",
+      "source": "fgpp_plural_account_set",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_represented_object",
+      "definition": "Its members may concern one represented object.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0105",
+      "source": "fgpp_plural_account_set",
+      "relation": "MAY_CONFLICT_WITH",
+      "target": "fgpp_plural_account_set",
+      "definition": "Plural accounts can contain locally coherent disagreement.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0106",
+      "source": "fgpp_ontology_graph",
+      "relation": "IS_A",
+      "target": "fgpp_knowledge_graph",
+      "definition": "An ontology graph is a specialized knowledge graph.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0107",
+      "source": "fgpp_graph_of_graphs",
+      "relation": "CONTAINS",
+      "target": "fgpp_knowledge_graph",
+      "definition": "A graph-of-graphs registers member graphs.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0108",
+      "source": "fgpp_knowledge_graph",
+      "relation": "MEMBER_OF",
+      "target": "fgpp_graph_of_graphs",
+      "definition": "Member graphs remain independently governed.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0109",
+      "source": "fgpp_knowledge_graph",
+      "relation": "DEFINED_BY",
+      "target": "fgpp_graph_namespace",
+      "definition": "A graph governs identifiers within a namespace.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0110",
+      "source": "fgpp_stable_identifier",
+      "relation": "PART_OF",
+      "target": "fgpp_graph_namespace",
+      "definition": "Stable identifiers are governed within namespaces.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0111",
+      "source": "fgpp_bridge_mapping",
+      "relation": "BRIDGES",
+      "target": "fgpp_knowledge_graph",
+      "definition": "A bridge mapping connects member graphs.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0112",
+      "source": "fgpp_bridge_mapping",
+      "relation": "ALIGNS_WITH",
+      "target": "fgpp_cross_graph_alignment",
+      "definition": "A bridge mapping realizes a scoped alignment.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0113",
+      "source": "fgpp_bridge_assertion",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_bridge_mapping",
+      "definition": "The assertion warrants and types the mapping.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0114",
+      "source": "fgpp_bridge_assertion",
+      "relation": "HAS_PROVENANCE",
+      "target": "fgpp_provenance",
+      "definition": "Bridge authority remains explicit.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0115",
+      "source": "fgpp_bridge_assertion",
+      "relation": "HAS_SCOPE",
+      "target": "fgpp_scope",
+      "definition": "A bridge is licensed only within stated conditions.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0116",
+      "source": "fgpp_bridge_conflict",
+      "relation": "MAY_CONFLICT_WITH",
+      "target": "fgpp_bridge_assertion",
+      "definition": "Conflicting mappings remain visible.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0117",
+      "source": "fgpp_versioned_graph_artifact",
+      "relation": "CARRIED_BY",
+      "target": "fgpp_durable_knowledge_artifact",
+      "definition": "A durable carrier stores the versioned graph.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0118",
+      "source": "fgpp_versioned_graph_artifact",
+      "relation": "VERSION_OF",
+      "target": "fgpp_versioned_graph_artifact",
+      "definition": "Artifacts declare version lineage without overwriting history.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0119",
+      "source": "fgpp_queryable_knowledge_surface",
+      "relation": "QUERIES",
+      "target": "fgpp_graph_of_graphs",
+      "definition": "The surface requests views across member graphs.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0120",
+      "source": "fgpp_queryable_knowledge_surface",
+      "relation": "RETURNS",
+      "target": "fgpp_qualified_view",
+      "definition": "Every response is a qualified projection.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0121",
+      "source": "fgpp_queryable_knowledge_surface",
+      "relation": "EXPOSES_BOUNDARY",
+      "target": "fgpp_evidence_boundary",
+      "definition": "The surface reveals where evidence ends.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0122",
+      "source": "fgpp_graph_of_graphs",
+      "relation": "DEFINED_BY",
+      "target": "fgpp_integration_policy",
+      "definition": "Membership and bridges follow explicit policy.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0123",
+      "source": "fgpp_integration_policy",
+      "relation": "PRESERVES",
+      "target": "fgpp_graph_namespace",
+      "definition": "Integration preserves namespace boundaries.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0124",
+      "source": "fgpp_integration_policy",
+      "relation": "PRESERVES",
+      "target": "fgpp_bridge_conflict",
+      "definition": "Integration retains unresolved conflict.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0125",
+      "source": "fgpp_knowledge_session",
+      "relation": "RELATIVE_TO",
+      "target": "fgpp_session_context",
+      "definition": "A session operates under local context.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0126",
+      "source": "fgpp_knowledge_session",
+      "relation": "PART_OF",
+      "target": "fgpp_project_context",
+      "definition": "Multiple sessions can contribute to durable project context.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0127",
+      "source": "fgpp_session_context",
+      "relation": "PART_OF",
+      "target": "fgpp_project_context",
+      "definition": "Local context is nested within a broader durable frame.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0128",
+      "source": "fgpp_knowledge_graph",
+      "relation": "PERSISTS_AS",
+      "target": "fgpp_durable_knowledge_artifact",
+      "definition": "Graph knowledge outlives a session through a carrier.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0129",
+      "source": "fgpp_durable_knowledge_artifact",
+      "relation": "CONTAINS",
+      "target": "fgpp_reentry_address",
+      "definition": "The artifact records stable return locations.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0130",
+      "source": "fgpp_durable_knowledge_artifact",
+      "relation": "CONTAINS",
+      "target": "fgpp_reconstruction_context",
+      "definition": "The artifact retains bounded interpretation cues.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0131",
+      "source": "fgpp_bounded_reconstruction",
+      "relation": "REQUIRES",
+      "target": "fgpp_reentry_address",
+      "definition": "Reconstruction begins from an address.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0132",
+      "source": "fgpp_bounded_reconstruction",
+      "relation": "REQUIRES",
+      "target": "fgpp_reconstruction_context",
+      "definition": "Reconstruction requires context beyond the address.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0133",
+      "source": "fgpp_bounded_reconstruction",
+      "relation": "RECONSTRUCTS",
+      "target": "fgpp_session_context",
+      "definition": "The result is a usable, bounded session state.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0134",
+      "source": "fgpp_reentry_path",
+      "relation": "REENTERS",
+      "target": "fgpp_project_context",
+      "definition": "A re-entry path restores access to a durable knowledge region.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0135",
+      "source": "fgpp_context_capsule",
+      "relation": "IS_A",
+      "target": "fgpp_durable_knowledge_artifact",
+      "definition": "A context capsule is a compact durable carrier.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0136",
+      "source": "fgpp_context_capsule",
+      "relation": "CONTAINS",
+      "target": "fgpp_reentry_address",
+      "definition": "It carries a stable address.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0137",
+      "source": "fgpp_context_capsule",
+      "relation": "CONTAINS",
+      "target": "fgpp_reconstruction_context",
+      "definition": "It carries interpretation cues.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0138",
+      "source": "fgpp_invariant_remainder",
+      "relation": "PART_OF",
+      "target": "fgpp_reconstruction_context",
+      "definition": "The invariant remainder is the minimum viable retained condition.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0139",
+      "source": "fgpp_invariant_remainder",
+      "relation": "PRESERVES",
+      "target": "fgpp_reentry_path",
+      "definition": "It preserves the possibility of bounded re-entry.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0140",
+      "source": "fgpp_axiom_role_relativity",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_figure_role",
+      "definition": "The figure role is frame-relative.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0141",
+      "source": "fgpp_axiom_role_relativity",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_ground_role",
+      "definition": "The ground role is frame-relative.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0142",
+      "source": "fgpp_axiom_role_relativity",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_inquiry_frame",
+      "definition": "The frame supplies role conditions.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0143",
+      "source": "fgpp_axiom_ground_retention",
+      "relation": "DISTINGUISHES",
+      "target": "fgpp_ground_role",
+      "definition": "Ground remains admitted context.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0144",
+      "source": "fgpp_ground_role",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "fgpp_excluded_role",
+      "definition": "Backgrounded content is not excluded content.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0145",
+      "source": "fgpp_axiom_refiguring_invariance",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_refiguring",
+      "definition": "Refiguring can preserve the represented field.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0146",
+      "source": "fgpp_axiom_framing_projection_boundary",
+      "relation": "DISTINGUISHES",
+      "target": "fgpp_inquiry_frame",
+      "definition": "Framing is not projection.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0147",
+      "source": "fgpp_axiom_framing_projection_boundary",
+      "relation": "DISTINGUISHES",
+      "target": "fgpp_figure_ground_assignment",
+      "definition": "Role assignment is not projection.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0148",
+      "source": "fgpp_figure_ground_assignment",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "fgpp_projection",
+      "definition": "Salience assignment and preservation-loss projection are distinct.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0149",
+      "source": "fgpp_axiom_address_path_complementarity",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_address",
+      "definition": "Addresses preserve location.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0150",
+      "source": "fgpp_axiom_address_path_complementarity",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_path_history",
+      "definition": "Paths preserve originating history.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0151",
+      "source": "fgpp_address",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "fgpp_path",
+      "definition": "A locator is not an ordered route.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0152",
+      "source": "fgpp_axiom_same_endpoint_plurality",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_path_convergence",
+      "definition": "Convergence permits path plurality.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0153",
+      "source": "fgpp_axiom_shared_contact_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_shared_identity_contact",
+      "definition": "Contact is weaker than equivalence.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0154",
+      "source": "fgpp_shared_identity_contact",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "fgpp_equivalence_claim",
+      "definition": "Shared reference does not establish interchangeability.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0155",
+      "source": "fgpp_axiom_projection_pluralism",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_projection_family",
+      "definition": "One field supports plural qualified views.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0156",
+      "source": "fgpp_axiom_provenance_preservation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_graph_of_graphs",
+      "definition": "Integration preserves member histories.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0157",
+      "source": "fgpp_axiom_provenance_preservation",
+      "relation": "REQUIRES",
+      "target": "fgpp_provenance",
+      "definition": "Provenance is mandatory for integration.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0158",
+      "source": "fgpp_axiom_epistemic_noncollapse",
+      "relation": "DISTINGUISHES",
+      "target": "fgpp_observation",
+      "definition": "Observation has distinct warrant.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0159",
+      "source": "fgpp_axiom_epistemic_noncollapse",
+      "relation": "DISTINGUISHES",
+      "target": "fgpp_assertion",
+      "definition": "Assertion has distinct warrant.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0160",
+      "source": "fgpp_axiom_epistemic_noncollapse",
+      "relation": "DISTINGUISHES",
+      "target": "fgpp_inference",
+      "definition": "Inference has distinct warrant.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0161",
+      "source": "fgpp_observation",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "fgpp_assertion",
+      "definition": "Recording and claiming are distinct.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0162",
+      "source": "fgpp_assertion",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "fgpp_inference",
+      "definition": "Authority and derivation are distinct warranting relations.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0163",
+      "source": "fgpp_axiom_explanatory_nonassertion",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_explanatory_route",
+      "definition": "Interpretive ordering does not create world relations.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0164",
+      "source": "fgpp_explanatory_route",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "fgpp_causal_lineage",
+      "definition": "A route for understanding is not a causal lineage.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0165",
+      "source": "fgpp_axiom_constellation_coherence",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_explanatory_constellation",
+      "definition": "A constellation is a framed graph figure.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0166",
+      "source": "fgpp_axiom_constellation_coherence",
+      "relation": "REQUIRES",
+      "target": "fgpp_retained_context",
+      "definition": "Constellation meaning depends on graph ground.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0167",
+      "source": "fgpp_axiom_local_coherence_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_coherent_reading",
+      "definition": "Coherence remains local.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0168",
+      "source": "fgpp_axiom_local_coherence_boundary",
+      "relation": "EXPOSES_BOUNDARY",
+      "target": "fgpp_account_boundary",
+      "definition": "Every account has descriptive limits.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0169",
+      "source": "fgpp_axiom_typed_bridge_integration",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_graph_of_graphs",
+      "definition": "Integration uses typed bridges.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0170",
+      "source": "fgpp_axiom_typed_bridge_integration",
+      "relation": "REQUIRES",
+      "target": "fgpp_bridge_assertion",
+      "definition": "Bridge mappings require explicit warrant.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0171",
+      "source": "fgpp_axiom_namespace_nonidentity",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_graph_namespace",
+      "definition": "Namespace boundaries preserve identity governance.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0172",
+      "source": "fgpp_axiom_namespace_nonidentity",
+      "relation": "REQUIRES",
+      "target": "fgpp_bridge_assertion",
+      "definition": "Cross-namespace identity requires a claim.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0173",
+      "source": "fgpp_axiom_loss_reentry",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_loss_profile",
+      "definition": "Durable projections expose loss.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0174",
+      "source": "fgpp_axiom_loss_reentry",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_reconstruction_context",
+      "definition": "Durable projections expose re-entry conditions.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0175",
+      "source": "fgpp_axiom_query_relative_view",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_queryable_knowledge_surface",
+      "definition": "Returned knowledge is qualified.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0176",
+      "source": "fgpp_axiom_query_relative_view",
+      "relation": "REQUIRES",
+      "target": "fgpp_inquiry_question",
+      "definition": "A returned view answers a question.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0177",
+      "source": "fgpp_axiom_persistent_remainder",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_invariant_remainder",
+      "definition": "Persistence depends on a viable remainder.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0178",
+      "source": "fgpp_axiom_persistent_remainder",
+      "relation": "SUPPORTS",
+      "target": "fgpp_bounded_reconstruction",
+      "definition": "The remainder enables bounded recovery.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0179",
+      "source": "fgpp_axiom_account_incommensurability",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fgpp_plural_account_set",
+      "definition": "Accounts can be coherent yet mutually incomplete.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0180",
+      "source": "fgpp_axiom_account_incommensurability",
+      "relation": "EXPOSES_BOUNDARY",
+      "target": "fgpp_account_boundary",
+      "definition": "Mutual incompleteness follows from account-specific resources.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0181",
+      "source": "fgpp_causal_projection",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "fgpp_structural_projection",
+      "definition": "Productive dependency and topology are distinct organizations.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0182",
+      "source": "fgpp_structural_projection",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "fgpp_explanatory_projection",
+      "definition": "Structure and explanation are distinct organizations.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0183",
+      "source": "fgpp_explanatory_projection",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "fgpp_causal_projection",
+      "definition": "Explanation need not assert causal production.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0184",
+      "source": "fgpp_field_boundary",
+      "relation": "EXCLUDES",
+      "target": "fgpp_field_element",
+      "definition": "A field boundary can place otherwise available elements outside the content admitted by a particular frame.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0185",
+      "source": "fgpp_refiguring",
+      "relation": "REFIGURES",
+      "target": "fgpp_figure_ground_assignment",
+      "definition": "Refiguring replaces one contextual allocation of figure and ground with another.",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "fgpp_e0186",
+      "source": "fgpp_translation_bridge",
+      "relation": "TRANSLATES",
+      "target": "fgpp_graph_namespace",
+      "definition": "A translation bridge maps governed meaning across graph namespaces under declared scope and loss.",
+      "status": "core",
+      "confidence": "high"
+    }
+  ]
+}

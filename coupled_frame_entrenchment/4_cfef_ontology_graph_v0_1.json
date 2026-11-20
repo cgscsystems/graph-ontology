@@ -1,0 +1,2147 @@
+{
+  "manifest": {
+    "title": "Coupled Frame-Entrenchment Failure Ontology",
+    "version": "0.1.0",
+    "graph_type": "ontology",
+    "status": "canonical_seed",
+    "namespace": "cfef",
+    "created_utc": "2026-11-19T16:17:00Z",
+    "description": "Self-contained graph-native module for diagnosing and interrupting recursive stabilization of inadequate problem representations in human-LLM inquiry.",
+    "schema_ref": "cfef_ontology_graph_schema_v0_1.json",
+    "glossary_ref": "cfef_glossary_graph_v0_1.json",
+    "scope": [
+      "human ontological constraint",
+      "model frame capture and externalization failure",
+      "recursive interactional reinforcement",
+      "compensatory complexity",
+      "performative and institutional entrenchment",
+      "diagnostic signals",
+      "frame-audit operations",
+      "guard conditions for justified non-reframing"
+    ],
+    "anti_collapse_invariants": [
+      "human_error != coupled_failure",
+      "model_error != coupled_failure",
+      "inadequate_frame != false_statement",
+      "model_reconstructibility != observed_hidden_answer",
+      "frame_internal_success != unique_frame_validation",
+      "compensatory_structure != necessarily_avoidable_structure",
+      "complexity_signal != diagnosis",
+      "alternative_representation != better_purpose_fit_representation",
+      "ontological_escape != over_reframing",
+      "socially_constructed_constraint != unreal_constraint",
+      "purpose_relative != arbitrary",
+      "plural_ontology != contradiction"
+    ],
+    "counts": {
+      "nodes": 78,
+      "edges": 120,
+      "relations": 40,
+      "propositions": 10
+    }
+  },
+  "relation_vocabulary": [
+    {
+      "id": "HAS_CORE_CONCEPT",
+      "definition": "links ontology root to a reconstructively central concept"
+    },
+    {
+      "id": "IS_A",
+      "definition": "states typed specialization"
+    },
+    {
+      "id": "PART_OF",
+      "definition": "places a concept within a larger process"
+    },
+    {
+      "id": "CONTAINS",
+      "definition": "states structured inclusion"
+    },
+    {
+      "id": "SHAPES",
+      "definition": "alters a representation or field of candidates"
+    },
+    {
+      "id": "FORMULATES",
+      "definition": "produces a communicable problem representation"
+    },
+    {
+      "id": "CONDITIONS_ON",
+      "definition": "uses a representation as contextual constraint"
+    },
+    {
+      "id": "PRESERVES",
+      "definition": "retains structure through an operation"
+    },
+    {
+      "id": "ELABORATES",
+      "definition": "adds internally coherent detail"
+    },
+    {
+      "id": "REIFIES",
+      "definition": "converts a contingent artifact into an apparent necessity"
+    },
+    {
+      "id": "INCREASES_AUTHORITY_OF",
+      "definition": "raises practical or epistemic credibility"
+    },
+    {
+      "id": "SUPPRESSES",
+      "definition": "reduces salience or accessibility"
+    },
+    {
+      "id": "NARROWS",
+      "definition": "contracts a search neighbourhood"
+    },
+    {
+      "id": "MAY_PRODUCE",
+      "definition": "allows a possible effect"
+    },
+    {
+      "id": "PRODUCES",
+      "definition": "states a characteristic generated effect"
+    },
+    {
+      "id": "REINFORCES",
+      "definition": "feeds back to stabilize a condition"
+    },
+    {
+      "id": "MODIFIES",
+      "definition": "changes an external or representational field"
+    },
+    {
+      "id": "GENERATES_EVIDENCE_FOR",
+      "definition": "creates observations interpreted as support"
+    },
+    {
+      "id": "DIAGNOSED_BY",
+      "definition": "links a failure to a diagnostic criterion"
+    },
+    {
+      "id": "INDICATES",
+      "definition": "marks a non-conclusive signal"
+    },
+    {
+      "id": "CORRECTED_BY",
+      "definition": "links a failure to a corrective operation"
+    },
+    {
+      "id": "RECOVERS",
+      "definition": "retrieves objective, invariant, or context"
+    },
+    {
+      "id": "CLASSIFIES",
+      "definition": "assigns a typed source or status"
+    },
+    {
+      "id": "TESTS",
+      "definition": "evaluates under evidence or consequences"
+    },
+    {
+      "id": "COMPARES_WITH",
+      "definition": "places rival frames in explicit comparison"
+    },
+    {
+      "id": "REQUIRES",
+      "definition": "states a necessary condition"
+    },
+    {
+      "id": "GUARDED_BY",
+      "definition": "states a safeguard or stopping condition"
+    },
+    {
+      "id": "DEFEATS_DIAGNOSIS",
+      "definition": "marks evidence against the diagnosis"
+    },
+    {
+      "id": "NOT_EQUIVALENT_TO",
+      "definition": "records an anti-collapse boundary"
+    },
+    {
+      "id": "ASSERTS_ABOUT",
+      "definition": "links a proposition to its subjects"
+    },
+    {
+      "id": "INSTANTIATES",
+      "definition": "links a case to ontology concepts"
+    },
+    {
+      "id": "OBSERVES",
+      "definition": "links a case to an observation"
+    },
+    {
+      "id": "SATISFIES",
+      "definition": "marks a diagnostic condition present"
+    },
+    {
+      "id": "LACKS",
+      "definition": "marks a diagnostic condition absent"
+    },
+    {
+      "id": "APPLIES",
+      "definition": "links intervention to a case"
+    },
+    {
+      "id": "YIELDS",
+      "definition": "links operation to outcome"
+    },
+    {
+      "id": "HAS_VERDICT",
+      "definition": "links a case to its classification"
+    },
+    {
+      "id": "NEAR_NEIGHBOUR_OF",
+      "definition": "marks conceptual proximity without identity"
+    },
+    {
+      "id": "HAS_SUCCESS_TYPE",
+      "definition": "types local success"
+    },
+    {
+      "id": "HAS_CONSTRAINT_TYPE",
+      "definition": "types constraint provenance"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cfef_ontology",
+      "label": "Coupled Frame-Entrenchment Failure Ontology",
+      "kind": "ontology",
+      "layer": "root",
+      "definition": "A graph ontology of the coupled human-LLM process by which an inadequate frame can be recursively stabilized, plus disciplined operations for tested frame repair.",
+      "status": "canonical_seed",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "human_inquirer",
+      "label": "Human inquirer",
+      "kind": "participant",
+      "layer": "participants",
+      "definition": "A human participant whose situated knowledge, ontology, goals, access, and history shape the problem representation communicated to the model.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "llm_execution",
+      "label": "LLM execution",
+      "kind": "participant",
+      "layer": "participants",
+      "definition": "A bounded model execution whose continuations are conditioned by the current context, learned structure, instructions, and selection dynamics.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "coupled_inquiry_system",
+      "label": "Coupled inquiry system",
+      "kind": "structure",
+      "layer": "participants",
+      "definition": "The interactional unit formed by the human, model execution, exchanged representations, external actions, and accumulated artifacts.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "target_field",
+      "label": "Target field",
+      "kind": "structure",
+      "layer": "framing",
+      "definition": "The world, system, evidence, or task about which inquiry is conducted.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "active_frame",
+      "label": "Active frame",
+      "kind": "frame",
+      "layer": "framing",
+      "definition": "The operative arrangement of objects, relations, operations, constraints, evaluation criteria, and candidate alternatives.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "problem_representation",
+      "label": "Problem representation",
+      "kind": "structure",
+      "layer": "framing",
+      "definition": "The communicable projection of the target field constituted through the active frame.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "search_neighbourhood",
+      "label": "Search neighbourhood",
+      "kind": "structure",
+      "layer": "framing",
+      "definition": "The alternatives treated as sufficiently relevant and expressible to generate or investigate.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "ontological_deficit",
+      "label": "Ontological deficit",
+      "kind": "structure",
+      "layer": "framing",
+      "definition": "An absent, incomplete, conflated, falsely separated, misleveled, or misbounded feature of the active frame.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "better_purpose_fit_representation",
+      "label": "Better-purpose-fit representation",
+      "kind": "frame",
+      "layer": "repair",
+      "definition": "An alternative representation that better serves the stated purpose while preserving required invariants and surviving comparison against evidence, constraints, consequences, and rivals.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "corrective_structure",
+      "label": "Corrective structure",
+      "kind": "structure",
+      "layer": "repair",
+      "definition": "A concept, relation, operation, causal level, unit of analysis, or distinction capable of reorganizing the apparent problem and action space.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "model_reconstructibility",
+      "label": "Model reconstructibility",
+      "kind": "criterion",
+      "layer": "model",
+      "definition": "The degree to which corrective structure can plausibly be generated or investigated from model learning plus current evidence; it is not direct evidence of an unspoken internal candidate.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "frame_capture",
+      "label": "Frame capture",
+      "kind": "mechanism",
+      "layer": "model",
+      "definition": "Model conditioning on the supplied problem representation as the operative world of assistance rather than a revisable hypothesis.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "premise_deference",
+      "label": "Premise deference",
+      "kind": "mechanism",
+      "layer": "model",
+      "definition": "Treatment of detailed, confident, or effort-laden premises as settled constraints without independent classification.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "local_answer_optimization",
+      "label": "Local answer optimization",
+      "kind": "mechanism",
+      "layer": "model",
+      "definition": "Selection of an immediately responsive answer inside the active frame without auditing the representation that produced the question.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "corrective_externalization_failure",
+      "label": "Corrective externalization failure",
+      "kind": "mechanism",
+      "layer": "model",
+      "definition": "Failure to express reconstructible corrective structure in an inspectable and testable form.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "compensatory_structure",
+      "label": "Compensatory structure",
+      "kind": "structure",
+      "layer": "entrenchment",
+      "definition": "A workaround or artifact created because the active frame lacks a direct representation or operation.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "compensatory_structure_reification",
+      "label": "Compensatory structure reification",
+      "kind": "mechanism",
+      "layer": "entrenchment",
+      "definition": "Conversion of contingent compensation into an apparent requirement of the task.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "effort_derived_constraint_credibility",
+      "label": "Effort-derived constraint credibility",
+      "kind": "mechanism",
+      "layer": "entrenchment",
+      "definition": "Increase in apparent constraint authority caused by labor already invested within the frame.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "frame_internal_success",
+      "label": "Frame-internal success",
+      "kind": "outcome",
+      "layer": "entrenchment",
+      "definition": "A locally coherent result that is compatible with the frame but may not discriminate it from rivals.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "rhetorical_success",
+      "label": "Rhetorical success",
+      "kind": "success_type",
+      "layer": "entrenchment",
+      "definition": "An answer appears coherent or persuasive.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "procedural_success",
+      "label": "Procedural success",
+      "kind": "success_type",
+      "layer": "entrenchment",
+      "definition": "A next step can be completed.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "symptomatic_success",
+      "label": "Symptomatic success",
+      "kind": "success_type",
+      "layer": "entrenchment",
+      "definition": "A visible symptom improves without establishing mechanism.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "metric_success",
+      "label": "Metric success",
+      "kind": "success_type",
+      "layer": "entrenchment",
+      "definition": "A chosen measure improves, potentially with unmeasured displacement.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "institutional_success",
+      "label": "Institutional success",
+      "kind": "success_type",
+      "layer": "entrenchment",
+      "definition": "A procedure or classification becomes adopted and durable.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "causal_success",
+      "label": "Causal success",
+      "kind": "success_type",
+      "layer": "entrenchment",
+      "definition": "An intervention affects the operative cause; this is stronger evidence but does not by itself establish exclusivity.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "intervention_induced_pseudoconfirmation",
+      "label": "Intervention-induced pseudo-confirmation",
+      "kind": "mechanism",
+      "layer": "entrenchment",
+      "definition": "A non-diagnostic intervention changes the outcome and the change is attributed uniquely to the presumed mechanism.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "performative_entrenchment",
+      "label": "Performative entrenchment",
+      "kind": "mechanism",
+      "layer": "entrenchment",
+      "definition": "Frame-generated action modifies the external field so later evidence increasingly resembles the frame.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "search_neighbourhood_contraction",
+      "label": "Search-neighbourhood contraction",
+      "kind": "process",
+      "layer": "entrenchment",
+      "definition": "Progressive narrowing of candidate alternatives toward those expressible inside the active frame.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "institutional_inscription",
+      "label": "Institutional inscription",
+      "kind": "process",
+      "layer": "entrenchment",
+      "definition": "Durable preservation of the frame in policies, code, metrics, forms, roles, training, or other artifacts.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "coupled_frame_entrenchment_failure",
+      "label": "Coupled frame-entrenchment failure",
+      "kind": "process",
+      "layer": "core",
+      "definition": "An emergent failure in which human ontological constraint and frame-conditioned model assistance recursively stabilize an inadequate representation, reify compensation, and suppress tested problem restructuring.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "avoidable_burden",
+      "label": "Avoidable burden",
+      "kind": "outcome",
+      "layer": "effects",
+      "definition": "Labor, complexity, error, delay, or risk that a better-purpose-fit representation can reduce without violating required invariants.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "disproportionate_compensatory_complexity",
+      "label": "Disproportionate compensatory complexity",
+      "kind": "signal",
+      "layer": "diagnosis",
+      "definition": "A mismatch between a simple required invariant and an elaborate process dominated by decomposition, reconstruction, enumeration, coordination, or symptom repair.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "recursive_reinforcement",
+      "label": "Recursive reinforcement",
+      "kind": "criterion",
+      "layer": "diagnosis",
+      "definition": "Evidence that each interactional cycle increases the authority, elaboration, switching cost, or persistence of the active frame.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "local_success_nonuniqueness",
+      "label": "Local-success non-uniqueness",
+      "kind": "criterion",
+      "layer": "diagnosis",
+      "definition": "Recognition that local improvement is compatible with multiple causal or representational accounts.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "scale_insufficiency",
+      "label": "Scale insufficiency",
+      "kind": "criterion",
+      "layer": "diagnosis",
+      "definition": "The framed cause cannot account for the magnitude of the outcome even if perfectly optimized or eliminated.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "frame_audit",
+      "label": "Frame audit",
+      "kind": "operation",
+      "layer": "repair",
+      "definition": "A procedure that makes the active representation itself an object of inquiry.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "objective_recovery",
+      "label": "Objective recovery",
+      "kind": "operation",
+      "layer": "repair",
+      "definition": "Restatement of the required end state independently of the current procedure.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "invariant_ledger",
+      "label": "Invariant ledger",
+      "kind": "operation",
+      "layer": "repair",
+      "definition": "Explicit list of what an alternative preserves, loses, assumes, requires verification of, and introduces.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "constraint_provenance_classification",
+      "label": "Constraint provenance classification",
+      "kind": "operation",
+      "layer": "repair",
+      "definition": "Typing constraints by source and warrant rather than treating all stated limits as equivalent.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "logical_constraint",
+      "label": "Logical constraint",
+      "kind": "constraint_type",
+      "layer": "constraints",
+      "definition": "A condition required by consistency, identity, or formal entailment.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "physical_constraint",
+      "label": "Physical constraint",
+      "kind": "constraint_type",
+      "layer": "constraints",
+      "definition": "A condition imposed by material or causal possibility.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "empirical_constraint",
+      "label": "Empirical constraint",
+      "kind": "constraint_type",
+      "layer": "constraints",
+      "definition": "A condition supported by observation or measurement under declared scope.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "technical_constraint",
+      "label": "Technical constraint",
+      "kind": "constraint_type",
+      "layer": "constraints",
+      "definition": "A condition imposed by an implemented system, interface, version, or architecture.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "permission_constraint",
+      "label": "Permission constraint",
+      "kind": "constraint_type",
+      "layer": "constraints",
+      "definition": "A condition imposed by access control or authority.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "legal_constraint",
+      "label": "Legal constraint",
+      "kind": "constraint_type",
+      "layer": "constraints",
+      "definition": "A condition imposed by applicable law or regulation.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "safety_constraint",
+      "label": "Safety constraint",
+      "kind": "constraint_type",
+      "layer": "constraints",
+      "definition": "A condition required to control asymmetric harm.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "organizational_constraint",
+      "label": "Organizational constraint",
+      "kind": "constraint_type",
+      "layer": "constraints",
+      "definition": "A condition imposed by roles, governance, capacity, or institutional process.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "conventional_constraint",
+      "label": "Conventional constraint",
+      "kind": "constraint_type",
+      "layer": "constraints",
+      "definition": "A condition maintained by standard practice or interoperability convention.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "inherited_assumption",
+      "label": "Inherited assumption",
+      "kind": "constraint_type",
+      "layer": "constraints",
+      "definition": "A premise carried forward from prior practice without current independent warrant.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "adjacent_ontology_search",
+      "label": "Adjacent-ontology search",
+      "kind": "operation",
+      "layer": "repair",
+      "definition": "Search across neighbouring disciplines, scales, units of analysis, and standard primitives for structures matching the recovered invariant.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "rival_frame_generation",
+      "label": "Rival-frame generation",
+      "kind": "operation",
+      "layer": "repair",
+      "definition": "Construction of multiple plausible representations that preserve the objective while changing decomposition, cause, operation set, or unit of analysis.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "discriminating_test",
+      "label": "Discriminating test",
+      "kind": "operation",
+      "layer": "repair",
+      "definition": "A test designed to produce meaningfully different expectations under rival frames.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "scale_sufficiency_test",
+      "label": "Scale sufficiency test",
+      "kind": "operation",
+      "layer": "repair",
+      "definition": "Comparison of the maximum effect available to the framed cause with the magnitude of the observed outcome.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "figure_ground_reversal",
+      "label": "Figure-ground reversal",
+      "kind": "operation",
+      "layer": "repair",
+      "definition": "Foregrounding backgrounded or excluded structure that could reorganize the current figure.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "corrective_externalization",
+      "label": "Corrective externalization",
+      "kind": "operation",
+      "layer": "repair",
+      "definition": "Expression of candidate corrective structure as a qualified, testable alternative rather than as hidden certainty.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "ontological_escape",
+      "label": "Ontological escape",
+      "kind": "process",
+      "layer": "repair",
+      "definition": "Controlled transition to a tested better-purpose-fit representation.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "genuine_irreducible_complexity",
+      "label": "Genuine irreducible complexity",
+      "kind": "guard",
+      "layer": "guards",
+      "definition": "Complexity that persists after independent reformulation because required constraints remain operative.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "model_knowledge_absence",
+      "label": "Model knowledge absence",
+      "kind": "guard",
+      "layer": "guards",
+      "definition": "The model lacks and cannot plausibly reconstruct the corrective structure from available evidence.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "deliberate_constraint_acceptance",
+      "label": "Deliberate constraint acceptance",
+      "kind": "guard",
+      "layer": "guards",
+      "definition": "An expensive or limited path intentionally serves the actual objective.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "temporary_scaffolding",
+      "label": "Temporary scaffolding",
+      "kind": "guard",
+      "layer": "guards",
+      "definition": "A knowingly incomplete and revisable representation used for bounded action.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "emergency_priority",
+      "label": "Emergency priority",
+      "kind": "guard",
+      "layer": "guards",
+      "definition": "Immediate asymmetric risk requires safe action before exploratory reframing.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fixed_frame_task",
+      "label": "Fixed-frame task",
+      "kind": "guard",
+      "layer": "guards",
+      "definition": "The task requires compliance, faithful reproduction, or work inside an explicitly fixed representation.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "empirically_rejected_alternative",
+      "label": "Empirically rejected alternative",
+      "kind": "guard",
+      "layer": "guards",
+      "definition": "A candidate has already failed a coherent test under relevant conditions.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "ontological_plurality",
+      "label": "Ontological plurality",
+      "kind": "guard",
+      "layer": "guards",
+      "definition": "Multiple representations are legitimate for different purposes, scales, or preservation policies.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "value_conflict",
+      "label": "Value conflict",
+      "kind": "guard",
+      "layer": "guards",
+      "definition": "The apparent problem includes irreducibly normative disagreement not removable by technical optimization.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "underdetermination",
+      "label": "Underdetermination",
+      "kind": "guard",
+      "layer": "guards",
+      "definition": "Available evidence supports several live interpretations without selecting one.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "over_reframing",
+      "label": "Over-reframing",
+      "kind": "mechanism",
+      "layer": "guards",
+      "definition": "Unwarranted replacement of a frame by novelty or elegance while dropping evidence, purpose, or real constraints.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_coupled_unit",
+      "label": "The coupled system is the diagnostic unit",
+      "kind": "proposition",
+      "layer": "axioms",
+      "definition": "The failure is constituted by recursive interaction among human framing, model conditioning, external action, and accumulated artifacts; it is not located wholly in either participant.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_local_success",
+      "label": "Local success does not uniquely validate a frame",
+      "kind": "proposition",
+      "layer": "axioms",
+      "definition": "Coherent or useful results inside a frame can occur under several rival causal or representational accounts.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_compensation",
+      "label": "Compensation can be mistaken for necessity",
+      "kind": "proposition",
+      "layer": "axioms",
+      "definition": "A workaround generated by a representational gap can become reified as part of the problem itself.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_effort_feedback",
+      "label": "Effort can reinforce the frame that generated it",
+      "kind": "proposition",
+      "layer": "axioms",
+      "definition": "Labor within a frame can increase its credibility to both human and model even when the labor is avoidable.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_performative_loop",
+      "label": "A frame can help create its own evidence",
+      "kind": "proposition",
+      "layer": "axioms",
+      "definition": "Actions generated under a frame can modify the external field and produce later observations interpreted as confirmation.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_restructuring",
+      "label": "Correction targets the problem representation",
+      "kind": "proposition",
+      "layer": "axioms",
+      "definition": "The decisive transition is often from one problem representation to another, not merely from one answer to a better answer.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_purpose_relative",
+      "label": "Adequacy is purpose-relative and constrained",
+      "kind": "proposition",
+      "layer": "axioms",
+      "definition": "A corrected representation is better only relative to purpose, evidence, required invariants, real constraints, consequences, and comparison with rivals.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_signal_not_proof",
+      "label": "Disproportionate complexity is a signal, not proof",
+      "kind": "proposition",
+      "layer": "axioms",
+      "definition": "Compensatory complexity warrants a frame audit but does not establish that a simpler valid alternative exists.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_reconstructibility_boundary",
+      "label": "Model reconstructibility is not observed internal activation",
+      "kind": "proposition",
+      "layer": "axioms",
+      "definition": "The ability to generate corrective structure under some prompting does not prove that a fully formed unspoken answer was present in a prior execution.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "axiom_refusal",
+      "label": "Reframing has stopping conditions",
+      "kind": "proposition",
+      "layer": "axioms",
+      "definition": "The model should preserve an operative frame when emergency, compliance, reproducibility, tested rejection, underdetermination, value conflict, or genuine constraints make reframing unsafe or inapposite.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    }
+  ],
+  "edges": [
+    {
+      "id": "cfef_e0001",
+      "source": "cfef_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "coupled_inquiry_system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0002",
+      "source": "cfef_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "active_frame",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0003",
+      "source": "cfef_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "ontological_deficit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0004",
+      "source": "cfef_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "frame_capture",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0005",
+      "source": "cfef_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "compensatory_structure_reification",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0006",
+      "source": "cfef_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "recursive_reinforcement",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0007",
+      "source": "cfef_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "frame_audit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0008",
+      "source": "cfef_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "better_purpose_fit_representation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0009",
+      "source": "cfef_ontology",
+      "relation": "HAS_CORE_CONCEPT",
+      "target": "ontological_escape",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0010",
+      "source": "human_inquirer",
+      "relation": "PART_OF",
+      "target": "coupled_inquiry_system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0011",
+      "source": "llm_execution",
+      "relation": "PART_OF",
+      "target": "coupled_inquiry_system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0012",
+      "source": "active_frame",
+      "relation": "SHAPES",
+      "target": "problem_representation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0013",
+      "source": "human_inquirer",
+      "relation": "FORMULATES",
+      "target": "problem_representation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0014",
+      "source": "problem_representation",
+      "relation": "CONDITIONS_ON",
+      "target": "llm_execution",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0015",
+      "source": "ontological_deficit",
+      "relation": "SHAPES",
+      "target": "active_frame",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0016",
+      "source": "frame_capture",
+      "relation": "PRESERVES",
+      "target": "active_frame",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0017",
+      "source": "premise_deference",
+      "relation": "INCREASES_AUTHORITY_OF",
+      "target": "active_frame",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0018",
+      "source": "local_answer_optimization",
+      "relation": "ELABORATES",
+      "target": "problem_representation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0019",
+      "source": "corrective_externalization_failure",
+      "relation": "SUPPRESSES",
+      "target": "corrective_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0020",
+      "source": "active_frame",
+      "relation": "SHAPES",
+      "target": "search_neighbourhood",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0021",
+      "source": "search_neighbourhood_contraction",
+      "relation": "NARROWS",
+      "target": "search_neighbourhood",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0022",
+      "source": "compensatory_structure",
+      "relation": "PART_OF",
+      "target": "problem_representation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0023",
+      "source": "compensatory_structure_reification",
+      "relation": "REIFIES",
+      "target": "compensatory_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0024",
+      "source": "effort_derived_constraint_credibility",
+      "relation": "INCREASES_AUTHORITY_OF",
+      "target": "active_frame",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0025",
+      "source": "frame_internal_success",
+      "relation": "REINFORCES",
+      "target": "active_frame",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0026",
+      "source": "intervention_induced_pseudoconfirmation",
+      "relation": "REINFORCES",
+      "target": "active_frame",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0027",
+      "source": "performative_entrenchment",
+      "relation": "MODIFIES",
+      "target": "target_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0028",
+      "source": "performative_entrenchment",
+      "relation": "GENERATES_EVIDENCE_FOR",
+      "target": "active_frame",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0029",
+      "source": "institutional_inscription",
+      "relation": "PRESERVES",
+      "target": "active_frame",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0030",
+      "source": "frame_internal_success",
+      "relation": "HAS_SUCCESS_TYPE",
+      "target": "rhetorical_success",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0031",
+      "source": "frame_internal_success",
+      "relation": "HAS_SUCCESS_TYPE",
+      "target": "procedural_success",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0032",
+      "source": "frame_internal_success",
+      "relation": "HAS_SUCCESS_TYPE",
+      "target": "symptomatic_success",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0033",
+      "source": "frame_internal_success",
+      "relation": "HAS_SUCCESS_TYPE",
+      "target": "metric_success",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0034",
+      "source": "frame_internal_success",
+      "relation": "HAS_SUCCESS_TYPE",
+      "target": "institutional_success",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0035",
+      "source": "frame_internal_success",
+      "relation": "HAS_SUCCESS_TYPE",
+      "target": "causal_success",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0036",
+      "source": "frame_capture",
+      "relation": "MAY_PRODUCE",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0037",
+      "source": "premise_deference",
+      "relation": "MAY_PRODUCE",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0038",
+      "source": "local_answer_optimization",
+      "relation": "MAY_PRODUCE",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0039",
+      "source": "corrective_externalization_failure",
+      "relation": "MAY_PRODUCE",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0040",
+      "source": "compensatory_structure_reification",
+      "relation": "MAY_PRODUCE",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0041",
+      "source": "effort_derived_constraint_credibility",
+      "relation": "MAY_PRODUCE",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0042",
+      "source": "intervention_induced_pseudoconfirmation",
+      "relation": "MAY_PRODUCE",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0043",
+      "source": "performative_entrenchment",
+      "relation": "MAY_PRODUCE",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0044",
+      "source": "search_neighbourhood_contraction",
+      "relation": "MAY_PRODUCE",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0045",
+      "source": "institutional_inscription",
+      "relation": "MAY_PRODUCE",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0046",
+      "source": "coupled_frame_entrenchment_failure",
+      "relation": "PRODUCES",
+      "target": "avoidable_burden",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0047",
+      "source": "coupled_frame_entrenchment_failure",
+      "relation": "DIAGNOSED_BY",
+      "target": "recursive_reinforcement",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0048",
+      "source": "disproportionate_compensatory_complexity",
+      "relation": "INDICATES",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0049",
+      "source": "local_success_nonuniqueness",
+      "relation": "DIAGNOSED_BY",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0050",
+      "source": "scale_insufficiency",
+      "relation": "INDICATES",
+      "target": "ontological_deficit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0051",
+      "source": "objective_recovery",
+      "relation": "PART_OF",
+      "target": "frame_audit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0052",
+      "source": "invariant_ledger",
+      "relation": "PART_OF",
+      "target": "frame_audit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0053",
+      "source": "constraint_provenance_classification",
+      "relation": "PART_OF",
+      "target": "frame_audit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0054",
+      "source": "adjacent_ontology_search",
+      "relation": "PART_OF",
+      "target": "frame_audit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0055",
+      "source": "rival_frame_generation",
+      "relation": "PART_OF",
+      "target": "frame_audit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0056",
+      "source": "discriminating_test",
+      "relation": "PART_OF",
+      "target": "frame_audit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0057",
+      "source": "scale_sufficiency_test",
+      "relation": "PART_OF",
+      "target": "frame_audit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0058",
+      "source": "figure_ground_reversal",
+      "relation": "PART_OF",
+      "target": "frame_audit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0059",
+      "source": "corrective_externalization",
+      "relation": "PART_OF",
+      "target": "frame_audit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0060",
+      "source": "constraint_provenance_classification",
+      "relation": "HAS_CONSTRAINT_TYPE",
+      "target": "logical_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0061",
+      "source": "constraint_provenance_classification",
+      "relation": "HAS_CONSTRAINT_TYPE",
+      "target": "physical_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0062",
+      "source": "constraint_provenance_classification",
+      "relation": "HAS_CONSTRAINT_TYPE",
+      "target": "empirical_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0063",
+      "source": "constraint_provenance_classification",
+      "relation": "HAS_CONSTRAINT_TYPE",
+      "target": "technical_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0064",
+      "source": "constraint_provenance_classification",
+      "relation": "HAS_CONSTRAINT_TYPE",
+      "target": "permission_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0065",
+      "source": "constraint_provenance_classification",
+      "relation": "HAS_CONSTRAINT_TYPE",
+      "target": "legal_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0066",
+      "source": "constraint_provenance_classification",
+      "relation": "HAS_CONSTRAINT_TYPE",
+      "target": "safety_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0067",
+      "source": "constraint_provenance_classification",
+      "relation": "HAS_CONSTRAINT_TYPE",
+      "target": "organizational_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0068",
+      "source": "constraint_provenance_classification",
+      "relation": "HAS_CONSTRAINT_TYPE",
+      "target": "conventional_constraint",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0069",
+      "source": "constraint_provenance_classification",
+      "relation": "HAS_CONSTRAINT_TYPE",
+      "target": "inherited_assumption",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0070",
+      "source": "objective_recovery",
+      "relation": "RECOVERS",
+      "target": "target_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0071",
+      "source": "rival_frame_generation",
+      "relation": "COMPARES_WITH",
+      "target": "active_frame",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0072",
+      "source": "discriminating_test",
+      "relation": "TESTS",
+      "target": "better_purpose_fit_representation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0073",
+      "source": "invariant_ledger",
+      "relation": "TESTS",
+      "target": "better_purpose_fit_representation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0074",
+      "source": "corrective_externalization",
+      "relation": "YIELDS",
+      "target": "corrective_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0075",
+      "source": "ontological_escape",
+      "relation": "REQUIRES",
+      "target": "better_purpose_fit_representation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0076",
+      "source": "frame_audit",
+      "relation": "CORRECTED_BY",
+      "target": "ontological_escape",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0077",
+      "source": "genuine_irreducible_complexity",
+      "relation": "DEFEATS_DIAGNOSIS",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0078",
+      "source": "ontological_escape",
+      "relation": "GUARDED_BY",
+      "target": "genuine_irreducible_complexity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0079",
+      "source": "model_knowledge_absence",
+      "relation": "DEFEATS_DIAGNOSIS",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0080",
+      "source": "ontological_escape",
+      "relation": "GUARDED_BY",
+      "target": "model_knowledge_absence",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0081",
+      "source": "deliberate_constraint_acceptance",
+      "relation": "DEFEATS_DIAGNOSIS",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0082",
+      "source": "ontological_escape",
+      "relation": "GUARDED_BY",
+      "target": "deliberate_constraint_acceptance",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0083",
+      "source": "temporary_scaffolding",
+      "relation": "DEFEATS_DIAGNOSIS",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0084",
+      "source": "ontological_escape",
+      "relation": "GUARDED_BY",
+      "target": "temporary_scaffolding",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0085",
+      "source": "emergency_priority",
+      "relation": "DEFEATS_DIAGNOSIS",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0086",
+      "source": "ontological_escape",
+      "relation": "GUARDED_BY",
+      "target": "emergency_priority",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0087",
+      "source": "fixed_frame_task",
+      "relation": "DEFEATS_DIAGNOSIS",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0088",
+      "source": "ontological_escape",
+      "relation": "GUARDED_BY",
+      "target": "fixed_frame_task",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0089",
+      "source": "empirically_rejected_alternative",
+      "relation": "DEFEATS_DIAGNOSIS",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0090",
+      "source": "ontological_escape",
+      "relation": "GUARDED_BY",
+      "target": "empirically_rejected_alternative",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0091",
+      "source": "ontological_plurality",
+      "relation": "DEFEATS_DIAGNOSIS",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0092",
+      "source": "ontological_escape",
+      "relation": "GUARDED_BY",
+      "target": "ontological_plurality",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0093",
+      "source": "value_conflict",
+      "relation": "DEFEATS_DIAGNOSIS",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0094",
+      "source": "ontological_escape",
+      "relation": "GUARDED_BY",
+      "target": "value_conflict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0095",
+      "source": "underdetermination",
+      "relation": "DEFEATS_DIAGNOSIS",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0096",
+      "source": "ontological_escape",
+      "relation": "GUARDED_BY",
+      "target": "underdetermination",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0097",
+      "source": "over_reframing",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "ontological_escape",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0098",
+      "source": "frame_capture",
+      "relation": "NOT_EQUIVALENT_TO",
+      "target": "premise_deference",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0099",
+      "source": "axiom_coupled_unit",
+      "relation": "ASSERTS_ABOUT",
+      "target": "coupled_inquiry_system",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0100",
+      "source": "axiom_coupled_unit",
+      "relation": "ASSERTS_ABOUT",
+      "target": "coupled_frame_entrenchment_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0101",
+      "source": "axiom_local_success",
+      "relation": "ASSERTS_ABOUT",
+      "target": "frame_internal_success",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0102",
+      "source": "axiom_local_success",
+      "relation": "ASSERTS_ABOUT",
+      "target": "local_success_nonuniqueness",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0103",
+      "source": "axiom_compensation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "compensatory_structure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0104",
+      "source": "axiom_compensation",
+      "relation": "ASSERTS_ABOUT",
+      "target": "compensatory_structure_reification",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0105",
+      "source": "axiom_effort_feedback",
+      "relation": "ASSERTS_ABOUT",
+      "target": "effort_derived_constraint_credibility",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0106",
+      "source": "axiom_effort_feedback",
+      "relation": "ASSERTS_ABOUT",
+      "target": "active_frame",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0107",
+      "source": "axiom_performative_loop",
+      "relation": "ASSERTS_ABOUT",
+      "target": "performative_entrenchment",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0108",
+      "source": "axiom_performative_loop",
+      "relation": "ASSERTS_ABOUT",
+      "target": "target_field",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0109",
+      "source": "axiom_restructuring",
+      "relation": "ASSERTS_ABOUT",
+      "target": "frame_audit",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0110",
+      "source": "axiom_restructuring",
+      "relation": "ASSERTS_ABOUT",
+      "target": "better_purpose_fit_representation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0111",
+      "source": "axiom_purpose_relative",
+      "relation": "ASSERTS_ABOUT",
+      "target": "better_purpose_fit_representation",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0112",
+      "source": "axiom_purpose_relative",
+      "relation": "ASSERTS_ABOUT",
+      "target": "invariant_ledger",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0113",
+      "source": "axiom_signal_not_proof",
+      "relation": "ASSERTS_ABOUT",
+      "target": "disproportionate_compensatory_complexity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0114",
+      "source": "axiom_signal_not_proof",
+      "relation": "ASSERTS_ABOUT",
+      "target": "genuine_irreducible_complexity",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0115",
+      "source": "axiom_reconstructibility_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "model_reconstructibility",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0116",
+      "source": "axiom_reconstructibility_boundary",
+      "relation": "ASSERTS_ABOUT",
+      "target": "corrective_externalization_failure",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0117",
+      "source": "axiom_refusal",
+      "relation": "ASSERTS_ABOUT",
+      "target": "ontological_escape",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0118",
+      "source": "axiom_refusal",
+      "relation": "ASSERTS_ABOUT",
+      "target": "emergency_priority",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0119",
+      "source": "axiom_refusal",
+      "relation": "ASSERTS_ABOUT",
+      "target": "fixed_frame_task",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "cfef_e0120",
+      "source": "axiom_refusal",
+      "relation": "ASSERTS_ABOUT",
+      "target": "underdetermination",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    }
+  ]
+}

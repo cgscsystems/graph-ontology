@@ -1,0 +1,3423 @@
+{
+  "manifest": {
+    "title": "Coupled Frame-Entrenchment Failure Application Cases Graph",
+    "version": "0.1.0",
+    "graph_type": "application_cases",
+    "status": "canonical_seed",
+    "namespace": "cfef_app",
+    "created_utc": "2026-11-19T16:17:00Z",
+    "description": "Token-efficient case graph. Each case stores compact facts plus typed diagnostic-presence, absence, intervention, and verdict relations. It offloads narrative burden to the glossary and governing ontology.",
+    "schema_ref": "cfef_ontology_graph_schema_v0_1.json",
+    "ontology_ref": "cfef_ontology_graph_v0_1.json",
+    "glossary_ref": "cfef_glossary_graph_v0_1.json",
+    "scope": [
+      "positive cross-domain cases",
+      "counterexamples",
+      "near-neighbours",
+      "false positives",
+      "correct refusals to reframe"
+    ],
+    "anti_collapse_invariants": [
+      "case_fact != universal_rule",
+      "present_signal != confirmed_diagnosis",
+      "compact_case != full_evidence_account",
+      "correct_refusal != model_inertia",
+      "near_neighbour != equivalence"
+    ],
+    "counts": {
+      "nodes": 115,
+      "edges": 185,
+      "relations": 10,
+      "cases": 25
+    }
+  },
+  "relation_vocabulary": [
+    {
+      "id": "INSTANTIATES",
+      "definition": "links a case to an ontology concept"
+    },
+    {
+      "id": "OBSERVES",
+      "definition": "links case to compact observation"
+    },
+    {
+      "id": "SATISFIES",
+      "definition": "marks diagnostic condition present"
+    },
+    {
+      "id": "LACKS",
+      "definition": "marks condition absent"
+    },
+    {
+      "id": "APPLIES",
+      "definition": "links corrective operation"
+    },
+    {
+      "id": "YIELDS",
+      "definition": "links intervention to outcome"
+    },
+    {
+      "id": "HAS_VERDICT",
+      "definition": "links case to classification"
+    },
+    {
+      "id": "NEAR_NEIGHBOUR_OF",
+      "definition": "marks conceptual relation"
+    },
+    {
+      "id": "DEFEATS_DIAGNOSIS",
+      "definition": "marks exclusion"
+    },
+    {
+      "id": "GUARDED_BY",
+      "definition": "marks stopping condition"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cfef_anchor",
+      "label": "CFEF ontology anchor",
+      "kind": "ontology",
+      "layer": "anchors",
+      "definition": "Reference to the governing ontology.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "cond_h",
+      "label": "H: human ontological constraint",
+      "kind": "condition",
+      "layer": "anchors",
+      "definition": "The active human representation omits, conflates, mislevels, or misbounds relevant structure.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "cond_f",
+      "label": "F: inadequate formulation",
+      "kind": "condition",
+      "layer": "anchors",
+      "definition": "The task is communicated through that limiting representation.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "cond_m",
+      "label": "M: corrective reconstructibility",
+      "kind": "condition",
+      "layer": "anchors",
+      "definition": "The model can plausibly generate or investigate corrective alternatives.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "cond_c",
+      "label": "C: frame-conditioned assistance",
+      "kind": "condition",
+      "layer": "anchors",
+      "definition": "The model assists inside the supplied frame.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "cond_r",
+      "label": "R: local success",
+      "kind": "condition",
+      "layer": "anchors",
+      "definition": "The assistance produces coherent or locally useful results.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "cond_e",
+      "label": "E: recursive entrenchment",
+      "kind": "condition",
+      "layer": "anchors",
+      "definition": "The result increases frame authority, elaboration, switching cost, or persistence.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "cond_k",
+      "label": "K: avoidable burden",
+      "kind": "condition",
+      "layer": "anchors",
+      "definition": "The frame generates avoidable labor, complexity, error, delay, or risk.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "frame_audit_anchor",
+      "label": "Frame audit",
+      "kind": "intervention",
+      "layer": "anchors",
+      "definition": "Recover objective and invariants, classify constraints, generate rivals, and test them.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refusal_anchor",
+      "label": "Justified refusal to reframe",
+      "kind": "intervention",
+      "layer": "anchors",
+      "definition": "Preserve or temporarily prioritize the operative frame because a guard condition applies.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_clinical_hydration",
+      "label": "Clinical: hydration-exclusive headache management",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Recurrent symptoms are represented through one cause.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "positive",
+      "domain": "clinical",
+      "compact_facts": [
+        "Recurrent symptoms are represented through one cause.",
+        "The model elaborates schedules and tracking inside that cause.",
+        "Partial symptomatic improvement is treated as exclusive causal confirmation.",
+        "Broader assessment is delayed."
+      ],
+      "required_conditions": [
+        "cond_h",
+        "cond_f",
+        "cond_m",
+        "cond_c",
+        "cond_r",
+        "cond_e",
+        "cond_k"
+      ],
+      "absent_conditions": []
+    },
+    {
+      "id": "case_clinical_hydration_obs",
+      "label": "Clinical: hydration-exclusive headache management observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Recurrent symptoms are represented through one cause.; The model elaborates schedules and tracking inside that cause.; Partial symptomatic improvement is treated as exclusive causal confirmation.; Broader assessment is delayed.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Recurrent symptoms are represented through one cause.",
+        "The model elaborates schedules and tracking inside that cause.",
+        "Partial symptomatic improvement is treated as exclusive causal confirmation.",
+        "Broader assessment is delayed."
+      ]
+    },
+    {
+      "id": "case_clinical_hydration_intervention",
+      "label": "Clinical: hydration-exclusive headache management intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Separate trigger management from diagnosis; reopen the differential; prioritize red flags and qualified assessment without asserting a replacement diagnosis.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_clinical_hydration_verdict",
+      "label": "Clinical: hydration-exclusive headache management verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Strong CFEF candidate when recursive confirmation and delayed assessment are present.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_organizational_individualization",
+      "label": "Organization: individualizing a throughput failure",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Missed deadlines are assigned to motivation.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "positive",
+      "domain": "organization",
+      "compact_facts": [
+        "Missed deadlines are assigned to motivation.",
+        "The model generates monitoring and performance documents.",
+        "Reporting consumes capacity and creates institutional evidence against the individual.",
+        "Queue, dependency, and workload structure remain ground."
+      ],
+      "required_conditions": [
+        "cond_h",
+        "cond_f",
+        "cond_m",
+        "cond_c",
+        "cond_r",
+        "cond_e",
+        "cond_k"
+      ],
+      "absent_conditions": []
+    },
+    {
+      "id": "case_organizational_individualization_obs",
+      "label": "Organization: individualizing a throughput failure observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Missed deadlines are assigned to motivation.; The model generates monitoring and performance documents.; Reporting consumes capacity and creates institutional evidence against the individual.; Queue, dependency, and workload structure remain ground.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Missed deadlines are assigned to motivation.",
+        "The model generates monitoring and performance documents.",
+        "Reporting consumes capacity and creates institutional evidence against the individual.",
+        "Queue, dependency, and workload structure remain ground."
+      ]
+    },
+    {
+      "id": "case_organizational_individualization_intervention",
+      "label": "Organization: individualizing a throughput failure intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Audit unit of analysis using arrival rate, work in progress, blocked time, dependency ownership, and throughput.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_organizational_individualization_verdict",
+      "label": "Organization: individualizing a throughput failure verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Strong CFEF with performative and institutional entrenchment.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_learning_summaries",
+      "label": "Education: explanation accumulation without retrieval",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "A learner responds to transfer failure by requesting more summaries.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "positive",
+      "domain": "education",
+      "compact_facts": [
+        "A learner responds to transfer failure by requesting more summaries.",
+        "The model improves readability and familiarity.",
+        "Familiarity is interpreted as learning while unaided discrimination remains poor."
+      ],
+      "required_conditions": [
+        "cond_h",
+        "cond_f",
+        "cond_m",
+        "cond_c",
+        "cond_r",
+        "cond_e",
+        "cond_k"
+      ],
+      "absent_conditions": []
+    },
+    {
+      "id": "case_learning_summaries_obs",
+      "label": "Education: explanation accumulation without retrieval observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "A learner responds to transfer failure by requesting more summaries.; The model improves readability and familiarity.; Familiarity is interpreted as learning while unaided discrimination remains poor.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "A learner responds to transfer failure by requesting more summaries.",
+        "The model improves readability and familiarity.",
+        "Familiarity is interpreted as learning while unaided discrimination remains poor."
+      ]
+    },
+    {
+      "id": "case_learning_summaries_intervention",
+      "label": "Education: explanation accumulation without retrieval intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Distinguish recognition from recall and transfer; test retrieval practice, worked-example fading, interleaving, and error classification.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_learning_summaries_verdict",
+      "label": "Education: explanation accumulation without retrieval verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Strong CFEF if repeated summaries fail to improve independent performance.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_debugging_race",
+      "label": "Software: race-condition presumption",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "An intermittent failure is named a race condition.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "positive",
+      "domain": "software",
+      "compact_facts": [
+        "An intermittent failure is named a race condition.",
+        "The model adds locks, retries, or delays.",
+        "Timing changes reduce frequency but do not uniquely identify cause.",
+        "Complexity accumulates while rival causes remain untested."
+      ],
+      "required_conditions": [
+        "cond_h",
+        "cond_f",
+        "cond_m",
+        "cond_c",
+        "cond_r",
+        "cond_e",
+        "cond_k"
+      ],
+      "absent_conditions": []
+    },
+    {
+      "id": "case_debugging_race_obs",
+      "label": "Software: race-condition presumption observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "An intermittent failure is named a race condition.; The model adds locks, retries, or delays.; Timing changes reduce frequency but do not uniquely identify cause.; Complexity accumulates while rival causes remain untested.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "An intermittent failure is named a race condition.",
+        "The model adds locks, retries, or delays.",
+        "Timing changes reduce frequency but do not uniquely identify cause.",
+        "Complexity accumulates while rival causes remain untested."
+      ]
+    },
+    {
+      "id": "case_debugging_race_intervention",
+      "label": "Software: race-condition presumption intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Generate rival mechanisms and use discriminating instrumentation rather than symptom-frequency change alone.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_debugging_race_verdict",
+      "label": "Software: race-condition presumption verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Strong CFEF with intervention-induced pseudo-confirmation.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_conflict_hostility",
+      "label": "Interpersonal: hostile-intent recursion",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Terse communication is represented as hostile intent.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "positive",
+      "domain": "interpersonal",
+      "compact_facts": [
+        "Terse communication is represented as hostile intent.",
+        "The model drafts defensive replies.",
+        "Replies alter the relationship and elicit strained responses.",
+        "The new responses are interpreted as proof of hostility."
+      ],
+      "required_conditions": [
+        "cond_h",
+        "cond_f",
+        "cond_m",
+        "cond_c",
+        "cond_r",
+        "cond_e",
+        "cond_k"
+      ],
+      "absent_conditions": []
+    },
+    {
+      "id": "case_conflict_hostility_obs",
+      "label": "Interpersonal: hostile-intent recursion observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Terse communication is represented as hostile intent.; The model drafts defensive replies.; Replies alter the relationship and elicit strained responses.; The new responses are interpreted as proof of hostility.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Terse communication is represented as hostile intent.",
+        "The model drafts defensive replies.",
+        "Replies alter the relationship and elicit strained responses.",
+        "The new responses are interpreted as proof of hostility."
+      ]
+    },
+    {
+      "id": "case_conflict_hostility_intervention",
+      "label": "Interpersonal: hostile-intent recursion intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Separate observed language from inferred intent; preserve alternatives and choose actions robust across interpretations.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_conflict_hostility_verdict",
+      "label": "Interpersonal: hostile-intent recursion verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Strong performative CFEF; motives remain underdetermined.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_budget_small_spend",
+      "label": "Finance: minor-spend frame under structural deficit",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Small discretionary purchases are framed as the cause of instability.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "positive",
+      "domain": "personal_finance",
+      "compact_facts": [
+        "Small discretionary purchases are framed as the cause of instability.",
+        "The model adds granular tracking and restrictions.",
+        "Real but small savings reinforce the frame.",
+        "Maximum possible savings cannot close the recurring shortfall."
+      ],
+      "required_conditions": [
+        "cond_h",
+        "cond_f",
+        "cond_m",
+        "cond_c",
+        "cond_r",
+        "cond_e",
+        "cond_k"
+      ],
+      "absent_conditions": []
+    },
+    {
+      "id": "case_budget_small_spend_obs",
+      "label": "Finance: minor-spend frame under structural deficit observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Small discretionary purchases are framed as the cause of instability.; The model adds granular tracking and restrictions.; Real but small savings reinforce the frame.; Maximum possible savings cannot close the recurring shortfall.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Small discretionary purchases are framed as the cause of instability.",
+        "The model adds granular tracking and restrictions.",
+        "Real but small savings reinforce the frame.",
+        "Maximum possible savings cannot close the recurring shortfall."
+      ]
+    },
+    {
+      "id": "case_budget_small_spend_intervention",
+      "label": "Finance: minor-spend frame under structural deficit intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Apply a scale sufficiency test across fixed costs, debt interest, income volatility, and timing mismatch.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_budget_small_spend_verdict",
+      "label": "Finance: minor-spend frame under structural deficit verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Strong CFEF when order-of-magnitude insufficiency is demonstrated.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_repair_surface",
+      "label": "Physical repair: recurring downstream restoration",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "A recurring surface symptom is treated as a surface defect.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "positive",
+      "domain": "maintenance",
+      "compact_facts": [
+        "A recurring surface symptom is treated as a surface defect.",
+        "The model recommends progressively stronger restoration.",
+        "Temporary success reinforces the treatment level.",
+        "The source or transmission path remains unmodeled."
+      ],
+      "required_conditions": [
+        "cond_h",
+        "cond_f",
+        "cond_m",
+        "cond_c",
+        "cond_r",
+        "cond_e",
+        "cond_k"
+      ],
+      "absent_conditions": []
+    },
+    {
+      "id": "case_repair_surface_obs",
+      "label": "Physical repair: recurring downstream restoration observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "A recurring surface symptom is treated as a surface defect.; The model recommends progressively stronger restoration.; Temporary success reinforces the treatment level.; The source or transmission path remains unmodeled.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "A recurring surface symptom is treated as a surface defect.",
+        "The model recommends progressively stronger restoration.",
+        "Temporary success reinforces the treatment level.",
+        "The source or transmission path remains unmodeled."
+      ]
+    },
+    {
+      "id": "case_repair_surface_intervention",
+      "label": "Physical repair: recurring downstream restoration intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Audit source, transmission path, and symptom surface as distinct causal levels.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_repair_surface_verdict",
+      "label": "Physical repair: recurring downstream restoration verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Strong CFEF when repeated recurrence is absorbed into stronger downstream repair.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_policy_productivity",
+      "label": "Policy: productivity frame for service delay",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Long waits are framed as individual productivity failure.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "positive",
+      "domain": "public_policy",
+      "compact_facts": [
+        "Long waits are framed as individual productivity failure.",
+        "The model designs scripts, targets, and dashboards.",
+        "Metrics improve while hard cases age or rework shifts elsewhere.",
+        "The metric becomes institutional proof of the frame."
+      ],
+      "required_conditions": [
+        "cond_h",
+        "cond_f",
+        "cond_m",
+        "cond_c",
+        "cond_r",
+        "cond_e",
+        "cond_k"
+      ],
+      "absent_conditions": []
+    },
+    {
+      "id": "case_policy_productivity_obs",
+      "label": "Policy: productivity frame for service delay observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Long waits are framed as individual productivity failure.; The model designs scripts, targets, and dashboards.; Metrics improve while hard cases age or rework shifts elsewhere.; The metric becomes institutional proof of the frame.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Long waits are framed as individual productivity failure.",
+        "The model designs scripts, targets, and dashboards.",
+        "Metrics improve while hard cases age or rework shifts elsewhere.",
+        "The metric becomes institutional proof of the frame."
+      ]
+    },
+    {
+      "id": "case_policy_productivity_intervention",
+      "label": "Policy: productivity frame for service delay intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Model arrival volume, case mix, rework, batching, bottlenecks, and specialist capacity; test displacement effects.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "case_policy_productivity_verdict",
+      "label": "Policy: productivity frame for service delay verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Strong CFEF with metric gaming and institutional inscription.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "counter_vehicle_routing",
+      "label": "Counterexample: constrained vehicle routing",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Capacity, time windows, driver hours, roads, and depots remain after independent reformulation.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "counterexample",
+      "domain": "operations_research",
+      "compact_facts": [
+        "Capacity, time windows, driver hours, roads, and depots remain after independent reformulation.",
+        "Heuristics and decomposition reflect genuine computational difficulty."
+      ],
+      "required_conditions": [
+        "cond_f"
+      ],
+      "absent_conditions": [
+        "cond_h",
+        "cond_k"
+      ]
+    },
+    {
+      "id": "counter_vehicle_routing_obs",
+      "label": "Counterexample: constrained vehicle routing observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Capacity, time windows, driver hours, roads, and depots remain after independent reformulation.; Heuristics and decomposition reflect genuine computational difficulty.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Capacity, time windows, driver hours, roads, and depots remain after independent reformulation.",
+        "Heuristics and decomposition reflect genuine computational difficulty."
+      ]
+    },
+    {
+      "id": "counter_vehicle_routing_intervention",
+      "label": "Counterexample: constrained vehicle routing intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Retain the optimization frame; improve algorithms or approximations without promising a hidden trivial primitive.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "counter_vehicle_routing_verdict",
+      "label": "Counterexample: constrained vehicle routing verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Not CFEF absent evidence that the constraints are representational artifacts.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "counter_proprietary_command",
+      "label": "Counterexample: unavailable proprietary command",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "A useful device-specific command is undocumented and absent from model learning and inferable evidence.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "counterexample",
+      "domain": "industrial_control",
+      "compact_facts": [
+        "A useful device-specific command is undocumented and absent from model learning and inferable evidence.",
+        "The model proposes workarounds."
+      ],
+      "required_conditions": [
+        "cond_h",
+        "cond_f",
+        "cond_c",
+        "cond_k"
+      ],
+      "absent_conditions": [
+        "cond_m"
+      ]
+    },
+    {
+      "id": "counter_proprietary_command_obs",
+      "label": "Counterexample: unavailable proprietary command observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "A useful device-specific command is undocumented and absent from model learning and inferable evidence.; The model proposes workarounds.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "A useful device-specific command is undocumented and absent from model learning and inferable evidence.",
+        "The model proposes workarounds."
+      ]
+    },
+    {
+      "id": "counter_proprietary_command_intervention",
+      "label": "Counterexample: unavailable proprietary command intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "State the knowledge boundary; seek authoritative engineering documentation or direct testing.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "counter_proprietary_command_verdict",
+      "label": "Counterexample: unavailable proprietary command verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Not full CFEF because corrective reconstructibility is absent.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "counter_pedagogical_manual",
+      "label": "Counterexample: deliberate manual implementation",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "A learner knowingly rejects a built-in feature to understand the mechanism.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "counterexample",
+      "domain": "education",
+      "compact_facts": [
+        "A learner knowingly rejects a built-in feature to understand the mechanism.",
+        "The expensive path is part of the objective."
+      ],
+      "required_conditions": [
+        "cond_f",
+        "cond_c"
+      ],
+      "absent_conditions": [
+        "cond_h",
+        "cond_k"
+      ]
+    },
+    {
+      "id": "counter_pedagogical_manual_obs",
+      "label": "Counterexample: deliberate manual implementation observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "A learner knowingly rejects a built-in feature to understand the mechanism.; The expensive path is part of the objective.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "A learner knowingly rejects a built-in feature to understand the mechanism.",
+        "The expensive path is part of the objective."
+      ]
+    },
+    {
+      "id": "counter_pedagogical_manual_intervention",
+      "label": "Counterexample: deliberate manual implementation intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Honor the declared learning objective while marking production alternatives separately.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "counter_pedagogical_manual_verdict",
+      "label": "Counterexample: deliberate manual implementation verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Not CFEF because inefficiency is intentional and purpose-fit.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "counter_scaffold",
+      "label": "Counterexample: revisable simplification",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "A simplified model is openly declared provisional.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "counterexample",
+      "domain": "therapy",
+      "compact_facts": [
+        "A simplified model is openly declared provisional.",
+        "Revision triggers and boundaries remain explicit."
+      ],
+      "required_conditions": [
+        "cond_f",
+        "cond_r"
+      ],
+      "absent_conditions": [
+        "cond_e"
+      ]
+    },
+    {
+      "id": "counter_scaffold_obs",
+      "label": "Counterexample: revisable simplification observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "A simplified model is openly declared provisional.; Revision triggers and boundaries remain explicit.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "A simplified model is openly declared provisional.",
+        "Revision triggers and boundaries remain explicit."
+      ]
+    },
+    {
+      "id": "counter_scaffold_intervention",
+      "label": "Counterexample: revisable simplification intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Use the scaffold within scope and revisit it when predictions or outcomes fail.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "counter_scaffold_verdict",
+      "label": "Counterexample: revisable simplification verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Not CFEF because incompleteness remains visible and revisable.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "false_hidden_one_liner",
+      "label": "False positive: assumed hidden one-line solution",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "The user and model repeatedly seek a magical primitive.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "false_positive",
+      "domain": "software",
+      "compact_facts": [
+        "The user and model repeatedly seek a magical primitive.",
+        "The platform genuinely lacks it or it violates required invariants."
+      ],
+      "required_conditions": [
+        "cond_f",
+        "cond_e",
+        "cond_k"
+      ],
+      "absent_conditions": [
+        "cond_h"
+      ]
+    },
+    {
+      "id": "false_hidden_one_liner_obs",
+      "label": "False positive: assumed hidden one-line solution observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "The user and model repeatedly seek a magical primitive.; The platform genuinely lacks it or it violates required invariants.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "The user and model repeatedly seek a magical primitive.",
+        "The platform genuinely lacks it or it violates required invariants."
+      ]
+    },
+    {
+      "id": "false_hidden_one_liner_intervention",
+      "label": "False positive: assumed hidden one-line solution intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Verify feature existence, version, permissions, invariants, and whether complexity is merely relocated.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "false_hidden_one_liner_verdict",
+      "label": "False positive: assumed hidden one-line solution verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "The ontology-gap hypothesis has itself become entrenched.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "false_elegant_drops_constraints",
+      "label": "False positive: elegant alternative drops constraints",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "A proposed simplification silently removes auditability, regulation, latency, permissions, or safety requirements.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "false_positive",
+      "domain": "general",
+      "compact_facts": [
+        "A proposed simplification silently removes auditability, regulation, latency, permissions, or safety requirements."
+      ],
+      "required_conditions": [
+        "cond_m"
+      ],
+      "absent_conditions": [
+        "cond_k"
+      ]
+    },
+    {
+      "id": "false_elegant_drops_constraints_obs",
+      "label": "False positive: elegant alternative drops constraints observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "A proposed simplification silently removes auditability, regulation, latency, permissions, or safety requirements.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "A proposed simplification silently removes auditability, regulation, latency, permissions, or safety requirements."
+      ]
+    },
+    {
+      "id": "false_elegant_drops_constraints_intervention",
+      "label": "False positive: elegant alternative drops constraints intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Require an invariant ledger and constraint-provenance audit before comparison.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "false_elegant_drops_constraints_verdict",
+      "label": "False positive: elegant alternative drops constraints verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Reject the alternative; simplicity was purchased by loss.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "false_expert_resistance",
+      "label": "False positive: expert resistance misread as entrenchment",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "An expert rejects a shortcut because the short prompt omitted failure modes.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "false_positive",
+      "domain": "professional_practice",
+      "compact_facts": [
+        "An expert rejects a shortcut because the short prompt omitted failure modes.",
+        "The model treats resistance as proof of fixation."
+      ],
+      "required_conditions": [
+        "cond_f"
+      ],
+      "absent_conditions": [
+        "cond_e"
+      ]
+    },
+    {
+      "id": "false_expert_resistance_obs",
+      "label": "False positive: expert resistance misread as entrenchment observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "An expert rejects a shortcut because the short prompt omitted failure modes.; The model treats resistance as proof of fixation.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "An expert rejects a shortcut because the short prompt omitted failure modes.",
+        "The model treats resistance as proof of fixation."
+      ]
+    },
+    {
+      "id": "false_expert_resistance_intervention",
+      "label": "False positive: expert resistance misread as entrenchment intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Ask what failure each step prevents, under what conditions it may be omitted, and what evidence supports it.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "false_expert_resistance_verdict",
+      "label": "False positive: expert resistance misread as entrenchment verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Insufficient basis for CFEF; domain complexity may be warranted.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "near_anchoring",
+      "label": "Near-neighbour: anchoring",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Initial representation dominates judgment, but coupling and recursive artifact production are not required.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "near_neighbour",
+      "domain": "cognitive_bias",
+      "compact_facts": [
+        "Initial representation dominates judgment, but coupling and recursive artifact production are not required."
+      ],
+      "required_conditions": [],
+      "absent_conditions": []
+    },
+    {
+      "id": "near_anchoring_obs",
+      "label": "Near-neighbour: anchoring observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Initial representation dominates judgment, but coupling and recursive artifact production are not required.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Initial representation dominates judgment, but coupling and recursive artifact production are not required."
+      ]
+    },
+    {
+      "id": "near_anchoring_intervention",
+      "label": "Near-neighbour: anchoring intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Preserve the distinction while using the neighbour as a bridge concept.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "near_anchoring_verdict",
+      "label": "Near-neighbour: anchoring verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Initial representation dominates judgment, but coupling and recursive artifact production are not required.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "near_sycophancy",
+      "label": "Near-neighbour: sycophancy",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Agreement-seeking may contribute, but frame capture can occur without a salient rejected contradiction.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "near_neighbour",
+      "domain": "model_behavior",
+      "compact_facts": [
+        "Agreement-seeking may contribute, but frame capture can occur without a salient rejected contradiction."
+      ],
+      "required_conditions": [],
+      "absent_conditions": []
+    },
+    {
+      "id": "near_sycophancy_obs",
+      "label": "Near-neighbour: sycophancy observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Agreement-seeking may contribute, but frame capture can occur without a salient rejected contradiction.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Agreement-seeking may contribute, but frame capture can occur without a salient rejected contradiction."
+      ]
+    },
+    {
+      "id": "near_sycophancy_intervention",
+      "label": "Near-neighbour: sycophancy intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Preserve the distinction while using the neighbour as a bridge concept.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "near_sycophancy_verdict",
+      "label": "Near-neighbour: sycophancy verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Agreement-seeking may contribute, but frame capture can occur without a salient rejected contradiction.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "near_einstellung",
+      "label": "Near-neighbour: Einstellung effect",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Strategy fixation can initiate CFEF, but does not include coupled recursive stabilization.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "near_neighbour",
+      "domain": "problem_solving",
+      "compact_facts": [
+        "Strategy fixation can initiate CFEF, but does not include coupled recursive stabilization."
+      ],
+      "required_conditions": [],
+      "absent_conditions": []
+    },
+    {
+      "id": "near_einstellung_obs",
+      "label": "Near-neighbour: Einstellung effect observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Strategy fixation can initiate CFEF, but does not include coupled recursive stabilization.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Strategy fixation can initiate CFEF, but does not include coupled recursive stabilization."
+      ]
+    },
+    {
+      "id": "near_einstellung_intervention",
+      "label": "Near-neighbour: Einstellung effect intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Preserve the distinction while using the neighbour as a bridge concept.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "near_einstellung_verdict",
+      "label": "Near-neighbour: Einstellung effect verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Strategy fixation can initiate CFEF, but does not include coupled recursive stabilization.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "near_double_loop",
+      "label": "Near-neighbour: double-loop learning",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Names the corrective questioning of governing assumptions, not the coupled failure that blocks it.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "near_neighbour",
+      "domain": "organizational_learning",
+      "compact_facts": [
+        "Names the corrective questioning of governing assumptions, not the coupled failure that blocks it."
+      ],
+      "required_conditions": [],
+      "absent_conditions": []
+    },
+    {
+      "id": "near_double_loop_obs",
+      "label": "Near-neighbour: double-loop learning observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Names the corrective questioning of governing assumptions, not the coupled failure that blocks it.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Names the corrective questioning of governing assumptions, not the coupled failure that blocks it."
+      ]
+    },
+    {
+      "id": "near_double_loop_intervention",
+      "label": "Near-neighbour: double-loop learning intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Preserve the distinction while using the neighbour as a bridge concept.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "near_double_loop_verdict",
+      "label": "Near-neighbour: double-loop learning verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Names the corrective questioning of governing assumptions, not the coupled failure that blocks it.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_emergency",
+      "label": "Correct refusal: emergency gas-leak response",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Delay carries asymmetric risk.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "correct_refusal",
+      "domain": "safety",
+      "compact_facts": [
+        "Delay carries asymmetric risk.",
+        "Immediate safe action is available."
+      ],
+      "required_conditions": [],
+      "absent_conditions": []
+    },
+    {
+      "id": "refuse_emergency_obs",
+      "label": "Correct refusal: emergency gas-leak response observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Delay carries asymmetric risk.; Immediate safe action is available.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Delay carries asymmetric risk.",
+        "Immediate safe action is available."
+      ]
+    },
+    {
+      "id": "refuse_emergency_intervention",
+      "label": "Correct refusal: emergency gas-leak response intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Preserve or prioritize the operative frame under the named guard.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_emergency_verdict",
+      "label": "Correct refusal: emergency gas-leak response verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Prioritize evacuation and emergency procedure; explore alternative explanations only after safety is controlled.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_filing",
+      "label": "Correct refusal: prescribed legal filing",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "A valid transaction requires a mandated form and deadline.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "correct_refusal",
+      "domain": "legal",
+      "compact_facts": [
+        "A valid transaction requires a mandated form and deadline.",
+        "A more elegant ontology does not change the immediate institutional requirement."
+      ],
+      "required_conditions": [],
+      "absent_conditions": []
+    },
+    {
+      "id": "refuse_filing_obs",
+      "label": "Correct refusal: prescribed legal filing observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "A valid transaction requires a mandated form and deadline.; A more elegant ontology does not change the immediate institutional requirement.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "A valid transaction requires a mandated form and deadline.",
+        "A more elegant ontology does not change the immediate institutional requirement."
+      ]
+    },
+    {
+      "id": "refuse_filing_intervention",
+      "label": "Correct refusal: prescribed legal filing intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Preserve or prioritize the operative frame under the named guard.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_filing_verdict",
+      "label": "Correct refusal: prescribed legal filing verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Help satisfy the operative filing frame; annotate reform questions separately.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_reproduction",
+      "label": "Correct refusal: exact method reproduction",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "The stated objective is faithful replication before evaluation.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "correct_refusal",
+      "domain": "science",
+      "compact_facts": [
+        "The stated objective is faithful replication before evaluation."
+      ],
+      "required_conditions": [],
+      "absent_conditions": []
+    },
+    {
+      "id": "refuse_reproduction_obs",
+      "label": "Correct refusal: exact method reproduction observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "The stated objective is faithful replication before evaluation.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "The stated objective is faithful replication before evaluation."
+      ]
+    },
+    {
+      "id": "refuse_reproduction_intervention",
+      "label": "Correct refusal: exact method reproduction intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Preserve or prioritize the operative frame under the named guard.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_reproduction_verdict",
+      "label": "Correct refusal: exact method reproduction verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Preserve the published method and separate later critique.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_tested_alternative",
+      "label": "Correct refusal: previously falsified standard alternative",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "The user supplies coherent test conditions and a measured failure against a required invariant.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "correct_refusal",
+      "domain": "engineering",
+      "compact_facts": [
+        "The user supplies coherent test conditions and a measured failure against a required invariant."
+      ],
+      "required_conditions": [],
+      "absent_conditions": []
+    },
+    {
+      "id": "refuse_tested_alternative_obs",
+      "label": "Correct refusal: previously falsified standard alternative observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "The user supplies coherent test conditions and a measured failure against a required invariant.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "The user supplies coherent test conditions and a measured failure against a required invariant."
+      ]
+    },
+    {
+      "id": "refuse_tested_alternative_intervention",
+      "label": "Correct refusal: previously falsified standard alternative intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Preserve or prioritize the operative frame under the named guard.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_tested_alternative_verdict",
+      "label": "Correct refusal: previously falsified standard alternative verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Do not repeatedly revive the rejected option without new evidence.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_motive",
+      "label": "Correct refusal: underdetermined motive attribution",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Several intentions remain compatible with observed behaviour.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "correct_refusal",
+      "domain": "interpersonal",
+      "compact_facts": [
+        "Several intentions remain compatible with observed behaviour."
+      ],
+      "required_conditions": [],
+      "absent_conditions": []
+    },
+    {
+      "id": "refuse_motive_obs",
+      "label": "Correct refusal: underdetermined motive attribution observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Several intentions remain compatible with observed behaviour.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Several intentions remain compatible with observed behaviour."
+      ]
+    },
+    {
+      "id": "refuse_motive_intervention",
+      "label": "Correct refusal: underdetermined motive attribution intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Preserve or prioritize the operative frame under the named guard.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_motive_verdict",
+      "label": "Correct refusal: underdetermined motive attribution verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Preserve uncertainty and recommend robust actions rather than selecting a reassuring or hostile story.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_value_conflict",
+      "label": "Correct refusal: value-laden allocation conflict",
+      "kind": "case",
+      "layer": "cases",
+      "definition": "Stakeholders disagree about rights, fairness, history, and trade-offs.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "case_type": "correct_refusal",
+      "domain": "public_policy",
+      "compact_facts": [
+        "Stakeholders disagree about rights, fairness, history, and trade-offs."
+      ],
+      "required_conditions": [],
+      "absent_conditions": []
+    },
+    {
+      "id": "refuse_value_conflict_obs",
+      "label": "Correct refusal: value-laden allocation conflict observations",
+      "kind": "observation",
+      "layer": "cases",
+      "definition": "Stakeholders disagree about rights, fairness, history, and trade-offs.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": "",
+      "compact_facts": [
+        "Stakeholders disagree about rights, fairness, history, and trade-offs."
+      ]
+    },
+    {
+      "id": "refuse_value_conflict_intervention",
+      "label": "Correct refusal: value-laden allocation conflict intervention",
+      "kind": "intervention",
+      "layer": "cases",
+      "definition": "Preserve or prioritize the operative frame under the named guard.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "refuse_value_conflict_verdict",
+      "label": "Correct refusal: value-laden allocation conflict verdict",
+      "kind": "verdict",
+      "layer": "cases",
+      "definition": "Do not collapse the dispute into technical optimization alone.",
+      "status": "settled",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "emergency_priority",
+      "label": "Emergency priority",
+      "kind": "condition",
+      "layer": "guards",
+      "definition": "Guard condition imported by reference from the governing ontology.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "empirically_rejected_alternative",
+      "label": "Empirically rejected alternative",
+      "kind": "condition",
+      "layer": "guards",
+      "definition": "Guard condition imported by reference from the governing ontology.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "fixed_frame_task",
+      "label": "Fixed-frame task",
+      "kind": "condition",
+      "layer": "guards",
+      "definition": "Guard condition imported by reference from the governing ontology.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "underdetermination",
+      "label": "Underdetermination",
+      "kind": "condition",
+      "layer": "guards",
+      "definition": "Guard condition imported by reference from the governing ontology.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    },
+    {
+      "id": "value_conflict",
+      "label": "Value conflict",
+      "kind": "condition",
+      "layer": "guards",
+      "definition": "Guard condition imported by reference from the governing ontology.",
+      "status": "core",
+      "confidence": "high",
+      "aliases": [],
+      "notes": ""
+    }
+  ],
+  "edges": [
+    {
+      "id": "app_e0001",
+      "source": "case_clinical_hydration",
+      "relation": "OBSERVES",
+      "target": "case_clinical_hydration_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0002",
+      "source": "case_clinical_hydration",
+      "relation": "SATISFIES",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0003",
+      "source": "case_clinical_hydration",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0004",
+      "source": "case_clinical_hydration",
+      "relation": "SATISFIES",
+      "target": "cond_m",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0005",
+      "source": "case_clinical_hydration",
+      "relation": "SATISFIES",
+      "target": "cond_c",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0006",
+      "source": "case_clinical_hydration",
+      "relation": "SATISFIES",
+      "target": "cond_r",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0007",
+      "source": "case_clinical_hydration",
+      "relation": "SATISFIES",
+      "target": "cond_e",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0008",
+      "source": "case_clinical_hydration",
+      "relation": "SATISFIES",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0009",
+      "source": "case_clinical_hydration",
+      "relation": "APPLIES",
+      "target": "case_clinical_hydration_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0010",
+      "source": "case_clinical_hydration",
+      "relation": "HAS_VERDICT",
+      "target": "case_clinical_hydration_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0011",
+      "source": "case_clinical_hydration",
+      "relation": "INSTANTIATES",
+      "target": "cfef_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0012",
+      "source": "case_organizational_individualization",
+      "relation": "OBSERVES",
+      "target": "case_organizational_individualization_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0013",
+      "source": "case_organizational_individualization",
+      "relation": "SATISFIES",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0014",
+      "source": "case_organizational_individualization",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0015",
+      "source": "case_organizational_individualization",
+      "relation": "SATISFIES",
+      "target": "cond_m",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0016",
+      "source": "case_organizational_individualization",
+      "relation": "SATISFIES",
+      "target": "cond_c",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0017",
+      "source": "case_organizational_individualization",
+      "relation": "SATISFIES",
+      "target": "cond_r",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0018",
+      "source": "case_organizational_individualization",
+      "relation": "SATISFIES",
+      "target": "cond_e",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0019",
+      "source": "case_organizational_individualization",
+      "relation": "SATISFIES",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0020",
+      "source": "case_organizational_individualization",
+      "relation": "APPLIES",
+      "target": "case_organizational_individualization_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0021",
+      "source": "case_organizational_individualization",
+      "relation": "HAS_VERDICT",
+      "target": "case_organizational_individualization_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0022",
+      "source": "case_organizational_individualization",
+      "relation": "INSTANTIATES",
+      "target": "cfef_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0023",
+      "source": "case_learning_summaries",
+      "relation": "OBSERVES",
+      "target": "case_learning_summaries_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0024",
+      "source": "case_learning_summaries",
+      "relation": "SATISFIES",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0025",
+      "source": "case_learning_summaries",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0026",
+      "source": "case_learning_summaries",
+      "relation": "SATISFIES",
+      "target": "cond_m",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0027",
+      "source": "case_learning_summaries",
+      "relation": "SATISFIES",
+      "target": "cond_c",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0028",
+      "source": "case_learning_summaries",
+      "relation": "SATISFIES",
+      "target": "cond_r",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0029",
+      "source": "case_learning_summaries",
+      "relation": "SATISFIES",
+      "target": "cond_e",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0030",
+      "source": "case_learning_summaries",
+      "relation": "SATISFIES",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0031",
+      "source": "case_learning_summaries",
+      "relation": "APPLIES",
+      "target": "case_learning_summaries_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0032",
+      "source": "case_learning_summaries",
+      "relation": "HAS_VERDICT",
+      "target": "case_learning_summaries_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0033",
+      "source": "case_learning_summaries",
+      "relation": "INSTANTIATES",
+      "target": "cfef_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0034",
+      "source": "case_debugging_race",
+      "relation": "OBSERVES",
+      "target": "case_debugging_race_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0035",
+      "source": "case_debugging_race",
+      "relation": "SATISFIES",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0036",
+      "source": "case_debugging_race",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0037",
+      "source": "case_debugging_race",
+      "relation": "SATISFIES",
+      "target": "cond_m",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0038",
+      "source": "case_debugging_race",
+      "relation": "SATISFIES",
+      "target": "cond_c",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0039",
+      "source": "case_debugging_race",
+      "relation": "SATISFIES",
+      "target": "cond_r",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0040",
+      "source": "case_debugging_race",
+      "relation": "SATISFIES",
+      "target": "cond_e",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0041",
+      "source": "case_debugging_race",
+      "relation": "SATISFIES",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0042",
+      "source": "case_debugging_race",
+      "relation": "APPLIES",
+      "target": "case_debugging_race_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0043",
+      "source": "case_debugging_race",
+      "relation": "HAS_VERDICT",
+      "target": "case_debugging_race_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0044",
+      "source": "case_debugging_race",
+      "relation": "INSTANTIATES",
+      "target": "cfef_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0045",
+      "source": "case_conflict_hostility",
+      "relation": "OBSERVES",
+      "target": "case_conflict_hostility_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0046",
+      "source": "case_conflict_hostility",
+      "relation": "SATISFIES",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0047",
+      "source": "case_conflict_hostility",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0048",
+      "source": "case_conflict_hostility",
+      "relation": "SATISFIES",
+      "target": "cond_m",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0049",
+      "source": "case_conflict_hostility",
+      "relation": "SATISFIES",
+      "target": "cond_c",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0050",
+      "source": "case_conflict_hostility",
+      "relation": "SATISFIES",
+      "target": "cond_r",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0051",
+      "source": "case_conflict_hostility",
+      "relation": "SATISFIES",
+      "target": "cond_e",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0052",
+      "source": "case_conflict_hostility",
+      "relation": "SATISFIES",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0053",
+      "source": "case_conflict_hostility",
+      "relation": "APPLIES",
+      "target": "case_conflict_hostility_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0054",
+      "source": "case_conflict_hostility",
+      "relation": "HAS_VERDICT",
+      "target": "case_conflict_hostility_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0055",
+      "source": "case_conflict_hostility",
+      "relation": "INSTANTIATES",
+      "target": "cfef_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0056",
+      "source": "case_budget_small_spend",
+      "relation": "OBSERVES",
+      "target": "case_budget_small_spend_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0057",
+      "source": "case_budget_small_spend",
+      "relation": "SATISFIES",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0058",
+      "source": "case_budget_small_spend",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0059",
+      "source": "case_budget_small_spend",
+      "relation": "SATISFIES",
+      "target": "cond_m",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0060",
+      "source": "case_budget_small_spend",
+      "relation": "SATISFIES",
+      "target": "cond_c",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0061",
+      "source": "case_budget_small_spend",
+      "relation": "SATISFIES",
+      "target": "cond_r",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0062",
+      "source": "case_budget_small_spend",
+      "relation": "SATISFIES",
+      "target": "cond_e",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0063",
+      "source": "case_budget_small_spend",
+      "relation": "SATISFIES",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0064",
+      "source": "case_budget_small_spend",
+      "relation": "APPLIES",
+      "target": "case_budget_small_spend_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0065",
+      "source": "case_budget_small_spend",
+      "relation": "HAS_VERDICT",
+      "target": "case_budget_small_spend_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0066",
+      "source": "case_budget_small_spend",
+      "relation": "INSTANTIATES",
+      "target": "cfef_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0067",
+      "source": "case_repair_surface",
+      "relation": "OBSERVES",
+      "target": "case_repair_surface_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0068",
+      "source": "case_repair_surface",
+      "relation": "SATISFIES",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0069",
+      "source": "case_repair_surface",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0070",
+      "source": "case_repair_surface",
+      "relation": "SATISFIES",
+      "target": "cond_m",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0071",
+      "source": "case_repair_surface",
+      "relation": "SATISFIES",
+      "target": "cond_c",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0072",
+      "source": "case_repair_surface",
+      "relation": "SATISFIES",
+      "target": "cond_r",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0073",
+      "source": "case_repair_surface",
+      "relation": "SATISFIES",
+      "target": "cond_e",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0074",
+      "source": "case_repair_surface",
+      "relation": "SATISFIES",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0075",
+      "source": "case_repair_surface",
+      "relation": "APPLIES",
+      "target": "case_repair_surface_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0076",
+      "source": "case_repair_surface",
+      "relation": "HAS_VERDICT",
+      "target": "case_repair_surface_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0077",
+      "source": "case_repair_surface",
+      "relation": "INSTANTIATES",
+      "target": "cfef_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0078",
+      "source": "case_policy_productivity",
+      "relation": "OBSERVES",
+      "target": "case_policy_productivity_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0079",
+      "source": "case_policy_productivity",
+      "relation": "SATISFIES",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0080",
+      "source": "case_policy_productivity",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0081",
+      "source": "case_policy_productivity",
+      "relation": "SATISFIES",
+      "target": "cond_m",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0082",
+      "source": "case_policy_productivity",
+      "relation": "SATISFIES",
+      "target": "cond_c",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0083",
+      "source": "case_policy_productivity",
+      "relation": "SATISFIES",
+      "target": "cond_r",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0084",
+      "source": "case_policy_productivity",
+      "relation": "SATISFIES",
+      "target": "cond_e",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0085",
+      "source": "case_policy_productivity",
+      "relation": "SATISFIES",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0086",
+      "source": "case_policy_productivity",
+      "relation": "APPLIES",
+      "target": "case_policy_productivity_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0087",
+      "source": "case_policy_productivity",
+      "relation": "HAS_VERDICT",
+      "target": "case_policy_productivity_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0088",
+      "source": "case_policy_productivity",
+      "relation": "INSTANTIATES",
+      "target": "cfef_anchor",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0089",
+      "source": "counter_vehicle_routing",
+      "relation": "OBSERVES",
+      "target": "counter_vehicle_routing_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0090",
+      "source": "counter_vehicle_routing",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0091",
+      "source": "counter_vehicle_routing",
+      "relation": "LACKS",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0092",
+      "source": "counter_vehicle_routing",
+      "relation": "LACKS",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0093",
+      "source": "counter_vehicle_routing",
+      "relation": "APPLIES",
+      "target": "counter_vehicle_routing_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0094",
+      "source": "counter_vehicle_routing",
+      "relation": "HAS_VERDICT",
+      "target": "counter_vehicle_routing_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0095",
+      "source": "counter_vehicle_routing",
+      "relation": "INSTANTIATES",
+      "target": "counter_vehicle_routing_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0096",
+      "source": "counter_proprietary_command",
+      "relation": "OBSERVES",
+      "target": "counter_proprietary_command_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0097",
+      "source": "counter_proprietary_command",
+      "relation": "SATISFIES",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0098",
+      "source": "counter_proprietary_command",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0099",
+      "source": "counter_proprietary_command",
+      "relation": "SATISFIES",
+      "target": "cond_c",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0100",
+      "source": "counter_proprietary_command",
+      "relation": "SATISFIES",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0101",
+      "source": "counter_proprietary_command",
+      "relation": "LACKS",
+      "target": "cond_m",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0102",
+      "source": "counter_proprietary_command",
+      "relation": "APPLIES",
+      "target": "counter_proprietary_command_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0103",
+      "source": "counter_proprietary_command",
+      "relation": "HAS_VERDICT",
+      "target": "counter_proprietary_command_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0104",
+      "source": "counter_proprietary_command",
+      "relation": "INSTANTIATES",
+      "target": "counter_proprietary_command_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0105",
+      "source": "counter_pedagogical_manual",
+      "relation": "OBSERVES",
+      "target": "counter_pedagogical_manual_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0106",
+      "source": "counter_pedagogical_manual",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0107",
+      "source": "counter_pedagogical_manual",
+      "relation": "SATISFIES",
+      "target": "cond_c",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0108",
+      "source": "counter_pedagogical_manual",
+      "relation": "LACKS",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0109",
+      "source": "counter_pedagogical_manual",
+      "relation": "LACKS",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0110",
+      "source": "counter_pedagogical_manual",
+      "relation": "APPLIES",
+      "target": "counter_pedagogical_manual_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0111",
+      "source": "counter_pedagogical_manual",
+      "relation": "HAS_VERDICT",
+      "target": "counter_pedagogical_manual_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0112",
+      "source": "counter_pedagogical_manual",
+      "relation": "INSTANTIATES",
+      "target": "counter_pedagogical_manual_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0113",
+      "source": "counter_scaffold",
+      "relation": "OBSERVES",
+      "target": "counter_scaffold_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0114",
+      "source": "counter_scaffold",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0115",
+      "source": "counter_scaffold",
+      "relation": "SATISFIES",
+      "target": "cond_r",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0116",
+      "source": "counter_scaffold",
+      "relation": "LACKS",
+      "target": "cond_e",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0117",
+      "source": "counter_scaffold",
+      "relation": "APPLIES",
+      "target": "counter_scaffold_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0118",
+      "source": "counter_scaffold",
+      "relation": "HAS_VERDICT",
+      "target": "counter_scaffold_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0119",
+      "source": "counter_scaffold",
+      "relation": "INSTANTIATES",
+      "target": "counter_scaffold_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0120",
+      "source": "false_hidden_one_liner",
+      "relation": "OBSERVES",
+      "target": "false_hidden_one_liner_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0121",
+      "source": "false_hidden_one_liner",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0122",
+      "source": "false_hidden_one_liner",
+      "relation": "SATISFIES",
+      "target": "cond_e",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0123",
+      "source": "false_hidden_one_liner",
+      "relation": "SATISFIES",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0124",
+      "source": "false_hidden_one_liner",
+      "relation": "LACKS",
+      "target": "cond_h",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0125",
+      "source": "false_hidden_one_liner",
+      "relation": "APPLIES",
+      "target": "false_hidden_one_liner_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0126",
+      "source": "false_hidden_one_liner",
+      "relation": "HAS_VERDICT",
+      "target": "false_hidden_one_liner_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0127",
+      "source": "false_hidden_one_liner",
+      "relation": "INSTANTIATES",
+      "target": "false_hidden_one_liner_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0128",
+      "source": "false_elegant_drops_constraints",
+      "relation": "OBSERVES",
+      "target": "false_elegant_drops_constraints_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0129",
+      "source": "false_elegant_drops_constraints",
+      "relation": "SATISFIES",
+      "target": "cond_m",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0130",
+      "source": "false_elegant_drops_constraints",
+      "relation": "LACKS",
+      "target": "cond_k",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0131",
+      "source": "false_elegant_drops_constraints",
+      "relation": "APPLIES",
+      "target": "false_elegant_drops_constraints_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0132",
+      "source": "false_elegant_drops_constraints",
+      "relation": "HAS_VERDICT",
+      "target": "false_elegant_drops_constraints_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0133",
+      "source": "false_elegant_drops_constraints",
+      "relation": "INSTANTIATES",
+      "target": "false_elegant_drops_constraints_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0134",
+      "source": "false_expert_resistance",
+      "relation": "OBSERVES",
+      "target": "false_expert_resistance_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0135",
+      "source": "false_expert_resistance",
+      "relation": "SATISFIES",
+      "target": "cond_f",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0136",
+      "source": "false_expert_resistance",
+      "relation": "LACKS",
+      "target": "cond_e",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0137",
+      "source": "false_expert_resistance",
+      "relation": "APPLIES",
+      "target": "false_expert_resistance_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0138",
+      "source": "false_expert_resistance",
+      "relation": "HAS_VERDICT",
+      "target": "false_expert_resistance_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0139",
+      "source": "false_expert_resistance",
+      "relation": "INSTANTIATES",
+      "target": "false_expert_resistance_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0140",
+      "source": "near_anchoring",
+      "relation": "OBSERVES",
+      "target": "near_anchoring_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0141",
+      "source": "near_anchoring",
+      "relation": "APPLIES",
+      "target": "near_anchoring_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0142",
+      "source": "near_anchoring",
+      "relation": "HAS_VERDICT",
+      "target": "near_anchoring_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0143",
+      "source": "near_anchoring",
+      "relation": "INSTANTIATES",
+      "target": "near_anchoring_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0144",
+      "source": "near_sycophancy",
+      "relation": "OBSERVES",
+      "target": "near_sycophancy_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0145",
+      "source": "near_sycophancy",
+      "relation": "APPLIES",
+      "target": "near_sycophancy_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0146",
+      "source": "near_sycophancy",
+      "relation": "HAS_VERDICT",
+      "target": "near_sycophancy_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0147",
+      "source": "near_sycophancy",
+      "relation": "INSTANTIATES",
+      "target": "near_sycophancy_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0148",
+      "source": "near_einstellung",
+      "relation": "OBSERVES",
+      "target": "near_einstellung_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0149",
+      "source": "near_einstellung",
+      "relation": "APPLIES",
+      "target": "near_einstellung_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0150",
+      "source": "near_einstellung",
+      "relation": "HAS_VERDICT",
+      "target": "near_einstellung_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0151",
+      "source": "near_einstellung",
+      "relation": "INSTANTIATES",
+      "target": "near_einstellung_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0152",
+      "source": "near_double_loop",
+      "relation": "OBSERVES",
+      "target": "near_double_loop_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0153",
+      "source": "near_double_loop",
+      "relation": "APPLIES",
+      "target": "near_double_loop_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0154",
+      "source": "near_double_loop",
+      "relation": "HAS_VERDICT",
+      "target": "near_double_loop_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0155",
+      "source": "near_double_loop",
+      "relation": "INSTANTIATES",
+      "target": "near_double_loop_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0156",
+      "source": "refuse_emergency",
+      "relation": "OBSERVES",
+      "target": "refuse_emergency_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0157",
+      "source": "refuse_emergency",
+      "relation": "APPLIES",
+      "target": "refuse_emergency_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0158",
+      "source": "refuse_emergency",
+      "relation": "HAS_VERDICT",
+      "target": "refuse_emergency_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0159",
+      "source": "refuse_emergency",
+      "relation": "INSTANTIATES",
+      "target": "refuse_emergency_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0160",
+      "source": "refuse_emergency",
+      "relation": "GUARDED_BY",
+      "target": "emergency_priority",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0161",
+      "source": "refuse_filing",
+      "relation": "OBSERVES",
+      "target": "refuse_filing_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0162",
+      "source": "refuse_filing",
+      "relation": "APPLIES",
+      "target": "refuse_filing_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0163",
+      "source": "refuse_filing",
+      "relation": "HAS_VERDICT",
+      "target": "refuse_filing_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0164",
+      "source": "refuse_filing",
+      "relation": "INSTANTIATES",
+      "target": "refuse_filing_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0165",
+      "source": "refuse_filing",
+      "relation": "GUARDED_BY",
+      "target": "fixed_frame_task",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0166",
+      "source": "refuse_reproduction",
+      "relation": "OBSERVES",
+      "target": "refuse_reproduction_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0167",
+      "source": "refuse_reproduction",
+      "relation": "APPLIES",
+      "target": "refuse_reproduction_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0168",
+      "source": "refuse_reproduction",
+      "relation": "HAS_VERDICT",
+      "target": "refuse_reproduction_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0169",
+      "source": "refuse_reproduction",
+      "relation": "INSTANTIATES",
+      "target": "refuse_reproduction_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0170",
+      "source": "refuse_reproduction",
+      "relation": "GUARDED_BY",
+      "target": "fixed_frame_task",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0171",
+      "source": "refuse_tested_alternative",
+      "relation": "OBSERVES",
+      "target": "refuse_tested_alternative_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0172",
+      "source": "refuse_tested_alternative",
+      "relation": "APPLIES",
+      "target": "refuse_tested_alternative_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0173",
+      "source": "refuse_tested_alternative",
+      "relation": "HAS_VERDICT",
+      "target": "refuse_tested_alternative_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0174",
+      "source": "refuse_tested_alternative",
+      "relation": "INSTANTIATES",
+      "target": "refuse_tested_alternative_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0175",
+      "source": "refuse_tested_alternative",
+      "relation": "GUARDED_BY",
+      "target": "empirically_rejected_alternative",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0176",
+      "source": "refuse_motive",
+      "relation": "OBSERVES",
+      "target": "refuse_motive_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0177",
+      "source": "refuse_motive",
+      "relation": "APPLIES",
+      "target": "refuse_motive_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0178",
+      "source": "refuse_motive",
+      "relation": "HAS_VERDICT",
+      "target": "refuse_motive_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0179",
+      "source": "refuse_motive",
+      "relation": "INSTANTIATES",
+      "target": "refuse_motive_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0180",
+      "source": "refuse_motive",
+      "relation": "GUARDED_BY",
+      "target": "underdetermination",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0181",
+      "source": "refuse_value_conflict",
+      "relation": "OBSERVES",
+      "target": "refuse_value_conflict_obs",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0182",
+      "source": "refuse_value_conflict",
+      "relation": "APPLIES",
+      "target": "refuse_value_conflict_intervention",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0183",
+      "source": "refuse_value_conflict",
+      "relation": "HAS_VERDICT",
+      "target": "refuse_value_conflict_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0184",
+      "source": "refuse_value_conflict",
+      "relation": "INSTANTIATES",
+      "target": "refuse_value_conflict_verdict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    },
+    {
+      "id": "app_e0185",
+      "source": "refuse_value_conflict",
+      "relation": "GUARDED_BY",
+      "target": "value_conflict",
+      "definition": "",
+      "status": "core",
+      "confidence": "high"
+    }
+  ]
+}

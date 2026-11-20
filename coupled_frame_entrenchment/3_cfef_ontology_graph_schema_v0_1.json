@@ -1,0 +1,296 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ontology-schema:cfef-graph:1.0.0",
+  "title": "Coupled Frame-Entrenchment Ontology and Application Graph Schema",
+  "description": "Schema shared by the ontology graph and compact application graphs. Application cases are graphs of typed case, observation, condition, inference, intervention, and verdict nodes rather than narrative essays.",
+  "type": "object",
+  "required": [
+    "manifest",
+    "relation_vocabulary",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "manifest": {
+      "type": "object",
+      "required": [
+        "title",
+        "version",
+        "graph_type",
+        "status",
+        "namespace",
+        "description",
+        "counts"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "graph_type": {
+          "enum": [
+            "ontology",
+            "application_cases"
+          ]
+        },
+        "status": {
+          "type": "string"
+        },
+        "namespace": {
+          "type": "string"
+        },
+        "created_utc": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "anti_collapse_invariants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "schema_ref": {
+          "type": "string"
+        },
+        "ontology_ref": {
+          "type": "string"
+        },
+        "glossary_ref": {
+          "type": "string"
+        },
+        "counts": {
+          "type": "object",
+          "required": [
+            "nodes",
+            "edges",
+            "relations"
+          ],
+          "properties": {
+            "nodes": {
+              "type": "integer"
+            },
+            "edges": {
+              "type": "integer"
+            },
+            "relations": {
+              "type": "integer"
+            },
+            "propositions": {
+              "type": "integer"
+            },
+            "cases": {
+              "type": "integer"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "relation_vocabulary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "definition"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9_]*$"
+          },
+          "definition": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "kind",
+          "layer",
+          "definition",
+          "status",
+          "confidence",
+          "aliases"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "core",
+              "settled",
+              "provisional",
+              "candidate",
+              "rejected",
+              "canonical_seed"
+            ]
+          },
+          "confidence": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "notes": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "ontology",
+              "participant",
+              "frame",
+              "structure",
+              "process",
+              "mechanism",
+              "signal",
+              "criterion",
+              "operation",
+              "guard",
+              "proposition",
+              "case",
+              "observation",
+              "condition",
+              "intervention",
+              "outcome",
+              "verdict",
+              "domain",
+              "success_type",
+              "constraint_type"
+            ]
+          },
+          "layer": {
+            "type": "string"
+          },
+          "formalization": {
+            "type": "string"
+          },
+          "formalization_status": {
+            "type": "string"
+          },
+          "case_type": {
+            "enum": [
+              "positive",
+              "counterexample",
+              "near_neighbour",
+              "false_positive",
+              "correct_refusal"
+            ]
+          },
+          "domain": {
+            "type": "string"
+          },
+          "compact_facts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "required_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "absent_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "source",
+          "relation",
+          "target",
+          "status",
+          "confidence"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "source": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "relation": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9_]*$"
+          },
+          "target": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "definition": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "core",
+              "settled",
+              "provisional",
+              "candidate",
+              "rejected",
+              "canonical_seed"
+            ]
+          },
+          "confidence": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
